@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Dlouhodob�maturitn�pr�ce: Zdrojový soubor Models/MPDF/examples/example12_paging_html.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Dlouhodob�maturitn�pr�ce
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Hledat');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hlavní&#160;stránka</span></a></li>
+      <li><a href="pages.html"><span>Ostatní&#160;stránky</span></a></li>
+      <li><a href="annotated.html"><span>Třídy</span></a></li>
+      <li class="current"><a href="files.html"><span>Soubory</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Hledat" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Seznam&#160;souborů</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Vše</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Třídy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkce</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Stránky</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_22305cb0964bbe63c21991dd2265ce48.html">Models</a></li><li class="navelem"><a class="el" href="dir_3bbafe8f21523ffdb3cd429dbb168c71.html">MPDF</a></li><li class="navelem"><a class="el" href="dir_8006e7390ac448d67fc1c2e293cbc210.html">examples</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">example12_paging_html.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;$html = <span class="stringliteral">&#39;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="stringliteral">&lt;pageheader name=&quot;myHeaderNoNum&quot; content-left=&quot;My Book Title&quot; content-center=&quot;myHeader1&quot; content-right=&quot;&quot; header-style=&quot;font-family:sans-serif; font-size:8pt; color:#880000;&quot; header-style-right=&quot;font-size:12pt; font-weight:bold; font-style:italic; color:#088000;&quot; line=&quot;on&quot; /&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="stringliteral">&lt;pageheader name=&quot;myHeaderNoNumEven&quot; content-left=&quot;&quot; content-center=&quot;myHeader1Even&quot; content-right=&quot;{DATE j-m-Y}&quot; header-style=&quot;font-family:sans-serif; font-size:8pt; color:#000088;&quot; header-style-left=&quot;font-weight:bold; &quot; line=&quot;on&quot; /&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">&lt;pageheader name=&quot;myHeader1&quot; content-left=&quot;My Book Title&quot; content-center=&quot;myHeader1&quot; content-right=&quot;{PAGENO}&quot; header-style=&quot;font-family:sans-serif; font-size:8pt; color:#880000;&quot; header-style-right=&quot;font-size:12pt; font-weight:bold; font-style:italic; color:#088000;&quot; line=&quot;on&quot; /&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="stringliteral">&lt;pageheader name=&quot;myHeader1Even&quot; content-left=&quot;{PAGENO}&quot; content-center=&quot;myHeader1Even&quot; content-right=&quot;{DATE j-m-Y}&quot; header-style=&quot;font-family:sans-serif; font-size:8pt; color:#000088;&quot; header-style-left=&quot;font-weight:bold; &quot; line=&quot;on&quot; /&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="stringliteral">&lt;htmlpageheader name=&quot;myHTMLHeader1&quot; style=&quot;display:none&quot;&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">&lt;table width=&quot;100%&quot; style=&quot;border-bottom: 1px solid #000000; vertical-align: bottom; font-family: serif; font-size: 9pt; color: #000088;&quot;&gt;&lt;tr&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="stringliteral">&lt;td width=&quot;33%&quot;&gt;Left header p &lt;span style=&quot;font-size:14pt;&quot;&gt;{PAGENO}&lt;/span&gt;&lt;/td&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="stringliteral">&lt;td width=&quot;33%&quot; align=&quot;center&quot;&gt;&lt;img src=&quot;sunset.jpg&quot; width=&quot;126px&quot; /&gt;&lt;/td&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="stringliteral">&lt;td width=&quot;33%&quot; style=&quot;text-align: right;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Right header&lt;/span&gt;&lt;/td&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">&lt;/tr&gt;&lt;/table&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">&lt;/htmlpageheader&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">&lt;htmlpageheader name=&quot;myHTMLHeader1Even&quot; style=&quot;display:none&quot;&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">&lt;table width=&quot;100%&quot; style=&quot;border-bottom: 1px solid #000000; vertical-align: bottom; font-family: serif; font-size: 9pt; color: #000088;&quot;&gt;&lt;tr&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">&lt;td width=&quot;33%&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Outer header&lt;/span&gt;&lt;/td&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral">&lt;td width=&quot;33%&quot; align=&quot;center&quot;&gt;&lt;img src=&quot;sunset.jpg&quot; width=&quot;126px&quot; /&gt;&lt;/td&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="stringliteral">&lt;td width=&quot;33%&quot; style=&quot;text-align: right;&quot;&gt;Inner header p &lt;span style=&quot;font-size:14pt;&quot;&gt;{PAGENO}&lt;/span&gt;&lt;/td&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="stringliteral">&lt;/tr&gt;&lt;/table&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">&lt;/htmlpageheader&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">&lt;pagefooter name=&quot;myFooter1&quot; content-left=&quot;My Book Title&quot; content-center=&quot;myFooter1&quot; content-right=&quot;{PAGENO}&quot; footer-style=&quot;font-family:sans-serif; font-size:8pt; font-weight:bold; color:#008800;&quot; footer-style-left=&quot;&quot; line=&quot;on&quot; /&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">&lt;pagefooter name=&quot;myFooter1Even&quot; content-left=&quot;{PAGENO}&quot; content-center=&quot;myFooter1Even&quot; content-right=&quot;{DATE j-m-Y}&quot; footer-style=&quot;font-family:sans-serif; font-size:10pt; color:#000880;&quot; footer-style-left=&quot;font-weight:bold; &quot; line=&quot;on&quot; /&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">&lt;setpageheader name=&quot;myHeaderNoNum&quot; page=&quot;O&quot; value=&quot;on&quot; show-this-page=&quot;1&quot; /&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">&lt;setpageheader name=&quot;myHeaderNoNumEven&quot; page=&quot;E&quot; value=&quot;on&quot; /&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">&lt;h1 style=&quot;margin-collapse: none; margin-top: 35mm&quot;&gt;Introduction&lt;/h1&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">&lt;div&gt;Introduction&lt;/div&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">&lt;p&gt;Integer feugiat venenatis metus. Integer lacinia ultrices ipsum. Proin et arcu. Quisque varius libero. Nullam id arcu. Aenean justo quam, accumsan nec, luctus id, pellentesque molestie, mi. Aliquam sollicitudin feugiat eros. Nunc nisi turpis, consequat id, aliquet et, semper a, augue. Integer nisl ipsum, blandit et, lobortis a, egestas nec, odio. Nulla dolor ligula, nonummy ac, vulputate a, sollicitudin id, orci. &lt;!--Donec laoreet nisl id magna. Curabitur mollis, quam eget fermentum malesuada, risus tortor ullamcorper dolor, nec placerat nisi urna non pede. Aliquam pretium, leo in interdum interdum, ipsum neque accumsan lectus, ac fringilla dui ipsum sed justo. In tincidunt risus convallis odio egestas luctus. Integer volutpat. Donec ultricies, leo in congue iaculis, dolor neque imperdiet nibh, vitae feugiat mi enim nec sapien. --&gt;Aenean turpis lorem, consequat quis, varius in, posuere vel, eros. Nulla facilisi.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">&lt;tocpagebreak toc-orientation=&quot;landscape&quot; font=&quot;mono&quot; font-size=&quot;12&quot; indent=&quot;5&quot; paging=&quot;on&quot; links=&quot;on&quot; resetpagenum=&quot;1&quot; suppress=&quot;off&quot; pagenumstyle=&quot;1&quot; orientation=&quot;portrait&quot; margin-top=&quot;55mm&quot; odd-header-name=&quot;myHeader1&quot; odd-header-value=&quot;1&quot; even-header-name=&quot;html_myHTMLHeader1Even&quot; even-header-value=&quot;1&quot; odd-footer-name=&quot;myFooter1&quot; odd-footer-value=&quot;1&quot; even-footer-name=&quot;myFooter1Even&quot; even-footer-value=&quot;1&quot;  toc-odd-header-name=&quot;myHeaderNoNum&quot; toc-odd-header-value=&quot;1&quot; toc-even-header-name=&quot;myHeaderNoNumEven&quot; toc-even-header-value=&quot;1&quot; toc-odd-footer-name=&quot;&quot; toc-odd-footer-value=&quot;-1&quot; toc-even-footer-name=&quot;&quot; toc-even-footer-value=&quot;-1&quot; /&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">&lt;h1&gt;Section 2&lt;tocentry content=&quot;Section 2&quot; /&gt;&lt;/h1&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">&lt;div&gt;Section 2&lt;/div&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">&lt;p&gt;Integer feugiat venenatis metus. Integer lacinia ultrices ipsum. Proin et arcu. Quisque varius libero. Nullam id arcu. Aenean justo quam, accumsan nec, luctus id, pellentesque molestie, mi. Aliquam sollicitudin feugiat eros. Nunc nisi turpis, consequat id, aliquet et, semper a, augue. Integer nisl ipsum, blandit et, lobortis a, egestas nec, odio. Nulla dolor ligula, nonummy ac, vulputate a, sollicitudin id, orci. Donec laoreet nisl id magna. Curabitur mollis, quam eget fermentum malesuada, risus tortor ullamcorper dolor, nec placerat nisi urna non pede. Aliquam pretium, leo in interdum interdum, ipsum neque accumsan lectus, ac fringilla dui ipsum sed justo. In tincidunt risus convallis odio egestas luctus. Integer volutpat. Donec ultricies, leo in congue iaculis, dolor neque imperdiet nibh, vitae feugiat mi enim nec sapien. Aenean turpis lorem, consequat quis, varius in, posuere vel, eros. Nulla facilisi.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral">&lt;pagebreak type=&quot;NEXT-ODD&quot; margin-left=&quot;60mm&quot; margin-right=&quot;40mm&quot; margin-top=&quot;55mm&quot; margin-bottom=&quot;30mm&quot; margin-header=&quot;12mm&quot; margin-footer=&quot;12mm&quot; odd-header-name=&quot;html_myHTMLHeader1&quot; odd-header-value=&quot;1&quot; even-header-name=&quot;myHeader1Even&quot; even-header-value=&quot;1&quot; odd-footer-name=&quot;myFooter1&quot; odd-footer-value=&quot;1&quot; even-footer-name=&quot;myFooter1Even&quot; even-footer-value=&quot;1&quot; /&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="stringliteral">&lt;h1&gt;Section 3&lt;tocentry content=&quot;Section 3&quot; /&gt;&lt;/h1&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="stringliteral">&lt;div&gt;Section 3&lt;/div&gt;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">&lt;p&gt;Integer feugiat venenatis metus. Integer lacinia ultrices ipsum. Proin et arcu. Quisque varius libero. Nullam id arcu. Aenean justo quam, accumsan nec, luctus id, pellentesque molestie, mi. Aliquam sollicitudin feugiat eros. Nunc nisi turpis, consequat id, aliquet et, semper a, augue. Integer nisl ipsum, blandit et, lobortis a, egestas nec, odio. Nulla dolor ligula, nonummy ac, vulputate a, sollicitudin id, orci. Donec laoreet nisl id magna. Curabitur mollis, quam eget fermentum malesuada, risus tortor ullamcorper dolor, nec placerat nisi urna non pede. Aliquam pretium, leo in interdum interdum, ipsum neque accumsan lectus, ac fringilla dui ipsum sed justo. In tincidunt risus convallis odio egestas luctus. Integer volutpat. Donec ultricies, leo in congue iaculis, dolor neque imperdiet nibh, vitae feugiat mi enim nec sapien. Aenean turpis lorem, consequat quis, varius in, posuere vel, eros. Nulla facilisi.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="stringliteral">&lt;pagebreak orientation=&quot;landscape&quot; type=&quot;NEXT-ODD&quot; margin-left=&quot;60mm&quot; margin-right=&quot;40mm&quot; margin-top=&quot;55mm&quot; margin-bottom=&quot;30mm&quot; margin-header=&quot;12mm&quot; margin-footer=&quot;12mm&quot; /&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="stringliteral">&lt;h1&gt;Section 4&lt;tocentry content=&quot;Section 4&quot; /&gt;&lt;/h1&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="stringliteral">&lt;div&gt;Section 4&lt;/div&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="stringliteral">&lt;p&gt;Integer feugiat venenatis metus. Integer lacinia ultrices ipsum. Proin et arcu. Quisque varius libero. Nullam id arcu. Aenean justo quam, accumsan nec, luctus id, pellentesque molestie, mi. Aliquam sollicitudin feugiat eros. Nunc nisi turpis, consequat id, aliquet et, semper a, augue. Integer nisl ipsum, blandit et, lobortis a, egestas nec, odio. Nulla dolor ligula, nonummy ac, vulputate a, sollicitudin id, orci. Donec laoreet nisl id magna. Curabitur mollis, quam eget fermentum malesuada, risus tortor ullamcorper dolor, nec placerat nisi urna non pede. Aliquam pretium, leo in interdum interdum, ipsum neque accumsan lectus, ac fringilla dui ipsum sed justo. In tincidunt risus convallis odio egestas luctus. Integer volutpat. Donec ultricies, leo in congue iaculis, dolor neque imperdiet nibh, vitae feugiat mi enim nec sapien. Aenean turpis lorem, consequat quis, varius in, posuere vel, eros. Nulla facilisi.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="stringliteral">&lt;pagebreak orientation=&quot;portrait&quot; type=&quot;NEXT-ODD&quot; margin-left=&quot;40mm&quot; margin-right=&quot;20mm&quot; odd-header-name=&quot;myHeader1&quot; odd-header-value=&quot;1&quot; even-header-name=&quot;myHeader1Even&quot; even-header-value=&quot;1&quot; odd-footer-name=&quot;myFooter1&quot; odd-footer-value=&quot;1&quot; even-footer-name=&quot;myFooter1Even&quot; even-footer-value=&quot;1&quot; suppress=&quot;off&quot; /&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="stringliteral">&lt;h1&gt;Section 5&lt;tocentry content=&quot;Section 5&quot; /&gt;&lt;/h1&gt;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="stringliteral">&lt;div&gt;Section 5&lt;/div&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="stringliteral">&lt;p&gt;Integer feugiat venenatis metus. Integer lacinia ultrices ipsum. Proin et arcu. Quisque varius libero. Nullam id arcu. Aenean justo quam, accumsan nec, luctus id, pellentesque molestie, mi. Aliquam sollicitudin feugiat eros. Nunc nisi turpis, consequat id, aliquet et, semper a, augue. Integer nisl ipsum, blandit et, lobortis a, egestas nec, odio. Nulla dolor ligula, nonummy ac, vulputate a, sollicitudin id, orci. Donec laoreet nisl id magna. Curabitur mollis, quam eget fermentum malesuada, risus tortor ullamcorper dolor, nec placerat nisi urna non pede. Aliquam pretium, leo in interdum interdum, ipsum neque accumsan lectus, ac fringilla dui ipsum sed justo. In tincidunt risus convallis odio egestas luctus. Integer volutpat. Donec ultricies, leo in congue iaculis, dolor neque imperdiet nibh, vitae feugiat mi enim nec sapien. Aenean turpis lorem, consequat quis, varius in, posuere vel, eros. Nulla facilisi.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="stringliteral">&#39;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;include(<span class="stringliteral">&quot;../mpdf.php&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;$mpdf=<span class="keyword">new</span> mPDF(<span class="charliteral">&#39;c&#39;</span>); </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;$mpdf-&gt;mirrorMargins = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;$mpdf-&gt;SetDisplayMode(<span class="stringliteral">&#39;fullpage&#39;</span>,<span class="stringliteral">&#39;two&#39;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;$mpdf-&gt;WriteHTML($html);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;$mpdf-&gt;Output();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;exit;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;?&gt;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno ne 13. dub 2014 14.01:49 pro projekt Dlouhodob�maturitn�pr�ce programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['h2bookmarks',['h2bookmarks',['../config_8php.html#a0d318a973a665abc308c719941b316a4',1,'h2bookmarks():&#160;config.php'],['../example14__page__numbers___to_c___index___bookmarks_8php.html#afb14621f469d666ef1cfb8cac3de8764',1,'h2bookmarks():&#160;example14_page_numbers_ToC_Index_Bookmarks.php'],['../example60__new__m_p_d_f__v5-7__features_8php.html#afb14621f469d666ef1cfb8cac3de8764',1,'h2bookmarks():&#160;example60_new_mPDF_v5-7_features.php']]],
+  ['h2toc',['h2toc',['../config_8php.html#a7fdd837f73ced736bdaa63537f326fec',1,'h2toc():&#160;config.php'],['../example14__page__numbers___to_c___index___bookmarks_8php.html#aac5f519d93d5cc4e570c04f67028b10e',1,'h2toc():&#160;example14_page_numbers_ToC_Index_Bookmarks.php'],['../example60__new__m_p_d_f__v5-7__features_8php.html#aac5f519d93d5cc4e570c04f67028b10e',1,'h2toc():&#160;example60_new_mPDF_v5-7_features.php']]],
+  ['hardhyphenate',['hardHyphenate',['../classm_p_d_f.html#a4c81e1a09dd42dd3d54e765bd485100e',1,'mPDF']]],
+  ['header',['Header',['../class_f_p_d_f.html#ab1bedba6d1753b9e3f18ed3820743fd6',1,'FPDF\Header()'],['../class_p_d_f.html#a0061f0841056944eadb71aebff1a7e3f',1,'PDF\Header()'],['../class_p_d_f.html#a0061f0841056944eadb71aebff1a7e3f',1,'PDF\Header()'],['../class_p_d_f.html#a0061f0841056944eadb71aebff1a7e3f',1,'PDF\Header()'],['../classm_p_d_f.html#aa0f708c00ee427b6971a17746030d9ea',1,'mPDF\Header()']]],
+  ['header_5fline_5fspacing',['header_line_spacing',['../config_8php.html#a95e89f0ed77e9327ba63d8af50837d89',1,'config.php']]],
+  ['helvetica_2ephp',['helvetica.php',['../helvetica_8php.html',1,'']]],
+  ['helveticab_2ephp',['helveticab.php',['../helveticab_8php.html',1,'']]],
+  ['helveticabi_2ephp',['helveticabi.php',['../helveticabi_8php.html',1,'']]],
+  ['helveticai_2ephp',['helveticai.php',['../helveticai_8php.html',1,'']]],
+  ['hex2str',['hex2str',['../classm_p_d_f.html#a30a9ea49fd09415a89986716b6b65dfd',1,'mPDF']]],
+  ['hex_5fto_5fdec',['hex_to_dec',['../class_p_d_f_barcode.html#ab805f4afb580f9ff9e0ef36835675dea',1,'PDFBarcode']]],
+  ['hidecalendarcontrol',['hideCalendarControl',['../_script_8php.html#ae4d0244ab29667db98b7c81f64b24964',1,'Script.php']]],
+  ['hsl2rgb',['hsl2rgb',['../classm_p_d_f.html#a526a4b44610f36a027293b9f777bc1f9',1,'mPDF']]],
+  ['hue_5f2_5frgb',['hue_2_rgb',['../classm_p_d_f.html#a63f33d7c460985ed75898c70445dda68',1,'mPDF']]],
+  ['hyphenate',['hyphenate',['../example21__hyphenation_8php.html#a988e0360138a1001f27d70c65256d100',1,'hyphenate():&#160;example21_hyphenation.php'],['../example46__progress__bars__simple_8php.html#a988e0360138a1001f27d70c65256d100',1,'hyphenate():&#160;example46_progress_bars_simple.php'],['../example47__progress__bars__simple__custom_8php.html#a988e0360138a1001f27d70c65256d100',1,'hyphenate():&#160;example47_progress_bars_simple_custom.php'],['../example48__progress__bars__advanced_8php.html#a988e0360138a1001f27d70c65256d100',1,'hyphenate():&#160;example48_progress_bars_advanced.php']]],
+  ['hyphenateword',['hyphenateWord',['../classm_p_d_f.html#a9a780cbd253230ef8cbf428351255049',1,'mPDF']]]
+];

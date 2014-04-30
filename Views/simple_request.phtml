@@ -1,0 +1,54 @@
+				<article class="fragment" style="width: 100%;">
+					<h1><?=$request->GetName();?></h1>
+					<table>
+						<tr>
+							<td><b>Přidal:</b></td>
+							<td><?=$request->GetUserName();?></td>
+						</tr>
+						<tr>
+							<td><b>Datum:</b></td>
+							<td><?=$request->GetDate();?></td>
+						</tr>
+						<tr>
+							<td><b>Požadovaná částka:</b></td>
+							<td><?=$request->GetNeed();?> Kč</td>
+						</tr>
+<?php if ($request->ConfirmBySomeone()!=null):?>
+						<tr>
+							<td colspan="2"><h2>Schváleno</h2></td>
+						</tr>
+<?php for($i=0;$i<3;$i++) {
+		$cach=$request->GetConfirms($i);
+		if($cach!=null){?>
+						<tr>
+							<td><?php echo $cach->GetFullName();?></td>
+							<td></td>
+						</tr>
+<?php }
+ }?>
+<?php endif;
+		if($request->CanConfirm()):?>
+						<tr>
+							<td colspan="2" style="height:30px;">
+								<a href="<?= settings::$url_base; ?>/requests/confirm/<?= $request->GetId();?>" class="button">Schválit</a>
+							</td>
+						</tr>
+<?php endif;?>
+<?php					if($request->CanPrint()):?>
+						<tr>
+							<td colspan="2" style="height:30px;"><a href="<?= settings::$url_base; ?>/requests/print/<?= $request->GetId();?>" class="button">Tisknout</a></td>
+						</tr>
+<?php
+endif;
+						if($request->CanEdit()):?>
+						<tr>
+								<td colspan="2" style="height:30px;"><a href="<?= settings::$url_base; ?>/RequestsEditor/Edit/<?= $request->GetId()?>" class="button">Editovat</a><td>
+						</tr>
+<?php 					elseif($request->GetUserId()==Controller::$user->id()):?>
+						<tr>
+							<td colspan="2">Někdo již schválil vaši žádost. Již ji nezměníte.</td>
+						</tr>
+<?php endif;?>
+					</table>
+					<p><?=$request->GetDescription();?></p>
+				</article>

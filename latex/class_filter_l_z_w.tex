@@ -1,0 +1,239 @@
+\hypertarget{class_filter_l_z_w}{\section{Dokumentace třídy Filter\-L\-Z\-W}
+\label{class_filter_l_z_w}\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}}
+}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_filter_l_z_w_aa279c27588a99c2be1363afae50cf6c7}{error} (\$msg)
+\item 
+\hyperlink{class_filter_l_z_w_a2677358587bba67ba7ba2f236c478d36}{decode} (\$data)
+\item 
+\hyperlink{class_filter_l_z_w_a98289d6d5fdab6866d7da7ac5b53e909}{inits\-Table} ()
+\item 
+\hyperlink{class_filter_l_z_w_afc36c8760577dda99d3cc5b1be762ac2}{add\-String\-To\-Table} (\$old\-String, \$new\-String='')
+\item 
+\hyperlink{class_filter_l_z_w_a5b3fe712378f621efcab282dea340ef3}{get\-Next\-Code} ()
+\item 
+\hyperlink{class_filter_l_z_w_ad6a6ce0a16982f96b147ad8b3f8cf892}{encode} (\$in)
+\end{DoxyCompactItemize}
+\subsection*{Veřejné atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_filter_l_z_w_a94502219ea0cbca1334f1cb7282ad52d}{\$s\-Table} = array()
+\item 
+\hyperlink{class_filter_l_z_w_a6ec0e1525bcaa77a27610a2eb9d3f39c}{\$data} = null
+\item 
+\hyperlink{class_filter_l_z_w_a14795d6149da54c3fbe7794ad4568b8f}{\$data\-Length} = 0
+\item 
+\hyperlink{class_filter_l_z_w_ac6b4c616bb8f8e873233f1de77e5d59c}{\$t\-Idx}
+\item 
+\hyperlink{class_filter_l_z_w_ad92fc4666c3d6915b340aa7d67343c68}{\$bits\-To\-Get} = 9
+\item 
+\hyperlink{class_filter_l_z_w_a54df8318ce63e6f48196d53dc7221733}{\$byte\-Pointer}
+\item 
+\hyperlink{class_filter_l_z_w_ad24f76c50eaabb5e111878350e4f7dca}{\$bit\-Pointer}
+\item 
+\hyperlink{class_filter_l_z_w_aa926bc152d7d6bca1a4ba8aa163362f2}{\$next\-Data} = 0
+\item 
+\hyperlink{class_filter_l_z_w_a57ae5d01e13b31e5296f3b55ae21a003}{\$next\-Bits} = 0
+\item 
+\hyperlink{class_filter_l_z_w_ad125b5116240969fcd33acdc32e2b27e}{\$and\-Table} = array(511, 1023, 2047, 4095)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+
+
+Definice je uvedena na řádku 20 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+\subsection{Dokumentace k metodám}
+\hypertarget{class_filter_l_z_w_afc36c8760577dda99d3cc5b1be762ac2}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!add\-String\-To\-Table@{add\-String\-To\-Table}}
+\index{add\-String\-To\-Table@{add\-String\-To\-Table}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{add\-String\-To\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::add\-String\-To\-Table (
+\begin{DoxyParamCaption}
+\item[{}]{\$old\-String, }
+\item[{}]{\$new\-String = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{class_filter_l_z_w_afc36c8760577dda99d3cc5b1be762ac2}
+Add a new string to the string table. 
+
+Definice je uvedena na řádku 116 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Používá se v decode().
+
+\hypertarget{class_filter_l_z_w_a2677358587bba67ba7ba2f236c478d36}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!decode@{decode}}
+\index{decode@{decode}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{decode}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::decode (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}}\label{class_filter_l_z_w_a2677358587bba67ba7ba2f236c478d36}
+Method to decode L\-Z\-W compressed data.
+
+
+\begin{DoxyParams}{Parametry}
+{\em string} & data The compressed data. \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 42 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Odkazuje se na \$data, add\-String\-To\-Table(), error(), get\-Next\-Code() a inits\-Table().
+
+\hypertarget{class_filter_l_z_w_ad6a6ce0a16982f96b147ad8b3f8cf892}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!encode@{encode}}
+\index{encode@{encode}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{encode}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::encode (
+\begin{DoxyParamCaption}
+\item[{}]{\$in}
+\end{DoxyParamCaption}
+)}}\label{class_filter_l_z_w_ad6a6ce0a16982f96b147ad8b3f8cf892}
+
+
+Definice je uvedena na řádku 151 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Odkazuje se na error().
+
+\hypertarget{class_filter_l_z_w_aa279c27588a99c2be1363afae50cf6c7}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!error@{error}}
+\index{error@{error}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::error (
+\begin{DoxyParamCaption}
+\item[{}]{\$msg}
+\end{DoxyParamCaption}
+)}}\label{class_filter_l_z_w_aa279c27588a99c2be1363afae50cf6c7}
+
+
+Definice je uvedena na řádku 33 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Používá se v decode() a encode().
+
+\hypertarget{class_filter_l_z_w_a5b3fe712378f621efcab282dea340ef3}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!get\-Next\-Code@{get\-Next\-Code}}
+\index{get\-Next\-Code@{get\-Next\-Code}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{get\-Next\-Code}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::get\-Next\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_filter_l_z_w_a5b3fe712378f621efcab282dea340ef3}
+
+
+Definice je uvedena na řádku 132 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Odkazuje se na \$bits\-To\-Get.
+
+
+
+Používá se v decode().
+
+\hypertarget{class_filter_l_z_w_a98289d6d5fdab6866d7da7ac5b53e909}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!inits\-Table@{inits\-Table}}
+\index{inits\-Table@{inits\-Table}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{inits\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::inits\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_filter_l_z_w_a98289d6d5fdab6866d7da7ac5b53e909}
+Initialize the string table. 
+
+Definice je uvedena na řádku 103 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Používá se v decode().
+
+
+
+\subsection{Dokumentace k datovým členům}
+\hypertarget{class_filter_l_z_w_ad125b5116240969fcd33acdc32e2b27e}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$and\-Table@{\$and\-Table}}
+\index{\$and\-Table@{\$and\-Table}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$and\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$and\-Table = array(511, 1023, 2047, 4095)}}\label{class_filter_l_z_w_ad125b5116240969fcd33acdc32e2b27e}
+
+
+Definice je uvedena na řádku 31 v souboru Filter\-L\-Z\-W.\-php.
+
+\hypertarget{class_filter_l_z_w_ad24f76c50eaabb5e111878350e4f7dca}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$bit\-Pointer@{\$bit\-Pointer}}
+\index{\$bit\-Pointer@{\$bit\-Pointer}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$bit\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$bit\-Pointer}}\label{class_filter_l_z_w_ad24f76c50eaabb5e111878350e4f7dca}
+
+
+Definice je uvedena na řádku 28 v souboru Filter\-L\-Z\-W.\-php.
+
+\hypertarget{class_filter_l_z_w_ad92fc4666c3d6915b340aa7d67343c68}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$bits\-To\-Get@{\$bits\-To\-Get}}
+\index{\$bits\-To\-Get@{\$bits\-To\-Get}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$bits\-To\-Get}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$bits\-To\-Get = 9}}\label{class_filter_l_z_w_ad92fc4666c3d6915b340aa7d67343c68}
+
+
+Definice je uvedena na řádku 26 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Používá se v get\-Next\-Code().
+
+\hypertarget{class_filter_l_z_w_a54df8318ce63e6f48196d53dc7221733}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$byte\-Pointer@{\$byte\-Pointer}}
+\index{\$byte\-Pointer@{\$byte\-Pointer}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$byte\-Pointer}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$byte\-Pointer}}\label{class_filter_l_z_w_a54df8318ce63e6f48196d53dc7221733}
+
+
+Definice je uvedena na řádku 27 v souboru Filter\-L\-Z\-W.\-php.
+
+\hypertarget{class_filter_l_z_w_a6ec0e1525bcaa77a27610a2eb9d3f39c}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$data@{\$data}}
+\index{\$data@{\$data}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$data}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$data = null}}\label{class_filter_l_z_w_a6ec0e1525bcaa77a27610a2eb9d3f39c}
+
+
+Definice je uvedena na řádku 23 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Používá se v decode().
+
+\hypertarget{class_filter_l_z_w_a14795d6149da54c3fbe7794ad4568b8f}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$data\-Length@{\$data\-Length}}
+\index{\$data\-Length@{\$data\-Length}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$data\-Length}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$data\-Length = 0}}\label{class_filter_l_z_w_a14795d6149da54c3fbe7794ad4568b8f}
+
+
+Definice je uvedena na řádku 24 v souboru Filter\-L\-Z\-W.\-php.
+
+\hypertarget{class_filter_l_z_w_a57ae5d01e13b31e5296f3b55ae21a003}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$next\-Bits@{\$next\-Bits}}
+\index{\$next\-Bits@{\$next\-Bits}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$next\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$next\-Bits = 0}}\label{class_filter_l_z_w_a57ae5d01e13b31e5296f3b55ae21a003}
+
+
+Definice je uvedena na řádku 30 v souboru Filter\-L\-Z\-W.\-php.
+
+\hypertarget{class_filter_l_z_w_aa926bc152d7d6bca1a4ba8aa163362f2}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$next\-Data@{\$next\-Data}}
+\index{\$next\-Data@{\$next\-Data}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$next\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$next\-Data = 0}}\label{class_filter_l_z_w_aa926bc152d7d6bca1a4ba8aa163362f2}
+
+
+Definice je uvedena na řádku 29 v souboru Filter\-L\-Z\-W.\-php.
+
+\hypertarget{class_filter_l_z_w_a94502219ea0cbca1334f1cb7282ad52d}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$s\-Table@{\$s\-Table}}
+\index{\$s\-Table@{\$s\-Table}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$s\-Table}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$s\-Table = array()}}\label{class_filter_l_z_w_a94502219ea0cbca1334f1cb7282ad52d}
+
+
+Definice je uvedena na řádku 22 v souboru Filter\-L\-Z\-W.\-php.
+
+\hypertarget{class_filter_l_z_w_ac6b4c616bb8f8e873233f1de77e5d59c}{\index{Filter\-L\-Z\-W@{Filter\-L\-Z\-W}!\$t\-Idx@{\$t\-Idx}}
+\index{\$t\-Idx@{\$t\-Idx}!FilterLZW@{Filter\-L\-Z\-W}}
+\subsubsection[{\$t\-Idx}]{\setlength{\rightskip}{0pt plus 5cm}Filter\-L\-Z\-W\-::\$t\-Idx}}\label{class_filter_l_z_w_ac6b4c616bb8f8e873233f1de77e5d59c}
+
+
+Definice je uvedena na řádku 25 v souboru Filter\-L\-Z\-W.\-php.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+Models/\-M\-P\-D\-F/mpdfi/filters/\hyperlink{_filter_l_z_w_8php}{Filter\-L\-Z\-W.\-php}\end{DoxyCompactItemize}

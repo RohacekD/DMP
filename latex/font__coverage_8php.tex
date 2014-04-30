@@ -1,0 +1,197 @@
+\hypertarget{font__coverage_8php}{\section{Dokumentace souboru Models/\-M\-P\-D\-F/utils/font\-\_\-coverage.php}
+\label{font__coverage_8php}\index{Models/\-M\-P\-D\-F/utils/font\-\_\-coverage.\-php@{Models/\-M\-P\-D\-F/utils/font\-\_\-coverage.\-php}}
+}
+\subsection*{Proměnné}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{font__coverage_8php_ad773ebf7841c6538baa63f9945d7c9ca}{\$checkdir} = ''
+\item 
+\hyperlink{font__coverage_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\$mpdf} =new \hyperlink{classm_p_d_f}{m\-P\-D\-F}('','A4-\/L','','',10,10,10,10)
+\item 
+\$mpdf \hyperlink{font__coverage_8php_aa2ce4c2c0ab99d3365e4d7366a9be33a}{use\-Substitutions} = true
+\item 
+\$mpdf \hyperlink{font__coverage_8php_a200a436f1833a712239f1ae5bec608db}{debug} = true
+\item 
+\$mpdf \hyperlink{font__coverage_8php_a87bf4d3d8114a506fea7f0fc5f0714f6}{simple\-Tables} = true
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(\$checkdir) \hyperlink{font__coverage_8php_a5271a2344cca2dc08862484f40ba9273}{else} \{ \$ttfdir = \-\_\-\-M\-P\-D\-F\-\_\-\-T\-T\-F\-O\-N\-T\-P\-A\-T\-H
+\item 
+\hyperlink{font__coverage_8php_ad04a9e91774b9f9d3044e0c2b7636ca1}{\$mqr} =ini\-\_\-get(\char`\"{}magic\-\_\-quotes\-\_\-runtime\char`\"{})
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(\$mqr) \hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!class\-\_\-exists('T\-T\-Font\-File\-\_\-\-Analysis', \\*
+\hyperlink{ttfontsuni_8php_afbaa04e5cc97693dc668b3c45d3dd740}{false})) \hyperlink{font__coverage_8php_af4d78da859f2fb6f8d313e16bba59647}{\$smp} = true
+\item 
+\hyperlink{font__coverage_8php_a6f59d03d2504b6c14d08ff0d12d56f4e}{\$maxt} = 131071
+\item 
+\hyperlink{font__coverage_8php_abaa85dced3638e9abc7f47111f04df8e}{\$unifile} = file('Unicode\-Data.\-txt')
+\item 
+\hyperlink{font__coverage_8php_ab216a6d320faf1beba59f97c9941d866}{\$unichars} = array()
+\item 
+\hyperlink{font__coverage_8php_afa3e0d7f4c07331bb8ee7bd7e2008de6}{foreach} (\$unifile A\-S \$line)
+\item 
+\hyperlink{font__coverage_8php_adaf3754f65c4619ab65aa55169ef684e}{\$html}
+\item 
+\hyperlink{font__coverage_8php_a064fd64c462dd929cd17812cf14ec09e}{\$ff} = scandir(\$ttfdir)
+\item 
+\hyperlink{font__coverage_8php_a47be5bc20842a7025769908c5470c016}{\$tempfontdata} = array()
+\item 
+\hyperlink{font__names_8php_ac6e05d8eea8274a71f8f9c686e891421}{foreach}(\$ff A\-S \$f) \hyperlink{font__coverage_8php_a21ad601587a1620504b68ce5258b9ff6}{\$fullcovers} = array()
+\item 
+\hyperlink{font__coverage_8php_ade6f9afa46985ab699e0e5c9ca964210}{\$nearlycovers} = array()
+\item 
+\hyperlink{font__coverage_8php_af1f5707cce79ac65e657d1c0528d63a6}{\$ningroup} = 14
+\item 
+\hyperlink{font__coverage_8php_a24671fbe97d92adec47bb01f3c5b389b}{\$nofgroups} = ceil(count(\$unicode\-\_\-ranges)/\$ningroup)
+\item 
+\hyperlink{font__coverage_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentace proměnných}
+\hypertarget{font__coverage_8php_ad773ebf7841c6538baa63f9945d7c9ca}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$checkdir@{\$checkdir}}
+\index{\$checkdir@{\$checkdir}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$checkdir}]{\setlength{\rightskip}{0pt plus 5cm}\$checkdir = ''}}\label{font__coverage_8php_ad773ebf7841c6538baa63f9945d7c9ca}
+
+
+Definice je uvedena na řádku 14 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a064fd64c462dd929cd17812cf14ec09e}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$ff@{\$ff}}
+\index{\$ff@{\$ff}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$ff}]{\setlength{\rightskip}{0pt plus 5cm}\$ff = scandir(\$ttfdir)}}\label{font__coverage_8php_a064fd64c462dd929cd17812cf14ec09e}
+
+
+Definice je uvedena na řádku 85 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a21ad601587a1620504b68ce5258b9ff6}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$fullcovers@{\$fullcovers}}
+\index{\$fullcovers@{\$fullcovers}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$fullcovers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf foreach} (\$ff A\-S \$f) \$fullcovers = array()}}\label{font__coverage_8php_a21ad601587a1620504b68ce5258b9ff6}
+
+
+Definice je uvedena na řádku 117 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_adaf3754f65c4619ab65aa55169ef684e}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$html@{\$html}}
+\index{\$html@{\$html}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$html}]{\setlength{\rightskip}{0pt plus 5cm}{\bf foreach} (\$unicode\-\_\-ranges A\-S \$urk=$>$ \$ur) \$html}}\label{font__coverage_8php_adaf3754f65c4619ab65aa55169ef684e}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{'<html><head><style>td \{ border: 0.1mm solid #555555; \} }
+\textcolor{stringliteral}{body \{ font-weight: normal; font-family: helvetica;font-size:8pt; \}}
+\textcolor{stringliteral}{td \{ font-family: helvetica;font-size:8pt; vertical-align: top;\}}
+\textcolor{stringliteral}{</style></head><body>'}
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 79 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a6f59d03d2504b6c14d08ff0d12d56f4e}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$maxt@{\$maxt}}
+\index{\$maxt@{\$maxt}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$maxt}]{\setlength{\rightskip}{0pt plus 5cm}\$maxt = 131071}}\label{font__coverage_8php_a6f59d03d2504b6c14d08ff0d12d56f4e}
+
+
+Definice je uvedena na řádku 47 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$mpdf@{\$mpdf}}
+\index{\$mpdf@{\$mpdf}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$mpdf}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf =new {\bf m\-P\-D\-F}('','A4-\/L','','',10,10,10,10)}}\label{font__coverage_8php_ad028f81910d6cbab9b184d2214b3a8f8}
+
+
+Definice je uvedena na řádku 29 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_ad04a9e91774b9f9d3044e0c2b7636ca1}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$mqr@{\$mqr}}
+\index{\$mqr@{\$mqr}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$mqr}]{\setlength{\rightskip}{0pt plus 5cm}\$mqr =ini\-\_\-get(\char`\"{}magic\-\_\-quotes\-\_\-runtime\char`\"{})}}\label{font__coverage_8php_ad04a9e91774b9f9d3044e0c2b7636ca1}
+
+
+Definice je uvedena na řádku 41 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_ade6f9afa46985ab699e0e5c9ca964210}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$nearlycovers@{\$nearlycovers}}
+\index{\$nearlycovers@{\$nearlycovers}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$nearlycovers}]{\setlength{\rightskip}{0pt plus 5cm}\$nearlycovers = array()}}\label{font__coverage_8php_ade6f9afa46985ab699e0e5c9ca964210}
+
+
+Definice je uvedena na řádku 118 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_af1f5707cce79ac65e657d1c0528d63a6}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$ningroup@{\$ningroup}}
+\index{\$ningroup@{\$ningroup}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$ningroup}]{\setlength{\rightskip}{0pt plus 5cm}\$ningroup = 14}}\label{font__coverage_8php_af1f5707cce79ac65e657d1c0528d63a6}
+
+
+Definice je uvedena na řádku 120 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a24671fbe97d92adec47bb01f3c5b389b}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$nofgroups@{\$nofgroups}}
+\index{\$nofgroups@{\$nofgroups}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$nofgroups}]{\setlength{\rightskip}{0pt plus 5cm}\$nofgroups = ceil(count(\$unicode\-\_\-ranges)/\$ningroup)}}\label{font__coverage_8php_a24671fbe97d92adec47bb01f3c5b389b}
+
+
+Definice je uvedena na řádku 121 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_af4d78da859f2fb6f8d313e16bba59647}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$smp@{\$smp}}
+\index{\$smp@{\$smp}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$smp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$mqr) {\bf if} (!class\-\_\-exists('T\-T\-Font\-File\-\_\-\-Analysis', {\bf false})) \$smp = true}}\label{font__coverage_8php_af4d78da859f2fb6f8d313e16bba59647}
+
+
+Definice je uvedena na řádku 46 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a47be5bc20842a7025769908c5470c016}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$tempfontdata@{\$tempfontdata}}
+\index{\$tempfontdata@{\$tempfontdata}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$tempfontdata}]{\setlength{\rightskip}{0pt plus 5cm}\$tempfontdata = array()}}\label{font__coverage_8php_a47be5bc20842a7025769908c5470c016}
+
+
+Definice je uvedena na řádku 86 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_ab216a6d320faf1beba59f97c9941d866}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$unichars@{\$unichars}}
+\index{\$unichars@{\$unichars}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$unichars}]{\setlength{\rightskip}{0pt plus 5cm}\$unichars = array()}}\label{font__coverage_8php_ab216a6d320faf1beba59f97c9941d866}
+
+
+Definice je uvedena na řádku 51 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_abaa85dced3638e9abc7f47111f04df8e}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!\$unifile@{\$unifile}}
+\index{\$unifile@{\$unifile}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{\$unifile}]{\setlength{\rightskip}{0pt plus 5cm}\$unifile = file('Unicode\-Data.\-txt')}}\label{font__coverage_8php_abaa85dced3638e9abc7f47111f04df8e}
+
+
+Definice je uvedena na řádku 50 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a200a436f1833a712239f1ae5bec608db}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!debug@{debug}}
+\index{debug@{debug}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{debug}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf debug = true}}\label{font__coverage_8php_a200a436f1833a712239f1ae5bec608db}
+
+
+Definice je uvedena na řádku 32 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a5271a2344cca2dc08862484f40ba9273}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!else@{else}}
+\index{else@{else}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$checkdir) else \{ \$ttfdir = \-\_\-\-M\-P\-D\-F\-\_\-\-T\-T\-F\-O\-N\-T\-P\-A\-T\-H}}\label{font__coverage_8php_a5271a2344cca2dc08862484f40ba9273}
+
+
+Definice je uvedena na řádku 37 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a6733eb5f605d09eaede9845835d71c4e}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!exit@{exit}}
+\index{exit@{exit}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{exit}]{\setlength{\rightskip}{0pt plus 5cm}exit}}\label{font__coverage_8php_a6733eb5f605d09eaede9845835d71c4e}
+
+
+Definice je uvedena na řádku 245 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_afa3e0d7f4c07331bb8ee7bd7e2008de6}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!foreach@{foreach}}
+\index{foreach@{foreach}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{foreach}]{\setlength{\rightskip}{0pt plus 5cm}foreach(\$unifile A\-S \$line)}}\label{font__coverage_8php_afa3e0d7f4c07331bb8ee7bd7e2008de6}
+
+
+Definice je uvedena na řádku 52 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_a87bf4d3d8114a506fea7f0fc5f0714f6}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!simple\-Tables@{simple\-Tables}}
+\index{simple\-Tables@{simple\-Tables}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{simple\-Tables}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf simple\-Tables = true}}\label{font__coverage_8php_a87bf4d3d8114a506fea7f0fc5f0714f6}
+
+
+Definice je uvedena na řádku 33 v souboru font\-\_\-coverage.\-php.
+
+\hypertarget{font__coverage_8php_aa2ce4c2c0ab99d3365e4d7366a9be33a}{\index{font\-\_\-coverage.\-php@{font\-\_\-coverage.\-php}!use\-Substitutions@{use\-Substitutions}}
+\index{use\-Substitutions@{use\-Substitutions}!font_coverage.php@{font\-\_\-coverage.\-php}}
+\subsubsection[{use\-Substitutions}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf use\-Substitutions = true}}\label{font__coverage_8php_aa2ce4c2c0ab99d3365e4d7366a9be33a}
+
+
+Definice je uvedena na řádku 31 v souboru font\-\_\-coverage.\-php.
+

@@ -1,0 +1,149 @@
+\hypertarget{class_requests_manager}{\subsection{Dokumentace třídy Requests\-Manager}
+\label{class_requests_manager}\index{Requests\-Manager@{Requests\-Manager}}
+}
+\subsubsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_requests_manager_acfdecc085243987f67da504dd2e1af72}{Select\-Requests} (\$option)
+\item 
+\hyperlink{class_requests_manager_afd9c788f87995f0d91f6692cd113a71c}{Get\-Num\-Requests} ()
+\item 
+\hyperlink{class_requests_manager_a66c5577073654f827865644143815ec6}{Get\-Total\-Num\-Requests} ()
+\item 
+\hyperlink{class_requests_manager_aeb4db3d7b6c9ce1e1b63fa883a24bfaa}{Get\-Requests} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Statické veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_requests_manager_a4d04659c668642a970e78b8d0e1973f5}{Can\-Confirm} (\$request)
+\item 
+static \hyperlink{class_requests_manager_a6a09fbbab467ed15524694dfdff662a5}{Confirm} (\$id)
+\item 
+static \hyperlink{class_requests_manager_ab68ed511053eb15ecf2850ff2145348b}{Print\-Request} (\$req, \$html)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailní popis}
+Třída zajišťující veškeré operace s requesty, pro práci s nimi používá Class \hyperlink{class_request}{Request}. \begin{DoxyAuthor}{Autor}
+Ratan 
+\end{DoxyAuthor}
+
+
+Definice je uvedena na řádku 9 v souboru Requests\-Manager.\-php.
+
+
+
+\subsubsection{Dokumentace k metodám}
+\hypertarget{class_requests_manager_a4d04659c668642a970e78b8d0e1973f5}{\index{Requests\-Manager@{Requests\-Manager}!Can\-Confirm@{Can\-Confirm}}
+\index{Can\-Confirm@{Can\-Confirm}!RequestsManager@{Requests\-Manager}}
+\paragraph[{Can\-Confirm}]{\setlength{\rightskip}{0pt plus 5cm}static Requests\-Manager\-::\-Can\-Confirm (
+\begin{DoxyParamCaption}
+\item[{}]{\$request}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_requests_manager_a4d04659c668642a970e78b8d0e1973f5}
+Kontroluje jestli aktuální uživatel může request \$id potvrdit. Kritérium je, že ještě nidko se stejným oprávněním jako má tento uživatel ještě tuto request nepotvrdil. 
+\begin{DoxyParams}[1]{Parametry}
+\hyperlink{class_request}{Request} & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 167 v souboru Requests\-Manager.\-php.
+
+\hypertarget{class_requests_manager_a6a09fbbab467ed15524694dfdff662a5}{\index{Requests\-Manager@{Requests\-Manager}!Confirm@{Confirm}}
+\index{Confirm@{Confirm}!RequestsManager@{Requests\-Manager}}
+\paragraph[{Confirm}]{\setlength{\rightskip}{0pt plus 5cm}static Requests\-Manager\-::\-Confirm (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_requests_manager_a6a09fbbab467ed15524694dfdff662a5}
+Potcrzení žádosti uživatelem. 
+\begin{DoxyParams}[1]{Parametry}
+int & {\em \$id} & id Requestu. \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 186 v souboru Requests\-Manager.\-php.
+
+
+
+Používá se v Requests\-Controller\textbackslash{}run().
+
+\hypertarget{class_requests_manager_afd9c788f87995f0d91f6692cd113a71c}{\index{Requests\-Manager@{Requests\-Manager}!Get\-Num\-Requests@{Get\-Num\-Requests}}
+\index{Get\-Num\-Requests@{Get\-Num\-Requests}!RequestsManager@{Requests\-Manager}}
+\paragraph[{Get\-Num\-Requests}]{\setlength{\rightskip}{0pt plus 5cm}Requests\-Manager\-::\-Get\-Num\-Requests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_requests_manager_afd9c788f87995f0d91f6692cd113a71c}
+Vrací počet žádanek odpovídající kritériím. 
+
+Definice je uvedena na řádku 128 v souboru Requests\-Manager.\-php.
+
+\hypertarget{class_requests_manager_aeb4db3d7b6c9ce1e1b63fa883a24bfaa}{\index{Requests\-Manager@{Requests\-Manager}!Get\-Requests@{Get\-Requests}}
+\index{Get\-Requests@{Get\-Requests}!RequestsManager@{Requests\-Manager}}
+\paragraph[{Get\-Requests}]{\setlength{\rightskip}{0pt plus 5cm}Requests\-Manager\-::\-Get\-Requests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_requests_manager_aeb4db3d7b6c9ce1e1b63fa883a24bfaa}
+Vrátí všechny žádanky vybrané dle kritérií. 
+
+Definice je uvedena na řádku 143 v souboru Requests\-Manager.\-php.
+
+\hypertarget{class_requests_manager_a66c5577073654f827865644143815ec6}{\index{Requests\-Manager@{Requests\-Manager}!Get\-Total\-Num\-Requests@{Get\-Total\-Num\-Requests}}
+\index{Get\-Total\-Num\-Requests@{Get\-Total\-Num\-Requests}!RequestsManager@{Requests\-Manager}}
+\paragraph[{Get\-Total\-Num\-Requests}]{\setlength{\rightskip}{0pt plus 5cm}Requests\-Manager\-::\-Get\-Total\-Num\-Requests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_requests_manager_a66c5577073654f827865644143815ec6}
+Vrací kompletní počet requestů. 
+
+Definice je uvedena na řádku 136 v souboru Requests\-Manager.\-php.
+
+\hypertarget{class_requests_manager_ab68ed511053eb15ecf2850ff2145348b}{\index{Requests\-Manager@{Requests\-Manager}!Print\-Request@{Print\-Request}}
+\index{Print\-Request@{Print\-Request}!RequestsManager@{Requests\-Manager}}
+\paragraph[{Print\-Request}]{\setlength{\rightskip}{0pt plus 5cm}static Requests\-Manager\-::\-Print\-Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$req, }
+\item[{}]{\$html}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_requests_manager_ab68ed511053eb15ecf2850ff2145348b}
+Připraví requestu pro tisk. 
+\begin{DoxyParams}[1]{Parametry}
+\hyperlink{class_request}{Request} & {\em \$req} & \\
+\hline
+string & {\em \$html} & \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 202 v souboru Requests\-Manager.\-php.
+
+
+
+Používá se v Requests\-Controller\textbackslash{}run().
+
+\hypertarget{class_requests_manager_acfdecc085243987f67da504dd2e1af72}{\index{Requests\-Manager@{Requests\-Manager}!Select\-Requests@{Select\-Requests}}
+\index{Select\-Requests@{Select\-Requests}!RequestsManager@{Requests\-Manager}}
+\paragraph[{Select\-Requests}]{\setlength{\rightskip}{0pt plus 5cm}Requests\-Manager\-::\-Select\-Requests (
+\begin{DoxyParamCaption}
+\item[{}]{\$option}
+\end{DoxyParamCaption}
+)}}\label{class_requests_manager_acfdecc085243987f67da504dd2e1af72}
+T\-O\-D\-O\-: Some refactor, this function is long and can be split into smaller classes 
+\begin{DoxyParams}[1]{Parametry}
+array & {\em \$option} & \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 27 v souboru Requests\-Manager.\-php.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+Models/Requests\-Manager.\-php\end{DoxyCompactItemize}

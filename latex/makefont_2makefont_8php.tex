@@ -1,0 +1,272 @@
+\hypertarget{makefont_2makefont_8php}{\section{Dokumentace souboru Models/fpdf/makefont/makefont.php}
+\label{makefont_2makefont_8php}\index{Models/fpdf/makefont/makefont.\-php@{Models/fpdf/makefont/makefont.\-php}}
+}
+\subsection*{Funkce}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{makefont_2makefont_8php_a971f74d77a96a0c72721e33b05a31913}{Message} (\$txt, \$severity='')
+\item 
+\hyperlink{makefont_2makefont_8php_a350da5601143252db250f7bf3ca2c5c6}{Notice} (\$txt)
+\item 
+\hyperlink{makefont_2makefont_8php_ac3b83e4bc83ff322cbd88f70f269e7c2}{Warning} (\$txt)
+\item 
+\hyperlink{makefont_2makefont_8php_a8fb508c3ca3ccca6f318cb26631edfd4}{Error} (\$txt)
+\item 
+\hyperlink{makefont_2makefont_8php_a2fc077176f6f32e1885532112cc1a01f}{Load\-Map} (\$enc)
+\item 
+\hyperlink{makefont_2makefont_8php_a68e77911884a7079268d0f2664884223}{Get\-Info\-From\-True\-Type} (\$file, \$embed, \$map)
+\item 
+\hyperlink{makefont_2makefont_8php_a4dee0951be5f4f2e9333a709eca3096a}{Get\-Info\-From\-Type1} (\$file, \$embed, \$map)
+\item 
+\hyperlink{makefont_2makefont_8php_a2741a34186d086acfeb6b2899646381e}{Make\-Font\-Descriptor} (\$info)
+\item 
+\hyperlink{makefont_2makefont_8php_a2003a94dff4192e37e37c6b7cabc9da8}{Make\-Width\-Array} (\$widths)
+\item 
+\hyperlink{makefont_2makefont_8php_a6a51afba9135056d951a104d55f6af12}{Make\-Font\-Encoding} (\$map)
+\item 
+\hyperlink{makefont_2makefont_8php_abd2121a3e400e1df96d0dac02ade77a2}{Save\-To\-File} (\$file, \$s, \$mode)
+\item 
+\hyperlink{makefont_2makefont_8php_ae4056a117adb5d43924a455a73ab2bb9}{Make\-Definition\-File} (\$file, \$type, \$enc, \$embed, \$map, \$info)
+\item 
+\hyperlink{makefont_2makefont_8php_a15125ec0382d9f6c3f3e70e8fe3f8dba}{Make\-Font} (\$fontfile, \$enc='cp1252', \$embed=true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentace funkcí}
+\hypertarget{makefont_2makefont_8php_a8fb508c3ca3ccca6f318cb26631edfd4}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Error@{Error}}
+\index{Error@{Error}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}Error (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a8fb508c3ca3ccca6f318cb26631edfd4}
+
+
+Definice je uvedena na řádku 38 v souboru makefont.\-php.
+
+
+
+Odkazuje se na exit a Message().
+
+
+
+Používá se v F\-P\-D\-F\textbackslash{}\-\_\-parsegif(), F\-P\-D\-F\textbackslash{}\-\_\-putfonts(), F\-P\-D\-F\textbackslash{}\-\_\-readstream(), m\-P\-D\-F\textbackslash{}\-\_\-uncache\-Cell(), m\-P\-D\-F\textbackslash{}\-Add\-C\-I\-D\-Font(), m\-P\-D\-F\textbackslash{}\-Add\-C\-J\-K\-Font(), m\-P\-D\-F\textbackslash{}\-Adjust\-H\-T\-M\-L(), m\-P\-D\-F\textbackslash{}\-Close\-Tag(), m\-P\-D\-F\textbackslash{}\-Convert\-Color(), Get\-Info\-From\-True\-Type(), Get\-Info\-From\-Type1(), m\-P\-D\-F\textbackslash{}\-Import\-Page(), Load\-Map(), Make\-Font(), m\-P\-D\-F\textbackslash{}\-Open\-Tag(), m\-P\-D\-F\textbackslash{}purify\-\_\-utf8(), m\-P\-D\-F\textbackslash{}purify\-\_\-utf8\-\_\-text(), Save\-To\-File(), m\-P\-D\-F\textbackslash{}\-Set\-Protection(), m\-P\-D\-F\textbackslash{}\-Set\-Source\-File(), m\-P\-D\-F\textbackslash{}\-Table\-Check\-Min\-Width(), m\-P\-D\-F\textbackslash{}\-Table\-Word\-Wrap(), m\-P\-D\-F\textbackslash{}transform\-Scale(), m\-P\-D\-F\textbackslash{}\-Use\-Template(), m\-P\-D\-F\textbackslash{}watermark(), m\-P\-D\-F\textbackslash{}watermark\-Img(), m\-P\-D\-F\textbackslash{}\-Write\-Barcode() a m\-P\-D\-F\textbackslash{}\-Write\-Barcode2().
+
+\hypertarget{makefont_2makefont_8php_a68e77911884a7079268d0f2664884223}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Get\-Info\-From\-True\-Type@{Get\-Info\-From\-True\-Type}}
+\index{Get\-Info\-From\-True\-Type@{Get\-Info\-From\-True\-Type}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Get\-Info\-From\-True\-Type}]{\setlength{\rightskip}{0pt plus 5cm}Get\-Info\-From\-True\-Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$embed, }
+\item[{}]{\$map}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a68e77911884a7079268d0f2664884223}
+
+
+Definice je uvedena na řádku 62 v souboru makefont.\-php.
+
+
+
+Odkazuje se na \$file, \$ttf, \$w, Error() a Warning().
+
+
+
+Používá se v Make\-Font().
+
+\hypertarget{makefont_2makefont_8php_a4dee0951be5f4f2e9333a709eca3096a}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Get\-Info\-From\-Type1@{Get\-Info\-From\-Type1}}
+\index{Get\-Info\-From\-Type1@{Get\-Info\-From\-Type1}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Get\-Info\-From\-Type1}]{\setlength{\rightskip}{0pt plus 5cm}Get\-Info\-From\-Type1 (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$embed, }
+\item[{}]{\$map}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a4dee0951be5f4f2e9333a709eca3096a}
+
+
+Definice je uvedena na řádku 105 v souboru makefont.\-php.
+
+
+
+Odkazuje se na \$cw, \$data, \$f, \$file, \$name, \$w, Error() a Warning().
+
+
+
+Používá se v Make\-Font().
+
+\hypertarget{makefont_2makefont_8php_a2fc077176f6f32e1885532112cc1a01f}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Load\-Map@{Load\-Map}}
+\index{Load\-Map@{Load\-Map}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Load\-Map}]{\setlength{\rightskip}{0pt plus 5cm}Load\-Map (
+\begin{DoxyParamCaption}
+\item[{}]{\$enc}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a2fc077176f6f32e1885532112cc1a01f}
+
+
+Definice je uvedena na řádku 44 v souboru makefont.\-php.
+
+
+
+Odkazuje se na \$enc, \$file, \$name a Error().
+
+
+
+Používá se v Make\-Font() a Make\-Font\-Encoding().
+
+\hypertarget{makefont_2makefont_8php_ae4056a117adb5d43924a455a73ab2bb9}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Make\-Definition\-File@{Make\-Definition\-File}}
+\index{Make\-Definition\-File@{Make\-Definition\-File}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Make\-Definition\-File}]{\setlength{\rightskip}{0pt plus 5cm}Make\-Definition\-File (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$type, }
+\item[{}]{\$enc, }
+\item[{}]{\$embed, }
+\item[{}]{\$map, }
+\item[{}]{\$info}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_ae4056a117adb5d43924a455a73ab2bb9}
+
+
+Definice je uvedena na řádku 284 v souboru makefont.\-php.
+
+
+
+Odkazuje se na \$file, \$type, Make\-Font\-Encoding() a Save\-To\-File().
+
+
+
+Používá se v Make\-Font().
+
+\hypertarget{makefont_2makefont_8php_a15125ec0382d9f6c3f3e70e8fe3f8dba}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Make\-Font@{Make\-Font}}
+\index{Make\-Font@{Make\-Font}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Make\-Font}]{\setlength{\rightskip}{0pt plus 5cm}Make\-Font (
+\begin{DoxyParamCaption}
+\item[{}]{\$fontfile, }
+\item[{}]{\$enc = {\ttfamily 'cp1252'}, }
+\item[{}]{\$embed = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a15125ec0382d9f6c3f3e70e8fe3f8dba}
+
+
+Definice je uvedena na řádku 312 v souboru makefont.\-php.
+
+
+
+Odkazuje se na \$enc, \$file, \$type, Error(), Get\-Info\-From\-True\-Type(), Get\-Info\-From\-Type1(), Load\-Map(), Make\-Definition\-File(), Message(), Notice() a Save\-To\-File().
+
+\hypertarget{makefont_2makefont_8php_a2741a34186d086acfeb6b2899646381e}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Make\-Font\-Descriptor@{Make\-Font\-Descriptor}}
+\index{Make\-Font\-Descriptor@{Make\-Font\-Descriptor}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Make\-Font\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}Make\-Font\-Descriptor (
+\begin{DoxyParamCaption}
+\item[{}]{\$info}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a2741a34186d086acfeb6b2899646381e}
+
+
+Definice je uvedena na řádku 196 v souboru makefont.\-php.
+
+\hypertarget{makefont_2makefont_8php_a6a51afba9135056d951a104d55f6af12}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Make\-Font\-Encoding@{Make\-Font\-Encoding}}
+\index{Make\-Font\-Encoding@{Make\-Font\-Encoding}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Make\-Font\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}Make\-Font\-Encoding (
+\begin{DoxyParamCaption}
+\item[{}]{\$map}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a6a51afba9135056d951a104d55f6af12}
+
+
+Definice je uvedena na řádku 256 v souboru makefont.\-php.
+
+
+
+Odkazuje se na Load\-Map().
+
+
+
+Používá se v Make\-Definition\-File().
+
+\hypertarget{makefont_2makefont_8php_a2003a94dff4192e37e37c6b7cabc9da8}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Make\-Width\-Array@{Make\-Width\-Array}}
+\index{Make\-Width\-Array@{Make\-Width\-Array}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Make\-Width\-Array}]{\setlength{\rightskip}{0pt plus 5cm}Make\-Width\-Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$widths}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a2003a94dff4192e37e37c6b7cabc9da8}
+
+
+Definice je uvedena na řádku 233 v souboru makefont.\-php.
+
+\hypertarget{makefont_2makefont_8php_a971f74d77a96a0c72721e33b05a31913}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Message@{Message}}
+\index{Message@{Message}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Message}]{\setlength{\rightskip}{0pt plus 5cm}Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt, }
+\item[{}]{\$severity = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a971f74d77a96a0c72721e33b05a31913}
+
+
+Definice je uvedena na řádku 12 v souboru makefont.\-php.
+
+
+
+Používá se v Error(), Make\-Font(), Notice() a Warning().
+
+\hypertarget{makefont_2makefont_8php_a350da5601143252db250f7bf3ca2c5c6}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Notice@{Notice}}
+\index{Notice@{Notice}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Notice}]{\setlength{\rightskip}{0pt plus 5cm}Notice (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_a350da5601143252db250f7bf3ca2c5c6}
+
+
+Definice je uvedena na řádku 28 v souboru makefont.\-php.
+
+
+
+Odkazuje se na Message().
+
+
+
+Používá se v Make\-Font().
+
+\hypertarget{makefont_2makefont_8php_abd2121a3e400e1df96d0dac02ade77a2}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Save\-To\-File@{Save\-To\-File}}
+\index{Save\-To\-File@{Save\-To\-File}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Save\-To\-File}]{\setlength{\rightskip}{0pt plus 5cm}Save\-To\-File (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$s, }
+\item[{}]{\$mode}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_abd2121a3e400e1df96d0dac02ade77a2}
+
+
+Definice je uvedena na řádku 275 v souboru makefont.\-php.
+
+
+
+Odkazuje se na \$f, \$file a Error().
+
+
+
+Používá se v Make\-Definition\-File() a Make\-Font().
+
+\hypertarget{makefont_2makefont_8php_ac3b83e4bc83ff322cbd88f70f269e7c2}{\index{makefont/makefont.\-php@{makefont/makefont.\-php}!Warning@{Warning}}
+\index{Warning@{Warning}!makefont/makefont.php@{makefont/makefont.\-php}}
+\subsubsection[{Warning}]{\setlength{\rightskip}{0pt plus 5cm}Warning (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}}\label{makefont_2makefont_8php_ac3b83e4bc83ff322cbd88f70f269e7c2}
+
+
+Definice je uvedena na řádku 33 v souboru makefont.\-php.
+
+
+
+Odkazuje se na Message().
+
+
+
+Používá se v Get\-Info\-From\-True\-Type() a Get\-Info\-From\-Type1().
+

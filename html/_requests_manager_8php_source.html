@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Dlouhodob�maturitn�pr�ce: Zdrojový soubor Models/RequestsManager.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Dlouhodob�maturitn�pr�ce
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Hledat');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hlavní&#160;stránka</span></a></li>
+      <li><a href="pages.html"><span>Ostatní&#160;stránky</span></a></li>
+      <li><a href="annotated.html"><span>Třídy</span></a></li>
+      <li class="current"><a href="files.html"><span>Soubory</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Hledat" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Seznam&#160;souborů</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Vše</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Třídy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkce</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Stránky</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_22305cb0964bbe63c21991dd2265ce48.html">Models</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">RequestsManager.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="class_requests_manager.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_requests_manager.html">RequestsManager</a>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span> $r;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">private</span> $ret;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span> $total_pocet;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span> $q=<span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">private</span> $q_b=<span class="stringliteral">&quot;SELECT *, requests.name as r_name, </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="stringliteral">        requests.id as r_id, users.id as u_id, Create_date as date</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">        FROM requests JOIN users ON requests.User_id=users.id &quot;</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">private</span> $q_c=<span class="stringliteral">&quot;SELECT count(requests.id) as pocet FROM requests JOIN users ON requests.User_id=users.id &quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> __construct(){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_requests_manager.html#acfdecc085243987f67da504dd2e1af72">   27</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_requests_manager.html#acfdecc085243987f67da504dd2e1af72">SelectRequests</a>($option){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">switch</span> ($option[0]) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;My Requests&quot;</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                $this-&gt;q.=<span class="stringliteral">&quot;WHERE User_id=?&quot;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                $this-&gt;AskDB(array(Controller::$user-&gt;<span class="keywordtype">id</span>()), $option[<span class="stringliteral">&quot;limit&quot;</span>], $option[<span class="stringliteral">&quot;offset&quot;</span>]);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;History&quot;</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                $a=array();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">if</span>(isset($_POST[<span class="stringliteral">&#39;submit&#39;</span>])){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    $from = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    <span class="keywordflow">if</span>($_POST[<span class="stringliteral">&#39;from&#39;</span>]!=<span class="stringliteral">&quot;&quot;</span>) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        $this-&gt;q.=<span class="stringliteral">&quot;WHERE Create_date &gt; ?&quot;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        $a[]=$_POST[<span class="stringliteral">&#39;from&#39;</span>].<span class="stringliteral">&quot; 00:00:00&quot;</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        $from=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keywordflow">if</span>($_POST[<span class="stringliteral">&#39;to&#39;</span>]!=<span class="stringliteral">&quot;&quot;</span>) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                        <span class="keywordflow">if</span>($from) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                            $this-&gt;q.<span class="stringliteral">&quot; AND Create_date &lt; ?&quot;</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                        <span class="keywordflow">else</span> </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                            $this-&gt;q.<span class="stringliteral">&quot;WHERE Create_date &lt; ?&quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        $a[]=$_POST[<span class="stringliteral">&#39;to&#39;</span>].<span class="stringliteral">&quot; 00:00:00&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                $this-&gt;AskDB($a, $option[<span class="stringliteral">&quot;limit&quot;</span>], $option[<span class="stringliteral">&quot;offset&quot;</span>]);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;New-requests&quot;</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;New Requests&quot;</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                $this-&gt;q.=<span class="stringliteral">&quot;WHERE DATEDIFF(Create_date,?) &gt;= 0&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                $this-&gt;AskDB(array(Controller::$user-&gt;lastLogIn()), $option[<span class="stringliteral">&quot;limit&quot;</span>], $option[<span class="stringliteral">&quot;offset&quot;</span>]);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&quot;Request&quot;</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                $this-&gt;q.=<span class="stringliteral">&quot;WHERE requests.id=?&quot;</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                $this-&gt;AskDB(array($option[1]), $option[<span class="stringliteral">&quot;limit&quot;</span>], $option[<span class="stringliteral">&quot;offset&quot;</span>]);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                ;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">foreach</span> ($this-&gt;r as &amp;$row) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            $row[<span class="stringliteral">&#39;print&#39;</span>]=$this-&gt;IsPrintable($row[<span class="stringliteral">&#39;r_id&#39;</span>]);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            $row[<span class="stringliteral">&#39;edit&#39;</span>]=$this-&gt;IsEditable($row[<span class="stringliteral">&#39;User_id&#39;</span>], $row[<span class="stringliteral">&#39;r_id&#39;</span>]);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            $row[<span class="stringliteral">&#39;date&#39;</span>]=Database::ToOurDate($row[<span class="stringliteral">&#39;date&#39;</span>]);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            $this-&gt;ret[]=$this-&gt;MakeObject($row);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span>($option[0]==<span class="stringliteral">&quot;History&quot;</span>) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">if</span>(isset($_POST[<span class="stringliteral">&#39;submit&#39;</span>])){</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keywordflow">if</span> ($_POST[<span class="stringliteral">&#39;confirm&#39;</span>]==<span class="stringliteral">&quot;approved&quot;</span>) {<span class="comment">//schvalene</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    <span class="keywordflow">foreach</span> ($this-&gt;ret as  $n =&gt; $row) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        <span class="keywordflow">if</span>($row-&gt;CanPrint()==<span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                            unset($this-&gt;ret[$n]);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                            $this-&gt;total_pocet--;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                elseif ($_POST[<span class="stringliteral">&#39;confirm&#39;</span>]==<span class="stringliteral">&quot;unapproved&quot;</span>){<span class="comment">//neschválené</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    <span class="keywordflow">foreach</span> ($this-&gt;ret as $n =&gt; $row) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        <span class="keywordflow">if</span>($row-&gt;CanPrint()) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                            unset($this-&gt;ret[$n]);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                            $this-&gt;total_pocet--;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> IsPrintable($id){</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;         $r=Database::Query(<span class="stringliteral">&quot;SELECT User_id FROM requests_confirm WHERE Request_id = ?;&quot;</span>, array($id));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;         $i=0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;         <span class="keywordflow">foreach</span> ($r as $row){</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            $i+=<a class="code" href="class_user_manager.html#ae27411cd0d85f59baacc609d2a68f6ef">UserManager::AccessLevelById</a>($row[<span class="stringliteral">&#39;User_id&#39;</span>]);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;         }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;         <span class="keywordflow">if</span>($i==6) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;         <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> IsEditable($u_id, $id){</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span>($u_id!=Controller::$user-&gt;<span class="keywordtype">id</span>())<span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        $a=Database::OneRowQuery(<span class="stringliteral">&quot;SELECT count(User_id) as num FROM requests_confirm WHERE Request_id=?&quot;</span>, array($id));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span>($a[<span class="stringliteral">&#39;num&#39;</span>]==0) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="code" href="class_requests_manager.html#afd9c788f87995f0d91f6692cd113a71c">  128</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_requests_manager.html#afd9c788f87995f0d91f6692cd113a71c">GetNumRequests</a>(){</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">sizeof</span>($this-&gt;r);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="code" href="class_requests_manager.html#a66c5577073654f827865644143815ec6">  136</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_requests_manager.html#a66c5577073654f827865644143815ec6">GetTotalNumRequests</a>() {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">return</span> $this-&gt;total_pocet;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="class_requests_manager.html#aeb4db3d7b6c9ce1e1b63fa883a24bfaa">  143</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="class_requests_manager.html#aeb4db3d7b6c9ce1e1b63fa883a24bfaa">GetRequests</a>(){</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span> $this-&gt;ret;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> MakeObject($row) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        $build = <span class="keyword">new</span> <a class="code" href="class_request.html">Request</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        $build-&gt;SetDate($row[<span class="stringliteral">&#39;date&#39;</span>]);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        $build-&gt;SetDescription($row[<span class="stringliteral">&#39;Description&#39;</span>]);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        $build-&gt;SetId($row[<span class="stringliteral">&#39;r_id&#39;</span>]);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        $build-&gt;SetUserId($row[<span class="stringliteral">&#39;u_id&#39;</span>]);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        $build-&gt;SetNeed($row[<span class="stringliteral">&#39;Need&#39;</span>]);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        $build-&gt;SetName($row[<span class="stringliteral">&#39;r_name&#39;</span>]);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        $build-&gt;SetConfirmable(self::CanConfirm($build));</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        $build-&gt;SetPrintable($row[<span class="stringliteral">&#39;print&#39;</span>]);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        $build-&gt;SetEditable($row[<span class="stringliteral">&#39;edit&#39;</span>]);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> $build;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="code" href="class_requests_manager.html#a4d04659c668642a970e78b8d0e1973f5">  167</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="class_requests_manager.html#a4d04659c668642a970e78b8d0e1973f5">CanConfirm</a>($request){</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">if</span> (Controller::$user-&gt;GetAccess()==0) <span class="keywordflow">return</span> <span class="keyword">false</span>;<span class="comment">//učitel nic neschvaluje</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (Controller::$user-&gt;GetAccess()==4) <span class="keywordflow">return</span> <span class="keyword">false</span>;<span class="comment">//admin nic neschvaluje</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> ($request-&gt;GetUserId()==Controller::$user-&gt;id()) <span class="keywordflow">return</span> <span class="keyword">false</span>;<span class="comment">//předsi to neodsouhlasí sám sobě...</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        $r=Database::OneRowQuery(<span class="stringliteral">&quot;SELECT count(User_id) as num FROM requests_confirm </span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="stringliteral">        JOIN users ON users.id=requests_confirm.User_id </span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="stringliteral">        WHERE requests_confirm.Request_id = ? AND users.Access=?&quot;</span>, array($request-&gt;GetId(), Controller::$user-&gt;GetAccess()));</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span> ($r[<span class="stringliteral">&#39;num&#39;</span>]==0)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    </div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="code" href="class_requests_manager.html#a6a09fbbab467ed15524694dfdff662a5">  186</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="class_requests_manager.html#a6a09fbbab467ed15524694dfdff662a5">Confirm</a>($id){</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">if</span>(Controller::$user-&gt;GetAccess()!=0 &amp;&amp; Controller::$user-&gt;GetAccess()!=4) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            $req=<span class="keyword">new</span> <a class="code" href="class_requests_manager.html">RequestsManager</a>();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            $req-&gt;SelectRequests(array(<span class="stringliteral">&quot;Request&quot;</span>, $id,<span class="stringliteral">&quot;limit&quot;</span>=&gt;1,<span class="stringliteral">&quot;offset&quot;</span>=&gt;0));</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            $req=$req-&gt;GetRequests();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            $req=$req[0];</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">if</span>(self::CanConfirm($req))</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                Database::Insert(<span class="stringliteral">&quot;INSERT INTO requests_confirm VALUES (?,?,null);&quot;</span>, array(Controller::$user-&gt;<span class="keywordtype">id</span>(), $id));</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    </div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="code" href="class_requests_manager.html#ab68ed511053eb15ecf2850ff2145348b">  202</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="class_requests_manager.html#ab68ed511053eb15ecf2850ff2145348b">PrintRequest</a>($req, $html) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#description&quot;</span>, $req-&gt;GetDescription(), $html); </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#zebr_jm&quot;</span>, $req-&gt;GetUserName(), $html);    </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#zebr_date&quot;</span>, $req-&gt;GetDate(), $html);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#confirm_jm&quot;</span>, $req-&gt;GetConfirms(0)-&gt;GetFullName(), $html);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#confirm_date&quot;</span>, $req-&gt;GetConfirmsDate(0), $html);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#reditel_jm&quot;</span>, $req-&gt;GetConfirms(1)-&gt;GetFullName(), $html);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#reditel_date&quot;</span>, $req-&gt;GetConfirmsDate(1), $html);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#ucetni_jm&quot;</span>, $req-&gt;GetConfirms(2)-&gt;GetFullName(), $html);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        $html = str_replace(<span class="stringliteral">&quot;#ucetni_date&quot;</span>, $req-&gt;GetConfirmsDate(2), $html);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">return</span> $html;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> AskDB($param = array(), $limit, $offset) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        $this-&gt;q_b.=$this-&gt;q.<span class="stringliteral">&quot; LIMIT ? OFFSET ?;&quot;</span>;<span class="comment">//tvorba dotazu pro data</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        $this-&gt;q_c.=$this-&gt;q.<span class="stringliteral">&quot;;&quot;</span>;<span class="comment">//tvorba dotazu pro pocet</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        $a=Database::OneRowQuery($this-&gt;q_c, $param);<span class="comment">//dotaz na pocet celkem</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        $this-&gt;total_pocet=$a[<span class="stringliteral">&quot;pocet&quot;</span>];</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        $param[]=(int)$limit;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        $param[]=(int)$offset*$limit;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        $this-&gt;r=Database::Query($this-&gt;q_b, $param);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno ne 13. dub 2014 14.02:15 pro projekt Dlouhodob�maturitn�pr�ce programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

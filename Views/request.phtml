@@ -1,0 +1,68 @@
+				<article class="fragment" style="width: 100%;">
+					<h<?php if(isset($header)) echo "2"; else echo "1";?>><?=$type;?></h<?php if(isset($header)) echo "2"; else echo "1";?>>
+				</article>
+				<?php if(isset($error)):?>
+				<article class="fragment" style="width: 100%;">
+					<p class="error"><?=$error;?></p>
+				</article>
+				<?php endif;?>
+
+<?php if(isset($settings)):?>
+				<article class="fragment" style="width: 100%; padding: 20px;">
+					<form method="post">
+						<label class="select">
+							<select name="confirm">
+								<option value="all">Schálené a neschválene</option>
+								<option value="approved">Jen schálené</option>
+								<option value="unapproved">Jen neschválene</option>
+							</select>
+						</label>
+						<label for="from">Od: </label><input type="text" name="from" onfocus="javascript:showCalendarControl(this);"<?php if(isset($from)) echo " value=\"$from\"";?>>
+						<label for="to">Do: </label><input type="text" name="to" onfocus="javascript:showCalendarControl(this);"<?php if(isset($to)) echo " value=\"$to\"";?>>
+						<input type="submit" name="submit" value="Vyhledat">
+					</form>
+				</article>
+
+<?php endif;?>
+				<article class="fragment" style="width: 100%;"><center>
+<?php 
+if(!isset($error))
+foreach($requests as $request):?>
+					<article class="request"<?php if(isset($header)):?> style="width: 50%;"<?php endif;?>>
+						<a href="requests/request/<?= $request->GetId();?>">
+							<header>
+								<h3<?php if($request->CanPrint()):?> style="color: green;"<?php endif;?>><?= $request->GetName();?></h3>
+								<p><b>Přidal: </b> <?= $request->GetUserName();?></p>
+								
+<?php							if($request->CanPrint()):?>
+								<a href="<?= settings::$url_base; ?>/requests/print/<?= $request->GetId();?>">Tisknout</a>
+<?php endif;
+								if($request->CanEdit()):?>
+								<a href="<?= settings::$url_base; ?>/RequestsEditor/Edit/<?= $request->GetId();?>">Editovat</a>
+<?php endif;?>
+								<b><?= $request->GetDate();?></b>
+								<b><?= $request->GetNeed();?> Kč</b>
+							</header>
+						</a>
+						<?php if(mb_strlen($request->GetDescription())>50) :?>
+						<p><details><summary><?= str_split($request->GetDescription(),50)[0]."...";?></summary><?= $request->GetDescription()?></details></p>
+						<?php else:?>
+						<p><?= $request->GetDescription()?></p>
+						<?php endif;?>
+					</article>
+<?php endforeach;?>
+<br />
+					<article class="fragment" style="width:100%;text-align: center;padding-top:20px;">
+<?php
+if($limit<$num_req) {
+	$i=0;
+	do {
+?>
+<a href="<?php echo Settings::$url_base."/requests/$type_url/$limit/$i"?>" class="button<?php if($i==$offset) echo " active";?>"><?php echo $i+1;?></a>
+<?php 
+	$i++;
+	}while($i*$limit<$num_req);
+}?>					
+					</article>
+					</center>
+				</article>

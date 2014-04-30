@@ -1,0 +1,214 @@
+\hypertarget{mpdf_8php}{\section{Dokumentace souboru Models/\-M\-P\-D\-F/mpdf.php}
+\label{mpdf_8php}\index{Models/\-M\-P\-D\-F/mpdf.\-php@{Models/\-M\-P\-D\-F/mpdf.\-php}}
+}
+\subsection*{Třídy}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classm_p_d_f}{m\-P\-D\-F}
+\end{DoxyCompactItemize}
+\subsection*{Proměnné}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{mpdf_8php_a3e7086f113971110fee51c826d97c58c}{m\-P\-D\-F\-\_\-\-V\-E\-R\-S\-I\-O\-N} '5.\-7'
+\item 
+const \hyperlink{mpdf_8php_a1620fd00db2354fd97b5e01eba4bb7ab}{\-\_\-\-M\-P\-D\-F\-K} (72/25.\-4)
+\item 
+const \hyperlink{mpdf_8php_af3d2249ee24b8699ac31e465e2e91369}{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-C\-J\-K} 1
+\item 
+const \hyperlink{mpdf_8php_aa2ebc1164b8aefa9886f0824e66cc49a}{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-T\-H\-A\-I\-V\-I\-E\-T} 2
+\item 
+const \hyperlink{mpdf_8php_adf1bd08e567f41674b63d1ad2bc6c031}{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-R\-T\-L} 4
+\item 
+const \hyperlink{mpdf_8php_a77d04295862453c15c32c84b67c1616d}{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-I\-N\-D\-I\-C} 8
+\item 
+const \hyperlink{mpdf_8php_a7610702a00ad8f89228d9bcd7d2402e3}{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-A\-L\-L} 15
+\item 
+const \hyperlink{mpdf_8php_a9c8972d2e42ce4b23d9db960299d9327}{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-A\-L\-L} 15
+\item 
+const \hyperlink{mpdf_8php_ae41857e1278b10fd7d4b73883a626dd9}{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-O\-P} 8
+\item 
+const \hyperlink{mpdf_8php_a2021fc1de100f2a108b0802f45ec4643}{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T} 4
+\item 
+const \hyperlink{mpdf_8php_aa10cef67d347932b52d14cab8c871852}{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-B\-O\-T\-T\-O\-M} 2
+\item 
+const \hyperlink{mpdf_8php_a71a5c08b796c6176539e10ab2763f2ef}{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T} 1
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!defined('\hyperlink{font__dump_8php_a1ff50e3d84f8270d034f2e9d99c147c0}{\-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I}')) \\*
+define('\hyperlink{font__dump_8php_a1ff50e3d84f8270d034f2e9d99c147c0}{\-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I}' \hyperlink{mpdf_8php_a7d620d14eb10b0b8a3c1420281906e66}{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H}
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!defined('\-\_\-\-M\-P\-D\-F\-\_\-\-T\-T\-F\-O\-N\-T\-P\-A\-T\-H')) \\*
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!defined('\-\_\-\-M\-P\-D\-F\-\_\-\-T\-T\-F\-O\-N\-T\-D\-A\-T\-A\-P\-A\-T\-H')) \hyperlink{mpdf_8php_a9e8850ef4e92b5e07274a5b7aef1396d}{\$errorlevel} =error\-\_\-reporting()
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(function\-\_\-exists(\char`\"{}date\-\_\-default\-\_\-timezone\-\_\-set\char`\"{})) \\*
+if(!function\-\_\-exists(\char`\"{}mb\-\_\-strlen\char`\"{})) \\*
+if(!defined('P\-H\-P\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-\-I\-D')) \hyperlink{mpdf_8php_aa3a073f6e555dba8cb7f8fda5f03fefa}{\$test} = pack(\char`\"{}d\char`\"{}, 134455.\-474557333333666)
+\item 
+const \hyperlink{mpdf_8php_a7966b46681b5b845bc4ed993f3885b0b}{\-\_\-\-D\-S\-I\-Z\-E} strlen(\$test)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentace proměnných}
+\hypertarget{mpdf_8php_a9e8850ef4e92b5e07274a5b7aef1396d}{\index{mpdf.\-php@{mpdf.\-php}!\$errorlevel@{\$errorlevel}}
+\index{\$errorlevel@{\$errorlevel}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\$errorlevel}]{\setlength{\rightskip}{0pt plus 5cm}\$errorlevel =error\-\_\-reporting()}}\label{mpdf_8php_a9e8850ef4e92b5e07274a5b7aef1396d}
+
+
+Definice je uvedena na řádku 48 v souboru mpdf.\-php.
+
+\hypertarget{mpdf_8php_aa3a073f6e555dba8cb7f8fda5f03fefa}{\index{mpdf.\-php@{mpdf.\-php}!\$test@{\$test}}
+\index{\$test@{\$test}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\$test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (function\-\_\-exists(\char`\"{}date\-\_\-default\-\_\-timezone\-\_\-set\char`\"{})) if (!function\-\_\-exists(\char`\"{}mb\-\_\-strlen\char`\"{})) if (!defined('P\-H\-P\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-\-I\-D')) \$test = pack(\char`\"{}d\char`\"{}, 134455.\-474557333333666)}}\label{mpdf_8php_aa3a073f6e555dba8cb7f8fda5f03fefa}
+
+
+Definice je uvedena na řádku 63 v souboru mpdf.\-php.
+
+\hypertarget{mpdf_8php_a9c8972d2e42ce4b23d9db960299d9327}{\index{mpdf.\-php@{mpdf.\-php}!\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-A\-L\-L@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-A\-L\-L}}
+\index{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-A\-L\-L@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-A\-L\-L}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-A\-L\-L 15}}\label{mpdf_8php_a9c8972d2e42ce4b23d9db960299d9327}
+
+
+Definice je uvedena na řádku 28 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-Open\-Tag().
+
+\hypertarget{mpdf_8php_aa10cef67d347932b52d14cab8c871852}{\index{mpdf.\-php@{mpdf.\-php}!\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-B\-O\-T\-T\-O\-M@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-B\-O\-T\-T\-O\-M}}
+\index{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-B\-O\-T\-T\-O\-M@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-B\-O\-T\-T\-O\-M}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-B\-O\-T\-T\-O\-M}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-B\-O\-T\-T\-O\-M 2}}\label{mpdf_8php_aa10cef67d347932b52d14cab8c871852}
+
+
+Definice je uvedena na řádku 31 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-fix\-Table\-Borders(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Rect(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), m\-P\-D\-F\textbackslash{}\-Open\-Tag() a m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer().
+
+\hypertarget{mpdf_8php_a71a5c08b796c6176539e10ab2763f2ef}{\index{mpdf.\-php@{mpdf.\-php}!\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T}}
+\index{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-L\-E\-F\-T 1}}\label{mpdf_8php_a71a5c08b796c6176539e10ab2763f2ef}
+
+
+Definice je uvedena na řádku 32 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-fix\-Table\-Borders(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Rect(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), m\-P\-D\-F\textbackslash{}\-Open\-Tag() a m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer().
+
+\hypertarget{mpdf_8php_a2021fc1de100f2a108b0802f45ec4643}{\index{mpdf.\-php@{mpdf.\-php}!\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T}}
+\index{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-R\-I\-G\-H\-T 4}}\label{mpdf_8php_a2021fc1de100f2a108b0802f45ec4643}
+
+
+Definice je uvedena na řádku 30 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-fix\-Table\-Borders(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Rect(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), m\-P\-D\-F\textbackslash{}\-Close\-Tag(), m\-P\-D\-F\textbackslash{}\-Open\-Tag() a m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer().
+
+\hypertarget{mpdf_8php_ae41857e1278b10fd7d4b73883a626dd9}{\index{mpdf.\-php@{mpdf.\-php}!\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-O\-P@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-O\-P}}
+\index{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-O\-P@{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-O\-P}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-B\-O\-R\-D\-E\-R\-\_\-\-T\-O\-P 8}}\label{mpdf_8php_ae41857e1278b10fd7d4b73883a626dd9}
+
+
+Definice je uvedena na řádku 29 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-fix\-Table\-Borders(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Rect(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), m\-P\-D\-F\textbackslash{}\-Open\-Tag() a m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer().
+
+\hypertarget{mpdf_8php_a7966b46681b5b845bc4ed993f3885b0b}{\index{mpdf.\-php@{mpdf.\-php}!\-\_\-\-D\-S\-I\-Z\-E@{\-\_\-\-D\-S\-I\-Z\-E}}
+\index{\-\_\-\-D\-S\-I\-Z\-E@{\-\_\-\-D\-S\-I\-Z\-E}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\-\_\-\-D\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-D\-S\-I\-Z\-E strlen(\$test)}}\label{mpdf_8php_a7966b46681b5b845bc4ed993f3885b0b}
+
+
+Definice je uvedena na řádku 64 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-cache\-Update\-Mtx().
+
+\hypertarget{mpdf_8php_a7d620d14eb10b0b8a3c1420281906e66}{\index{mpdf.\-php@{mpdf.\-php}!\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H@{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H}}
+\index{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H@{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!defined('\-\_\-\-M\-P\-D\-F\-\_\-\-T\-E\-M\-P\-\_\-\-P\-A\-T\-H')) define(\char`\"{}\-\_\-\-M\-P\-D\-F\-\_\-\-T\-E\-M\-P\-\_\-\-P\-A\-T\-H\char`\"{} \-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H}}\label{mpdf_8php_a7d620d14eb10b0b8a3c1420281906e66}
+
+
+Definice je uvedena na řádku 36 v souboru mpdf.\-php.
+
+\hypertarget{mpdf_8php_a1620fd00db2354fd97b5e01eba4bb7ab}{\index{mpdf.\-php@{mpdf.\-php}!\-\_\-\-M\-P\-D\-F\-K@{\-\_\-\-M\-P\-D\-F\-K}}
+\index{\-\_\-\-M\-P\-D\-F\-K@{\-\_\-\-M\-P\-D\-F\-K}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{\-\_\-\-M\-P\-D\-F\-K}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-M\-P\-D\-F\-K (72/25.\-4)}}\label{mpdf_8php_a1620fd00db2354fd97b5e01eba4bb7ab}
+
+
+Definice je uvedena na řádku 19 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-\-Arc(), m\-P\-D\-F\textbackslash{}\-\_\-dounderline(), m\-P\-D\-F\textbackslash{}\-\_\-\-Ellipse\-Arc(), form\textbackslash{}\-\_\-form\-\_\-rect(), m\-P\-D\-F\textbackslash{}\-\_\-get\-H\-F\-Height(), wmf\textbackslash{}\-\_\-get\-W\-M\-Fimage(), m\-P\-D\-F\textbackslash{}\-\_\-kern(), m\-P\-D\-F\textbackslash{}\-\_\-out(), m\-P\-D\-F\textbackslash{}\-\_\-putannots(), m\-P\-D\-F\textbackslash{}\-\_\-putbookmarks(), m\-P\-D\-F\textbackslash{}\-\_\-putformxobjects(), m\-P\-D\-F\textbackslash{}\-\_\-puthtmlheaders(), m\-P\-D\-F\textbackslash{}\-\_\-putpages(), m\-P\-D\-F\textbackslash{}\-\_\-putpatterns(), m\-P\-D\-F\textbackslash{}\-\_\-resize\-Background\-Image(), m\-P\-D\-F\textbackslash{}\-\_\-set\-Page\-Size(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Height(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), m\-P\-D\-F\textbackslash{}\-Add\-Page(), m\-P\-D\-F\textbackslash{}\-Arrow(), m\-P\-D\-F\textbackslash{}\-Cell(), m\-P\-D\-F\textbackslash{}\-Close\-Tag(), m\-P\-D\-F\textbackslash{}\-Convert\-Size(), grad\textbackslash{}\-Coons\-Patch\-Mesh(), m\-P\-D\-F\textbackslash{}\-Ellipse(), m\-P\-D\-F\textbackslash{}finish\-Flowing\-Block(), cssmgr\textbackslash{}fix\-C\-S\-S(), m\-P\-D\-F\textbackslash{}\-Footer(), fpdi\-\_\-pdf\-\_\-parser\textbackslash{}get\-Page\-Box(), grad\textbackslash{}\-Gradient(), m\-P\-D\-F\textbackslash{}\-Header(), m\-P\-D\-F\textbackslash{}\-Image(), m\-P\-D\-F\textbackslash{}\-Import\-Page(), m\-P\-D\-F\textbackslash{}\-Line(), m\-P\-D\-F\textbackslash{}\-Link(), m\-P\-D\-F\textbackslash{}m\-P\-D\-F(), m\-P\-D\-F\textbackslash{}\-Multi\-Cell(), m\-P\-D\-F\textbackslash{}new\-Flowing\-Block(), m\-P\-D\-F\textbackslash{}\-Open\-Tag(), m\-P\-D\-F\textbackslash{}\-Paint\-Div\-B\-B(), form\textbackslash{}print\-\_\-ob\-\_\-imageinput(), m\-P\-D\-F\textbackslash{}\-Print\-Body\-Backgrounds(), m\-P\-D\-F\textbackslash{}printbuffer(), m\-P\-D\-F\textbackslash{}printcolumnbuffer(), m\-P\-D\-F\textbackslash{}printdivbuffer(), m\-P\-D\-F\textbackslash{}printkwtbuffer(), m\-P\-D\-F\textbackslash{}printobjectbuffer(), m\-P\-D\-F\textbackslash{}\-Print\-Page\-Backgrounds(), m\-P\-D\-F\textbackslash{}\-Print\-Table\-Backgrounds(), m\-P\-D\-F\textbackslash{}printtablebuffer(), m\-P\-D\-F\textbackslash{}\-Rect(), m\-P\-D\-F\textbackslash{}\-Rotate(), m\-P\-D\-F\textbackslash{}\-Rounded\-Rect(), m\-P\-D\-F\textbackslash{}\-Set\-Background(), m\-P\-D\-F\textbackslash{}set\-C\-S\-S(), m\-P\-D\-F\textbackslash{}\-Set\-Dash(), m\-P\-D\-F\textbackslash{}\-Set\-Font(), m\-P\-D\-F\textbackslash{}\-Set\-Font\-Size(), m\-P\-D\-F\textbackslash{}\-Set\-Line\-Height(), m\-P\-D\-F\textbackslash{}\-Set\-Line\-Width(), S\-V\-G\textbackslash{}svg\-Text(), m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer(), m\-P\-D\-F\textbackslash{}\-Text(), m\-P\-D\-F\textbackslash{}transform\-Rotate(), m\-P\-D\-F\textbackslash{}transform\-Scale(), m\-P\-D\-F\textbackslash{}transform\-Translate(), m\-P\-D\-F\textbackslash{}\-Use\-Template(), m\-P\-D\-F\textbackslash{}watermark(), directw\textbackslash{}\-Write(), m\-P\-D\-F\textbackslash{}\-Write\-Barcode(), m\-P\-D\-F\textbackslash{}\-Write\-Fixed\-Pos\-H\-T\-M\-L() a m\-P\-D\-F\textbackslash{}\-Write\-Flowing\-Block().
+
+\hypertarget{mpdf_8php_a7610702a00ad8f89228d9bcd7d2402e3}{\index{mpdf.\-php@{mpdf.\-php}!A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-A\-L\-L@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-A\-L\-L}}
+\index{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-A\-L\-L@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-A\-L\-L}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}const A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-A\-L\-L 15}}\label{mpdf_8php_a7610702a00ad8f89228d9bcd7d2402e3}
+
+
+Definice je uvedena na řádku 26 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-Set\-Auto\-Font().
+
+\hypertarget{mpdf_8php_af3d2249ee24b8699ac31e465e2e91369}{\index{mpdf.\-php@{mpdf.\-php}!A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-C\-J\-K@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-C\-J\-K}}
+\index{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-C\-J\-K@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-C\-J\-K}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-C\-J\-K}]{\setlength{\rightskip}{0pt plus 5cm}const A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-C\-J\-K 1}}\label{mpdf_8php_af3d2249ee24b8699ac31e465e2e91369}
+
+
+Definice je uvedena na řádku 22 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-Auto\-Font().
+
+\hypertarget{mpdf_8php_a77d04295862453c15c32c84b67c1616d}{\index{mpdf.\-php@{mpdf.\-php}!A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-I\-N\-D\-I\-C@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-I\-N\-D\-I\-C}}
+\index{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-I\-N\-D\-I\-C@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-I\-N\-D\-I\-C}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-I\-N\-D\-I\-C}]{\setlength{\rightskip}{0pt plus 5cm}const A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-I\-N\-D\-I\-C 8}}\label{mpdf_8php_a77d04295862453c15c32c84b67c1616d}
+
+
+Definice je uvedena na řádku 25 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-Auto\-Font().
+
+\hypertarget{mpdf_8php_adf1bd08e567f41674b63d1ad2bc6c031}{\index{mpdf.\-php@{mpdf.\-php}!A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-R\-T\-L@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-R\-T\-L}}
+\index{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-R\-T\-L@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-R\-T\-L}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-R\-T\-L}]{\setlength{\rightskip}{0pt plus 5cm}const A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-R\-T\-L 4}}\label{mpdf_8php_adf1bd08e567f41674b63d1ad2bc6c031}
+
+
+Definice je uvedena na řádku 24 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-Auto\-Font().
+
+\hypertarget{mpdf_8php_aa2ebc1164b8aefa9886f0824e66cc49a}{\index{mpdf.\-php@{mpdf.\-php}!A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-T\-H\-A\-I\-V\-I\-E\-T@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-T\-H\-A\-I\-V\-I\-E\-T}}
+\index{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-T\-H\-A\-I\-V\-I\-E\-T@{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-T\-H\-A\-I\-V\-I\-E\-T}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-T\-H\-A\-I\-V\-I\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}const A\-U\-T\-O\-F\-O\-N\-T\-\_\-\-T\-H\-A\-I\-V\-I\-E\-T 2}}\label{mpdf_8php_aa2ebc1164b8aefa9886f0824e66cc49a}
+
+
+Definice je uvedena na řádku 23 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-Auto\-Font().
+
+\hypertarget{mpdf_8php_a3e7086f113971110fee51c826d97c58c}{\index{mpdf.\-php@{mpdf.\-php}!m\-P\-D\-F\-\_\-\-V\-E\-R\-S\-I\-O\-N@{m\-P\-D\-F\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+\index{m\-P\-D\-F\-\_\-\-V\-E\-R\-S\-I\-O\-N@{m\-P\-D\-F\-\_\-\-V\-E\-R\-S\-I\-O\-N}!mpdf.php@{mpdf.\-php}}
+\subsubsection[{m\-P\-D\-F\-\_\-\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}const m\-P\-D\-F\-\_\-\-V\-E\-R\-S\-I\-O\-N '5.\-7'}}\label{mpdf_8php_a3e7086f113971110fee51c826d97c58c}
+
+
+Definice je uvedena na řádku 16 v souboru mpdf.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-putinfo().
+

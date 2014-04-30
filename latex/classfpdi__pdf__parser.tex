@@ -1,0 +1,464 @@
+\hypertarget{classfpdi__pdf__parser}{\section{Dokumentace třídy fpdi\-\_\-pdf\-\_\-parser}
+\label{classfpdi__pdf__parser}\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}}
+}
+Diagram dědičnosti pro třídu fpdi\-\_\-pdf\-\_\-parser\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfpdi__pdf__parser}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfpdi__pdf__parser_a283aec17be4149f64bad648a2801517e}{fpdi\-\_\-pdf\-\_\-parser} (\$filename, \&\$fpdi)
+\item 
+\hyperlink{classfpdi__pdf__parser_aecd0fec084300a00f7d640bd1667ffa8}{get\-Page\-Count} ()
+\item 
+\hyperlink{classfpdi__pdf__parser_abc12d1246a01cb20e823f0dc6e4b4920}{set\-Pageno} (\$pageno)
+\item 
+\hyperlink{classfpdi__pdf__parser_a854d78906b68932993fd276c72c3ad84}{get\-Page\-Resources} ()
+\item 
+\hyperlink{classfpdi__pdf__parser_abde5d5decc0c49062941e162e675ae5f}{\-\_\-get\-Page\-Resources} (\$obj)
+\item 
+\hyperlink{classfpdi__pdf__parser_a16be3c83d9f7ebfe1482a9266c2c2732}{get\-Content} ()
+\item 
+\hyperlink{classfpdi__pdf__parser_a662bbcc4f60ab8edb1df9bf39cfa1190}{\-\_\-get\-Page\-Content} (\$content\-\_\-ref)
+\item 
+\hyperlink{classfpdi__pdf__parser_ab7c9e6c5e9e68ae31f70a8241c53d894}{\-\_\-rebuild\-Content\-Stream} (\$obj)
+\item 
+\hyperlink{classfpdi__pdf__parser_afea253f07ba0611ace1028065a67868e}{get\-Page\-Box} (\$page, \$box\-\_\-index)
+\item 
+\hyperlink{classfpdi__pdf__parser_a21278f36792ce561fcbd90fa3f7acf5f}{get\-Page\-Boxes} (\$pageno)
+\item 
+\hyperlink{classfpdi__pdf__parser_a72b62f6165dda82836687c56d9e6db00}{\-\_\-get\-Page\-Boxes} (\$page)
+\item 
+\hyperlink{classfpdi__pdf__parser_ab0006a5903179eca6cd67cf485f032d3}{get\-Page\-Rotation} (\$pageno)
+\item 
+\hyperlink{classfpdi__pdf__parser_a26b7f3bf21fd30793a905a29249b7915}{\-\_\-get\-Page\-Rotation} (\$obj)
+\item 
+\hyperlink{classfpdi__pdf__parser_abecb49de0d0173292ef79e5603ab910d}{read\-\_\-pages} (\&\$c, \&\$pages, \&\$result)
+\end{DoxyCompactItemize}
+\subsection*{Veřejné atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfpdi__pdf__parser_a36999177da67b9cf4f971d23fcef69d5}{\$pages}
+\item 
+\hyperlink{classfpdi__pdf__parser_ac8722ca731ad84acb63ff1afaed504cc}{\$page\-\_\-count}
+\item 
+\hyperlink{classfpdi__pdf__parser_ab3c5c997cdad564a2bbdd1fb4cc486e3}{\$pageno}
+\item 
+\hyperlink{classfpdi__pdf__parser_af23f9ff9cf32224e3e0eb2b8948b92d4}{\$fpdi}
+\item 
+\hyperlink{classfpdi__pdf__parser_a9dabd6dc3d23b245d94df5fa6c8869e2}{\$available\-Boxes} = array(\char`\"{}/Media\-Box\char`\"{},\char`\"{}/Crop\-Box\char`\"{},\char`\"{}/Bleed\-Box\char`\"{},\char`\"{}/Trim\-Box\char`\"{},\char`\"{}/Art\-Box\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+
+
+Definice je uvedena na řádku 21 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+\subsection{Dokumentace k metodám}
+\hypertarget{classfpdi__pdf__parser_a72b62f6165dda82836687c56d9e6db00}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\-\_\-get\-Page\-Boxes@{\-\_\-get\-Page\-Boxes}}
+\index{\-\_\-get\-Page\-Boxes@{\-\_\-get\-Page\-Boxes}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\-\_\-get\-Page\-Boxes}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\-\_\-get\-Page\-Boxes (
+\begin{DoxyParamCaption}
+\item[{}]{\$page}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_a72b62f6165dda82836687c56d9e6db00}
+Get all Boxes from /\-Page
+
+
+\begin{DoxyParams}{Parametry}
+{\em array} & a /\-Page \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+array 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 294 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na get\-Page\-Box().
+
+
+
+Používá se v get\-Page\-Boxes().
+
+\hypertarget{classfpdi__pdf__parser_a662bbcc4f60ab8edb1df9bf39cfa1190}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\-\_\-get\-Page\-Content@{\-\_\-get\-Page\-Content}}
+\index{\-\_\-get\-Page\-Content@{\-\_\-get\-Page\-Content}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\-\_\-get\-Page\-Content}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\-\_\-get\-Page\-Content (
+\begin{DoxyParamCaption}
+\item[{}]{\$content\-\_\-ref}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_a662bbcc4f60ab8edb1df9bf39cfa1190}
+Resolve all content-\/objects
+
+
+\begin{DoxyParams}[1]{Parametry}
+array & {\em \$content\-\_\-ref} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+array 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 174 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na pdf\-\_\-parser\textbackslash{}pdf\-\_\-resolve\-\_\-object().
+
+
+
+Používá se v get\-Content().
+
+\hypertarget{classfpdi__pdf__parser_abde5d5decc0c49062941e162e675ae5f}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\-\_\-get\-Page\-Resources@{\-\_\-get\-Page\-Resources}}
+\index{\-\_\-get\-Page\-Resources@{\-\_\-get\-Page\-Resources}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\-\_\-get\-Page\-Resources}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\-\_\-get\-Page\-Resources (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_abde5d5decc0c49062941e162e675ae5f}
+Get page-\/resources from /\-Page
+
+
+\begin{DoxyParams}[1]{Parametry}
+array & {\em \$obj} & Array of pdf-\/data \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 122 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na pdf\-\_\-parser\textbackslash{}pdf\-\_\-resolve\-\_\-object().
+
+
+
+Používá se v get\-Page\-Resources().
+
+\hypertarget{classfpdi__pdf__parser_a26b7f3bf21fd30793a905a29249b7915}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\-\_\-get\-Page\-Rotation@{\-\_\-get\-Page\-Rotation}}
+\index{\-\_\-get\-Page\-Rotation@{\-\_\-get\-Page\-Rotation}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\-\_\-get\-Page\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\-\_\-get\-Page\-Rotation (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_a26b7f3bf21fd30793a905a29249b7915}
+
+
+Definice je uvedena na řádku 310 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na pdf\-\_\-parser\textbackslash{}pdf\-\_\-resolve\-\_\-object().
+
+
+
+Používá se v get\-Page\-Rotation().
+
+\hypertarget{classfpdi__pdf__parser_ab7c9e6c5e9e68ae31f70a8241c53d894}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\-\_\-rebuild\-Content\-Stream@{\-\_\-rebuild\-Content\-Stream}}
+\index{\-\_\-rebuild\-Content\-Stream@{\-\_\-rebuild\-Content\-Stream}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\-\_\-rebuild\-Content\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\-\_\-rebuild\-Content\-Stream (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_ab7c9e6c5e9e68ae31f70a8241c53d894}
+Rebuild content-\/streams
+
+
+\begin{DoxyParams}[1]{Parametry}
+array & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+string 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 200 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H.
+
+
+
+Používá se v get\-Content().
+
+\hypertarget{classfpdi__pdf__parser_a283aec17be4149f64bad648a2801517e}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{fpdi\-\_\-pdf\-\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::fpdi\-\_\-pdf\-\_\-parser (
+\begin{DoxyParamCaption}
+\item[{}]{\$filename, }
+\item[{\&}]{\$fpdi}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_a283aec17be4149f64bad648a2801517e}
+Constructor
+
+
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$filename} & Source-\/\-Filename \\
+\hline
+object & {\em \$fpdi} & Object of type fpdi \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 63 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na pdf\-\_\-parser\textbackslash{}\$filename, \$fpdi, \$pages, pdf\-\_\-parser\textbackslash{}pdf\-\_\-resolve\-\_\-object() a read\-\_\-pages().
+
+\hypertarget{classfpdi__pdf__parser_a16be3c83d9f7ebfe1482a9266c2c2732}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!get\-Content@{get\-Content}}
+\index{get\-Content@{get\-Content}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{get\-Content}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::get\-Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_a16be3c83d9f7ebfe1482a9266c2c2732}
+Get content of current page
+
+If more /\-Contents is an array, the streams are concated
+
+\begin{DoxyReturn}{Návratová hodnota}
+string 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 154 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \-\_\-get\-Page\-Content() a \-\_\-rebuild\-Content\-Stream().
+
+\hypertarget{classfpdi__pdf__parser_afea253f07ba0611ace1028065a67868e}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!get\-Page\-Box@{get\-Page\-Box}}
+\index{get\-Page\-Box@{get\-Page\-Box}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{get\-Page\-Box}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::get\-Page\-Box (
+\begin{DoxyParamCaption}
+\item[{}]{\$page, }
+\item[{}]{\$box\-\_\-index}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_afea253f07ba0611ace1028065a67868e}
+Get a Box from a page Arrayformat is same as used by fpdf\-\_\-tpl
+
+
+\begin{DoxyParams}[1]{Parametry}
+array & {\em \$page} & a /\-Page \\
+\hline
+string & {\em \$box\-\_\-index} & Type of Box\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Viz také}
+\hyperlink{classfpdi__pdf__parser_a9dabd6dc3d23b245d94df5fa6c8869e2}{\$available\-Boxes} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Návratová hodnota}
+array 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 260 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \-\_\-\-M\-P\-D\-F\-K a pdf\-\_\-parser\textbackslash{}pdf\-\_\-resolve\-\_\-object().
+
+
+
+Používá se v \-\_\-get\-Page\-Boxes().
+
+\hypertarget{classfpdi__pdf__parser_a21278f36792ce561fcbd90fa3f7acf5f}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!get\-Page\-Boxes@{get\-Page\-Boxes}}
+\index{get\-Page\-Boxes@{get\-Page\-Boxes}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{get\-Page\-Boxes}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::get\-Page\-Boxes (
+\begin{DoxyParamCaption}
+\item[{}]{\$pageno}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_a21278f36792ce561fcbd90fa3f7acf5f}
+
+
+Definice je uvedena na řádku 284 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$pageno a \-\_\-get\-Page\-Boxes().
+
+\hypertarget{classfpdi__pdf__parser_aecd0fec084300a00f7d640bd1667ffa8}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!get\-Page\-Count@{get\-Page\-Count}}
+\index{get\-Page\-Count@{get\-Page\-Count}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{get\-Page\-Count}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::get\-Page\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_aecd0fec084300a00f7d640bd1667ffa8}
+Get pagecount from sourcefile
+
+\begin{DoxyReturn}{Návratová hodnota}
+int 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 88 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$page\-\_\-count.
+
+
+
+Používá se v set\-Pageno().
+
+\hypertarget{classfpdi__pdf__parser_a854d78906b68932993fd276c72c3ad84}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!get\-Page\-Resources@{get\-Page\-Resources}}
+\index{get\-Page\-Resources@{get\-Page\-Resources}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{get\-Page\-Resources}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::get\-Page\-Resources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_a854d78906b68932993fd276c72c3ad84}
+Get page-\/resources from current page
+
+\begin{DoxyReturn}{Návratová hodnota}
+array 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 113 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \-\_\-get\-Page\-Resources().
+
+\hypertarget{classfpdi__pdf__parser_ab0006a5903179eca6cd67cf485f032d3}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!get\-Page\-Rotation@{get\-Page\-Rotation}}
+\index{get\-Page\-Rotation@{get\-Page\-Rotation}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{get\-Page\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::get\-Page\-Rotation (
+\begin{DoxyParamCaption}
+\item[{}]{\$pageno}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_ab0006a5903179eca6cd67cf485f032d3}
+
+
+Definice je uvedena na řádku 306 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$pageno a \-\_\-get\-Page\-Rotation().
+
+\hypertarget{classfpdi__pdf__parser_abecb49de0d0173292ef79e5603ab910d}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!read\-\_\-pages@{read\-\_\-pages}}
+\index{read\-\_\-pages@{read\-\_\-pages}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{read\-\_\-pages}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::read\-\_\-pages (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$c, }
+\item[{\&}]{\$pages, }
+\item[{\&}]{\$result}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_abecb49de0d0173292ef79e5603ab910d}
+Read all /\-Page(es)
+
+
+\begin{DoxyParams}{Parametry}
+{\em object} & \hyperlink{classpdf__context}{pdf\-\_\-context} \\
+\hline
+{\em array} & /\-Pages \\
+\hline
+{\em array} & the result-\/array \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 336 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na pdf\-\_\-parser\textbackslash{}\$c, \$pages a pdf\-\_\-parser\textbackslash{}pdf\-\_\-resolve\-\_\-object().
+
+
+
+Používá se v fpdi\-\_\-pdf\-\_\-parser().
+
+\hypertarget{classfpdi__pdf__parser_abc12d1246a01cb20e823f0dc6e4b4920}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!set\-Pageno@{set\-Pageno}}
+\index{set\-Pageno@{set\-Pageno}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{set\-Pageno}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::set\-Pageno (
+\begin{DoxyParamCaption}
+\item[{}]{\$pageno}
+\end{DoxyParamCaption}
+)}}\label{classfpdi__pdf__parser_abc12d1246a01cb20e823f0dc6e4b4920}
+Set pageno
+
+
+\begin{DoxyParams}[1]{Parametry}
+int & {\em \$pageno} & Pagenumber to use \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 98 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$pageno a get\-Page\-Count().
+
+
+
+\subsection{Dokumentace k datovým členům}
+\hypertarget{classfpdi__pdf__parser_a9dabd6dc3d23b245d94df5fa6c8869e2}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\$available\-Boxes@{\$available\-Boxes}}
+\index{\$available\-Boxes@{\$available\-Boxes}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\$available\-Boxes}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\$available\-Boxes = array(\char`\"{}/Media\-Box\char`\"{},\char`\"{}/Crop\-Box\char`\"{},\char`\"{}/Bleed\-Box\char`\"{},\char`\"{}/Trim\-Box\char`\"{},\char`\"{}/Art\-Box\char`\"{})}}\label{classfpdi__pdf__parser_a9dabd6dc3d23b245d94df5fa6c8869e2}
+
+
+Definice je uvedena na řádku 55 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+\hypertarget{classfpdi__pdf__parser_af23f9ff9cf32224e3e0eb2b8948b92d4}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\$fpdi@{\$fpdi}}
+\index{\$fpdi@{\$fpdi}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\$fpdi}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\$fpdi}}\label{classfpdi__pdf__parser_af23f9ff9cf32224e3e0eb2b8948b92d4}
+
+
+Definice je uvedena na řádku 48 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Používá se v fpdi\-\_\-pdf\-\_\-parser().
+
+\hypertarget{classfpdi__pdf__parser_ac8722ca731ad84acb63ff1afaed504cc}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\$page\-\_\-count@{\$page\-\_\-count}}
+\index{\$page\-\_\-count@{\$page\-\_\-count}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\$page\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\$page\-\_\-count}}\label{classfpdi__pdf__parser_ac8722ca731ad84acb63ff1afaed504cc}
+
+
+Definice je uvedena na řádku 35 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Používá se v get\-Page\-Count().
+
+\hypertarget{classfpdi__pdf__parser_ab3c5c997cdad564a2bbdd1fb4cc486e3}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\$pageno@{\$pageno}}
+\index{\$pageno@{\$pageno}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\$pageno}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\$pageno}}\label{classfpdi__pdf__parser_ab3c5c997cdad564a2bbdd1fb4cc486e3}
+
+
+Definice je uvedena na řádku 41 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Používá se v get\-Page\-Boxes(), get\-Page\-Rotation() a set\-Pageno().
+
+\hypertarget{classfpdi__pdf__parser_a36999177da67b9cf4f971d23fcef69d5}{\index{fpdi\-\_\-pdf\-\_\-parser@{fpdi\-\_\-pdf\-\_\-parser}!\$pages@{\$pages}}
+\index{\$pages@{\$pages}!fpdi_pdf_parser@{fpdi\-\_\-pdf\-\_\-parser}}
+\subsubsection[{\$pages}]{\setlength{\rightskip}{0pt plus 5cm}fpdi\-\_\-pdf\-\_\-parser\-::\$pages}}\label{classfpdi__pdf__parser_a36999177da67b9cf4f971d23fcef69d5}
+
+
+Definice je uvedena na řádku 29 v souboru fpdi\-\_\-pdf\-\_\-parser.\-php.
+
+
+
+Používá se v fpdi\-\_\-pdf\-\_\-parser() a read\-\_\-pages().
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+Models/\-M\-P\-D\-F/mpdfi/\hyperlink{fpdi__pdf__parser_8php}{fpdi\-\_\-pdf\-\_\-parser.\-php}\end{DoxyCompactItemize}

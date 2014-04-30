@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/*Výchozí*/
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+body, html{
+	background: #6A93D4;
+	height: 100%;
+	padding: 0;
+	font-size: 14px;
+}
+
+.button{
+	background: #FF6700;
+	color: white;
+	text-shadow: 1px 1px 1px #333;
+	font-weight: bolder;
+	border: 2px solid #FF8D40;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	outline: none;
+	-moz-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-webkit-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-ms-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	cursor: pointer;
+	margin: 10px;
+	height: 32px;
+}
+
+tr.show{
+	height: 35px;
+}
+
+.active{
+	background: #FFCD00;
+}
+
+#content{
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 0 -84px;
+	padding: 0px;
+	display: inline-block;
+}
+
+img{
+	-moz-border-radius: 	5%;
+	-webkit-border-radius: 	5%;
+	border-radius: 		5%;
+	-moz-box-shadow: 	1px 3px #FF6700, 10px 10px 20px #333;
+	-webkit-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	box-shadow: 		1px 3px #FF6700, 10px 10px 20px #333;
+	border: 			2px solid #FF8D40;
+}
+
+h1, h2{
+	background: #FF6700;
+	text-shadow: 1px 1px 1px #333;
+	border: 2px solid #FF8D40;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	
+	padding: 3px;
+	padding-left: 30px;
+	margin: 5px;
+	width: 50%;
+}
+
+h1{
+	font-size: 22px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2{
+	font-size: 17px;
+	text-align: center;
+	min-width: 40%;
+}
+
+header#top_panel{
+	z-index: 10;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background: #104BA9;
+	-moz-box-shadow:    0px 5px 10px 6px #284A7E;
+	-webkit-box-shadow: 0px 5px 10px 6px #284A7E;
+	box-shadow:         0px 5px 10px 6px #284A7E;
+}
+
+footer{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	background: #104BA9;
+	bottom: 0;
+	display: block;
+	-moz-box-shadow:    0px -5px 10px 6px #284A7E;
+	-webkit-box-shadow: 0px -5px 10px 6px #284A7E;
+	box-shadow:         0px -5px 10px 6px #284A7E;
+}
+
+#top{
+	height: 110px;
+	width: 100%;
+}
+
+#bottom{
+	height: 110px;
+	width: 100%
+}
+
+.garbage{
+	clear: both;
+}
+
+.nextto{
+	float: left;
+}
+
+article{
+	display: inline-block;
+}
+
+/* Forms */
+
+input[type="submit"]:hover{
+    background: radial-gradient(circle, #FFCD00 10%, #FFE373 100%);	
+}
+
+input[type="submit"]{
+	cursor: pointer;
+}
+
+[contentEditable="true"]{
+	background: #FF6700;
+	border-color: black;	
+	border: 2px solid #FF8D40;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-webkit-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	margin: 0px 10px 0px 10px;
+	text-shadow: 1px 1px 1px #333;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	padding-left: 10px;
+}
+
+textarea{
+	-moz-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-webkit-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	border: 2px solid #FF8D40;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	background: #FF6700;
+}
+
+input[type="text"], input[type="password"],input[type="email"], input[type="submit"], select, button, input[type="number"]{
+	background: #FF6700;
+	height: 32px;
+	
+	color: white;
+	text-shadow: 1px 1px 1px #333;
+	font-weight: bolder;
+	
+	border: 2px solid #FF8D40;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	
+	padding: 0px 10px 0px 10px;
+	
+	outline: none;/*nevim jestli to tak smi byt*/
+	
+	-moz-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-webkit-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-ms-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+}
+
+select{
+	z-index: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	cursor: pointer;
+	display: inline;
+}
+
+select::-ms-expand{
+	display: none;
+}
+
+select:focus{
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-ms-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:27px}
+}
+
+label.select { position: relative;}
+label.select:after{
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #333;
+    position:absolute;
+	content: ">";
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+    right:10px; top:-4px;
+    border-bottom:2px solid #fff;
+    pointer-events:none;
+    cursor: pointer;
+}
+
+label{
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px #333;
+}
+
+#login_l td, #login_l th{
+	padding: 0px 5px 0px 5px;
+}
+
+form table td, form table th{
+	padding: 5px 10px 5px 10px;
+}
+/*---------------Forms ----------------*/
+
+.center_content{
+	display:box;
+	box-pack:center;
+	box-align:center;
+}
+
+.content{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+section#user_panel{
+	float: right;
+	display: block;
+}
+
+section#logo{
+	margin-top: 5px;
+	float: left;
+	display: block;
+	background-image: url("../Resources/images/logo2.png");
+	background-size: contain;
+	height: 70px;
+	width: 160px;
+}
+
+.fragment{
+	display: block;
+	float: left;
+}
+	
+/* -------------- requesty ----------------------- */
+
+.request{
+	background: #FFAB73;
+	-moz-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-webkit-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	
+	border: 2px solid #FF8D40;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	text-align: left;
+	margin: 10px;
+	max-width: 215px;
+}
+
+.request header{
+	background: #FF6700;
+	
+	border: 2px solid #FF8D40;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+	
+	margin: -2px;
+}
+	
+.request header:hover{
+	background: #FFCD00;
+}
+
+/* --------------Bubbles -------------------------*/
+
+.Whisper {
+	position:absolute;
+	float: right;
+	background: #FF6700;
+	height: 24px;
+	padding: 8px 4px 0px 4px;
+	
+	color: #888;
+    margin: 0;
+
+	border: 2px solid #FF8D40;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    
+    margin-left: 18px;
+    
+    
+	-moz-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-webkit-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	-ms-box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+	box-shadow: 1px 3px #FF6700, 10px 10px 20px #333;
+    display: none;
+}
+	
+.Whisper p b{
+	color: white;
+}
+
+.Whisper:after {
+  content:"";
+  position:absolute;
+  border-style:solid;
+  /* reduce the damage in FF3.0 */
+  display:inline-block;
+  width:0;
+  top:6px; /* controls vertical position */
+  left:-20px; /* value = - border-left-width - border-right-width */
+  bottom:auto;
+  border-width:10px 20px 10px 0;
+  border-color:transparent #FF6700;
+}
+
+/*=====================Calendar==============*/
+#CalendarControlIFrame {
+    display: none;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    height: 250px;
+    width: 250px;
+    z-index: 99;
+}
+#CalendarControl {
+    position:absolute;
+    background-color: #FF6700;
+    margin:0;
+    padding:0;
+    display:none;
+    z-index: 100;
+}
+#CalendarControl table {
+    font-family: arial, verdana, helvetica, sans-serif;
+    font-size: 8pt;
+    border: 1px solid #000000;
+}
+#CalendarControl th {
+    font-weight: normal;
+}
+#CalendarControl th a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #000;
+    padding: 1px;
+}
+#CalendarControl td {
+    text-align: center;
+}
+#CalendarControl .calendar_header {
+    background-color: #FF6700;
+}
+#CalendarControl .calendar_weekday {
+    background-color: #FF6700;
+    color: #000;
+}
+#CalendarControl .calendar_weekend {
+    background-color: #FF6700;
+    color: #000;
+}
+#CalendarControl .calendar_current {
+    background-color: #66CCFF;
+    color: #000;
+}
+#CalendarControl .calendar_weekday,
+#CalendarControl .calendar_weekend,
+#CalendarControl .calendar_current {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #000;
+    width: 2em;
+}
+#CalendarControl .calendar_weekday:hover,
+#CalendarControl .calendar_weekend:hover,
+#CalendarControl .calendar_current:hover {
+    color: #FFF;
+    background-color: #66CCFF;
+}
+#CalendarControl .calendar_previous {
+    text-align: left;
+}
+#CalendarControl .calendar_next {
+    text-align: right;
+}
+#CalendarControl .calendar_previous,
+#CalendarControl .calendar_next {
+    padding: 1px 3px 1px 3px;
+    font-size: 1.4em;
+}
+#CalendarControl .calendar_previous a,
+#CalendarControl .calendar_next a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+#CalendarControl .calendar_title {
+    text-align: center;
+    font-weight: bold;
+    color: #FF6700;
+}
+#CalendarControl .calendar_empty {
+    background-color: #FF6700;
+    border: 1px solid #FFF;
+}

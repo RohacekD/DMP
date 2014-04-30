@@ -1,0 +1,317 @@
+\hypertarget{class_request}{\subsection{Dokumentace třídy Request}
+\label{class_request}\index{Request@{Request}}
+}
+\subsubsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_request_acb45c1bd5a1e720a43eb5c71735515ea}{Choose\-By\-Id} (\$id)
+\item 
+\hyperlink{class_request_a62ba6b8279558b2634fd0575766d102c}{Set\-User\-Id} (\$id)
+\item 
+\hyperlink{class_request_aa2fb280d6222b804a5410138f46a960d}{Get\-User\-Id} ()
+\item 
+\hyperlink{class_request_a8b542e7d4822ef364eeb9e5afe09681b}{Get\-User\-Name} ()
+\item 
+\hyperlink{class_request_ad7e9f35fc378d9f489cec80da1cf8d56}{Set\-Id} (\$id)
+\item 
+\hyperlink{class_request_a925f70750cae477ebd3a3fc44ea813b0}{Get\-Id} ()
+\item 
+\hyperlink{class_request_a6cb58cdc5c901fa449a05806fb1672ea}{Set\-Name} (\$name)
+\item 
+\hyperlink{class_request_a557b5270c9e0ba9a1669eb216b929aaa}{Get\-Name} ()
+\item 
+\hyperlink{class_request_acf2c28a3add3240da08675f81a3dcfcc}{Set\-Description} (\$description)
+\item 
+\hyperlink{class_request_ac5bebc81027895d2eb4591032080ec6d}{Get\-Description} ()
+\item 
+\hyperlink{class_request_a35f911475750f19a879ea6b71959f808}{Set\-Need} (\$need)
+\item 
+\hyperlink{class_request_acec0c5370ef395c5da9ed499dab11747}{Get\-Need} ()
+\item 
+\hyperlink{class_request_a1ae4a9e4b18c64b28c19b867a5970eac}{Set\-Date} (\$date)
+\item 
+\hyperlink{class_request_a22b9925d94f2831416772c3f54612eb0}{Get\-Date} ()
+\item 
+\hyperlink{class_request_a02a42600bab107d0d6b8613501a875f2}{Make\-Confirms} ()
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailní popis}
+Class represents a request. You can take it by id from D\-B or build it manualy. And then save it to D\-B again. \begin{DoxyAuthor}{Autor}
+Ratan 
+\end{DoxyAuthor}
+
+
+Definice je uvedena na řádku 9 v souboru Request.\-php.
+
+
+
+\subsubsection{Dokumentace k metodám}
+\hypertarget{class_request_acb45c1bd5a1e720a43eb5c71735515ea}{\index{Request@{Request}!Choose\-By\-Id@{Choose\-By\-Id}}
+\index{Choose\-By\-Id@{Choose\-By\-Id}!Request@{Request}}
+\paragraph[{Choose\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Choose\-By\-Id (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_request_acb45c1bd5a1e720a43eb5c71735515ea}
+Vybere request z db \begin{DoxyRefDesc}{Chyba}
+\item[\hyperlink{bug__bug000005}{Chyba}]Neni hotovo Protože nebylo potřeba \end{DoxyRefDesc}
+
+\begin{DoxyParams}[1]{Parametry}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Výjimky}
+{\em Exception} & \{\char`\"{}\-First attribute for Request\-::\-Choose\-By\-Id must be integer.\char`\"{}, 1\} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definice je uvedena na řádku 70 v souboru Request.\-php.
+
+\hypertarget{class_request_a22b9925d94f2831416772c3f54612eb0}{\index{Request@{Request}!Get\-Date@{Get\-Date}}
+\index{Get\-Date@{Get\-Date}!Request@{Request}}
+\paragraph[{Get\-Date}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Get\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_request_a22b9925d94f2831416772c3f54612eb0}
+Getter for created date \begin{DoxyReturn}{Návratová hodnota}
+date \$date 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 199 v souboru Request.\-php.
+
+\hypertarget{class_request_ac5bebc81027895d2eb4591032080ec6d}{\index{Request@{Request}!Get\-Description@{Get\-Description}}
+\index{Get\-Description@{Get\-Description}!Request@{Request}}
+\paragraph[{Get\-Description}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Get\-Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_request_ac5bebc81027895d2eb4591032080ec6d}
+Getter for request's descritpion. \begin{DoxyReturn}{Návratová hodnota}
+string \$description 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 161 v souboru Request.\-php.
+
+\hypertarget{class_request_a925f70750cae477ebd3a3fc44ea813b0}{\index{Request@{Request}!Get\-Id@{Get\-Id}}
+\index{Get\-Id@{Get\-Id}!Request@{Request}}
+\paragraph[{Get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_request_a925f70750cae477ebd3a3fc44ea813b0}
+Getter for id \begin{DoxyReturn}{Návratová hodnota}
+int \$id 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 121 v souboru Request.\-php.
+
+
+
+Používá se v Make\-Confirms().
+
+\hypertarget{class_request_a557b5270c9e0ba9a1669eb216b929aaa}{\index{Request@{Request}!Get\-Name@{Get\-Name}}
+\index{Get\-Name@{Get\-Name}!Request@{Request}}
+\paragraph[{Get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_request_a557b5270c9e0ba9a1669eb216b929aaa}
+Getter for name \begin{DoxyReturn}{Návratová hodnota}
+string \$name 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 141 v souboru Request.\-php.
+
+\hypertarget{class_request_acec0c5370ef395c5da9ed499dab11747}{\index{Request@{Request}!Get\-Need@{Get\-Need}}
+\index{Get\-Need@{Get\-Need}!Request@{Request}}
+\paragraph[{Get\-Need}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Get\-Need (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_request_acec0c5370ef395c5da9ed499dab11747}
+Getter for moeny need for request \begin{DoxyReturn}{Návratová hodnota}
+int \$need 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 181 v souboru Request.\-php.
+
+\hypertarget{class_request_aa2fb280d6222b804a5410138f46a960d}{\index{Request@{Request}!Get\-User\-Id@{Get\-User\-Id}}
+\index{Get\-User\-Id@{Get\-User\-Id}!Request@{Request}}
+\paragraph[{Get\-User\-Id}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Get\-User\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_request_aa2fb280d6222b804a5410138f46a960d}
+Getter for user's id. \begin{DoxyReturn}{Návratová hodnota}
+int User\-Id 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 92 v souboru Request.\-php.
+
+\hypertarget{class_request_a8b542e7d4822ef364eeb9e5afe09681b}{\index{Request@{Request}!Get\-User\-Name@{Get\-User\-Name}}
+\index{Get\-User\-Name@{Get\-User\-Name}!Request@{Request}}
+\paragraph[{Get\-User\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Get\-User\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_request_a8b542e7d4822ef364eeb9e5afe09681b}
+Getter for user's name \begin{DoxyReturn}{Návratová hodnota}
+string 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 101 v souboru Request.\-php.
+
+\hypertarget{class_request_a02a42600bab107d0d6b8613501a875f2}{\index{Request@{Request}!Make\-Confirms@{Make\-Confirms}}
+\index{Make\-Confirms@{Make\-Confirms}!Request@{Request}}
+\paragraph[{Make\-Confirms}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Make\-Confirms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_request_a02a42600bab107d0d6b8613501a875f2}
+Create confirms and save it to \$this-\/$>$confirm\mbox{[}\mbox{]} and \$this-\/$>$confrim\-\_\-date\mbox{[}\mbox{]}; \begin{DoxyRefDesc}{Plánované úpravy}
+\item[\hyperlink{todo__todo000001}{Plánované úpravy}]\-: Make confirm object to easy access \end{DoxyRefDesc}
+
+
+Definice je uvedena na řádku 232 v souboru Request.\-php.
+
+
+
+Odkazuje se na Get\-Id().
+
+\hypertarget{class_request_a1ae4a9e4b18c64b28c19b867a5970eac}{\index{Request@{Request}!Set\-Date@{Set\-Date}}
+\index{Set\-Date@{Set\-Date}!Request@{Request}}
+\paragraph[{Set\-Date}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Set\-Date (
+\begin{DoxyParamCaption}
+\item[{}]{\$date}
+\end{DoxyParamCaption}
+)}}\label{class_request_a1ae4a9e4b18c64b28c19b867a5970eac}
+Setter for created date 
+\begin{DoxyParams}[1]{Parametry}
+date & {\em \$date} & \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 190 v souboru Request.\-php.
+
+\hypertarget{class_request_acf2c28a3add3240da08675f81a3dcfcc}{\index{Request@{Request}!Set\-Description@{Set\-Description}}
+\index{Set\-Description@{Set\-Description}!Request@{Request}}
+\paragraph[{Set\-Description}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Set\-Description (
+\begin{DoxyParamCaption}
+\item[{}]{\$description}
+\end{DoxyParamCaption}
+)}}\label{class_request_acf2c28a3add3240da08675f81a3dcfcc}
+Setter for request's description 
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$description} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Výjimky}
+{\em Exception} & \{\char`\"{}\-First attribute for Request\-::\-Set\-Description must be string.\char`\"{}, 1\} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definice je uvedena na řádku 151 v souboru Request.\-php.
+
+\hypertarget{class_request_ad7e9f35fc378d9f489cec80da1cf8d56}{\index{Request@{Request}!Set\-Id@{Set\-Id}}
+\index{Set\-Id@{Set\-Id}!Request@{Request}}
+\paragraph[{Set\-Id}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Set\-Id (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_request_ad7e9f35fc378d9f489cec80da1cf8d56}
+Setter for id 
+\begin{DoxyParams}[1]{Parametry}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Výjimky}
+{\em Exception} & \{\char`\"{}\-First attribute for Request\-::\-Set\-Id must be integer.\char`\"{}, 1\} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definice je uvedena na řádku 111 v souboru Request.\-php.
+
+\hypertarget{class_request_a6cb58cdc5c901fa449a05806fb1672ea}{\index{Request@{Request}!Set\-Name@{Set\-Name}}
+\index{Set\-Name@{Set\-Name}!Request@{Request}}
+\paragraph[{Set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Set\-Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}}\label{class_request_a6cb58cdc5c901fa449a05806fb1672ea}
+Setter for name 
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Výjimky}
+{\em Exception} & \{\char`\"{}\-First attribute for Request\-::\-Set\-Name must be string.\char`\"{}, 1\} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definice je uvedena na řádku 131 v souboru Request.\-php.
+
+\hypertarget{class_request_a35f911475750f19a879ea6b71959f808}{\index{Request@{Request}!Set\-Need@{Set\-Need}}
+\index{Set\-Need@{Set\-Need}!Request@{Request}}
+\paragraph[{Set\-Need}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Set\-Need (
+\begin{DoxyParamCaption}
+\item[{}]{\$need}
+\end{DoxyParamCaption}
+)}}\label{class_request_a35f911475750f19a879ea6b71959f808}
+Setter for money need for request 
+\begin{DoxyParams}[1]{Parametry}
+int & {\em \$need} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Výjimky}
+{\em Exception} & \{\char`\"{}\-First attribute for Request\-::\-Set\-Need must be integer.\char`\"{}, 1\} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definice je uvedena na řádku 171 v souboru Request.\-php.
+
+\hypertarget{class_request_a62ba6b8279558b2634fd0575766d102c}{\index{Request@{Request}!Set\-User\-Id@{Set\-User\-Id}}
+\index{Set\-User\-Id@{Set\-User\-Id}!Request@{Request}}
+\paragraph[{Set\-User\-Id}]{\setlength{\rightskip}{0pt plus 5cm}Request\-::\-Set\-User\-Id (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}}\label{class_request_a62ba6b8279558b2634fd0575766d102c}
+Setter for id. 
+\begin{DoxyParams}[1]{Parametry}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Výjimky}
+{\em Exception} & \{\} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definice je uvedena na řádku 80 v souboru Request.\-php.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+Models/Request.\-php\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+*{
+	font-family:"Arial", Times, Sans-serif;
+}
+
+h2{
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0px;
+	font-size: 18px;
+}
+
+table
+{
+border-collapse:collapse;
+width: 100%;
+}
+
+table,th, td
+{
+border: 1px solid;
+}
+
+.left{
+	text-align: left;
+	padding-left: 10px;
+}
+
+td{
+	text-align: center;
+}
+
+td{	
+	height: 30px;
+}
+
+.slim{
+	height: auto;
+}
+
+.double{
+	border-style:double;
+}
+
+caption{
+	text-align: left;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}

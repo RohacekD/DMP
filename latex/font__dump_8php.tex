@@ -1,0 +1,190 @@
+\hypertarget{font__dump_8php}{\section{Dokumentace souboru Models/\-M\-P\-D\-F/utils/font\-\_\-dump.php}
+\label{font__dump_8php}\index{Models/\-M\-P\-D\-F/utils/font\-\_\-dump.\-php@{Models/\-M\-P\-D\-F/utils/font\-\_\-dump.\-php}}
+}
+\subsection*{Proměnné}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{font__dump_8php_a9d63b61d7d442048fe453731932c6aed}{\$font} = 'dejavusanscondensed'
+\item 
+\hyperlink{font__dump_8php_a78088e1469eb7590d2db044605ed9875}{\$showmissing} = true
+\item 
+const \hyperlink{font__dump_8php_a1ff50e3d84f8270d034f2e9d99c147c0}{\-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I} '../'
+\item 
+\hyperlink{font__dump_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\$mpdf} =new \hyperlink{classm_p_d_f}{m\-P\-D\-F}('')
+\item 
+\$mpdf \hyperlink{font__dump_8php_aa2ce4c2c0ab99d3365e4d7366a9be33a}{use\-Substitutions} = true
+\item 
+\$mpdf \hyperlink{font__dump_8php_a200a436f1833a712239f1ae5bec608db}{debug} = true
+\item 
+\$mpdf \hyperlink{font__dump_8php_a87bf4d3d8114a506fea7f0fc5f0714f6}{simple\-Tables} = true
+\item 
+\$mpdf \hyperlink{font__dump_8php_a6a35a9ff62c890b69a1774f6435e4e6d}{percent\-Subset} = 0
+\item 
+\hyperlink{font__dump_8php_ac4bf829c24b00f00ff9d3498539e1f4b}{\$html} = ''
+\item 
+\hyperlink{font__dump_8php_abaa85dced3638e9abc7f47111f04df8e}{\$unifile} = file('Unicode\-Data.\-txt')
+\item 
+\hyperlink{font__dump_8php_ab216a6d320faf1beba59f97c9941d866}{\$unichars} = array()
+\item 
+\hyperlink{font__dump_8php_afa3e0d7f4c07331bb8ee7bd7e2008de6}{foreach} (\$unifile A\-S \$line)
+\item 
+\hyperlink{font__dump_8php_ac2951b03dbb0317e6c61ec920b7479dc}{\$cw} = file\-\_\-get\-\_\-contents(\-\_\-\-M\-P\-D\-F\-\_\-\-T\-T\-F\-O\-N\-T\-D\-A\-T\-A\-P\-A\-T\-H.\$font.'.cw.\-dat')
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!\$cw) \hyperlink{font__dump_8php_a35dd73275e7e365f793275450f261be0}{\$counter} =0
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(\$smp) \hyperlink{font__dump_8php_aa378ca8ac707e59c3887cf4c96cc1724}{else}
+\item 
+\hyperlink{font__dump_8php_a5cf1d6910240e03965be9beb01aae219}{\$justfinishedblank} = \hyperlink{ttfontsuni_8php_afbaa04e5cc97693dc668b3c45d3dd740}{false}
+\item 
+\hyperlink{font__dump_8php_a848c618c4ef3de2f7f7b61b6443fcf41}{\$justfinishedblankinvalid} = \hyperlink{ttfontsuni_8php_afbaa04e5cc97693dc668b3c45d3dd740}{false}
+\item 
+\hyperlink{font__names_8php_ac6e05d8eea8274a71f8f9c686e891421}{foreach}(\$unicode\-\_\-ranges A\-S \\*
+\$urk=$>$ \$ur) \hyperlink{font__dump_8php_a62810da74f01f626696ab25d73e9ec48}{\$lastrange} = \$range
+\item 
+\hyperlink{font__dump_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentace proměnných}
+\hypertarget{font__dump_8php_a35dd73275e7e365f793275450f261be0}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$counter@{\$counter}}
+\index{\$counter@{\$counter}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$counter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!\$cw) \$counter =0}}\label{font__dump_8php_a35dd73275e7e365f793275450f261be0}
+
+
+Definice je uvedena na řádku 77 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_ac2951b03dbb0317e6c61ec920b7479dc}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$cw@{\$cw}}
+\index{\$cw@{\$cw}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$cw}]{\setlength{\rightskip}{0pt plus 5cm}\$cw = file\-\_\-get\-\_\-contents(\-\_\-\-M\-P\-D\-F\-\_\-\-T\-T\-F\-O\-N\-T\-D\-A\-T\-A\-P\-A\-T\-H.\$font.'.cw.\-dat')}}\label{font__dump_8php_ac2951b03dbb0317e6c61ec920b7479dc}
+
+
+Definice je uvedena na řádku 75 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a9d63b61d7d442048fe453731932c6aed}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$font@{\$font}}
+\index{\$font@{\$font}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$font}]{\setlength{\rightskip}{0pt plus 5cm}\$font = 'dejavusanscondensed'}}\label{font__dump_8php_a9d63b61d7d442048fe453731932c6aed}
+
+
+Definice je uvedena na řádku 15 v souboru font\-\_\-dump.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-enddoc(), F\-P\-D\-F\textbackslash{}\-\_\-putfonts(), m\-P\-D\-F\textbackslash{}\-\_\-putfonts(), m\-P\-D\-F\textbackslash{}\-\_\-putfontwidths(), m\-P\-D\-F\textbackslash{}\-\_\-putformxobjects(), m\-P\-D\-F\textbackslash{}\-\_\-putpages(), m\-P\-D\-F\textbackslash{}\-\_\-putpatterns(), F\-P\-D\-F\textbackslash{}\-\_\-putresourcedict(), m\-P\-D\-F\textbackslash{}\-\_\-putresources(), m\-P\-D\-F\textbackslash{}\-\_\-put\-T\-Tfontwidths(), m\-P\-D\-F\textbackslash{}\-\_\-put\-Type0(), m\-P\-D\-F\textbackslash{}\-Autosize\-Text(), directw\textbackslash{}\-Circular\-Text(), m\-P\-D\-F\textbackslash{}finish\-Flowing\-Block(), m\-P\-D\-F\textbackslash{}printbuffer(), m\-P\-D\-F\textbackslash{}\-Set\-Default\-Font(), directw\textbackslash{}\-Shaded\-\_\-box(), m\-P\-D\-F\textbackslash{}\-Shaded\-\_\-box(), m\-P\-D\-F\textbackslash{}\-Substitute\-Chars\-M\-B(), m\-P\-D\-F\textbackslash{}\-Substitute\-Chars\-Non\-Core(), m\-P\-D\-F\textbackslash{}\-Substitute\-Chars\-S\-I\-P(), indic\textbackslash{}substitute\-Indic(), m\-P\-D\-F\textbackslash{}\-Table\-Check\-Min\-Width(), m\-P\-D\-F\textbackslash{}\-Table\-Word\-Wrap() a m\-P\-D\-F\textbackslash{}\-Write\-Flowing\-Block().
+
+\hypertarget{font__dump_8php_ac4bf829c24b00f00ff9d3498539e1f4b}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$html@{\$html}}
+\index{\$html@{\$html}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$html}]{\setlength{\rightskip}{0pt plus 5cm}for (\$i=0;\$i$<$ 16;\$i++) for (\$i=32;\$i$<$ \$max;++\$i) {\bf if} ((\$i\%16) $>$ 0) \$html = ''}}\label{font__dump_8php_ac4bf829c24b00f00ff9d3498539e1f4b}
+
+
+Definice je uvedena na řádku 51 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a5cf1d6910240e03965be9beb01aae219}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$justfinishedblank@{\$justfinishedblank}}
+\index{\$justfinishedblank@{\$justfinishedblank}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$justfinishedblank}]{\setlength{\rightskip}{0pt plus 5cm}\$justfinishedblank = {\bf false}}}\label{font__dump_8php_a5cf1d6910240e03965be9beb01aae219}
+
+
+Definice je uvedena na řádku 90 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a848c618c4ef3de2f7f7b61b6443fcf41}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$justfinishedblankinvalid@{\$justfinishedblankinvalid}}
+\index{\$justfinishedblankinvalid@{\$justfinishedblankinvalid}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$justfinishedblankinvalid}]{\setlength{\rightskip}{0pt plus 5cm}\$justfinishedblankinvalid = {\bf false}}}\label{font__dump_8php_a848c618c4ef3de2f7f7b61b6443fcf41}
+
+
+Definice je uvedena na řádku 91 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a62810da74f01f626696ab25d73e9ec48}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$lastrange@{\$lastrange}}
+\index{\$lastrange@{\$lastrange}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$lastrange}]{\setlength{\rightskip}{0pt plus 5cm}{\bf foreach} (\$unicode\-\_\-ranges A\-S \$urk=$>$ \$ur) \$lastrange = \$range}}\label{font__dump_8php_a62810da74f01f626696ab25d73e9ec48}
+
+
+Definice je uvedena na řádku 102 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$mpdf@{\$mpdf}}
+\index{\$mpdf@{\$mpdf}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$mpdf}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf =new {\bf m\-P\-D\-F}('')}}\label{font__dump_8php_ad028f81910d6cbab9b184d2214b3a8f8}
+
+
+Definice je uvedena na řádku 32 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a78088e1469eb7590d2db044605ed9875}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$showmissing@{\$showmissing}}
+\index{\$showmissing@{\$showmissing}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$showmissing}]{\setlength{\rightskip}{0pt plus 5cm}\$showmissing = true}}\label{font__dump_8php_a78088e1469eb7590d2db044605ed9875}
+
+
+Definice je uvedena na řádku 17 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_ab216a6d320faf1beba59f97c9941d866}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$unichars@{\$unichars}}
+\index{\$unichars@{\$unichars}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$unichars}]{\setlength{\rightskip}{0pt plus 5cm}\$unichars = array()}}\label{font__dump_8php_ab216a6d320faf1beba59f97c9941d866}
+
+
+Definice je uvedena na řádku 57 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_abaa85dced3638e9abc7f47111f04df8e}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\$unifile@{\$unifile}}
+\index{\$unifile@{\$unifile}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\$unifile}]{\setlength{\rightskip}{0pt plus 5cm}\$unifile = file('Unicode\-Data.\-txt')}}\label{font__dump_8php_abaa85dced3638e9abc7f47111f04df8e}
+
+
+Definice je uvedena na řádku 56 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a1ff50e3d84f8270d034f2e9d99c147c0}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!\-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I@{\-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I}}
+\index{\-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I@{\-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{\-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-M\-P\-D\-F\-\_\-\-U\-R\-I '../'}}\label{font__dump_8php_a1ff50e3d84f8270d034f2e9d99c147c0}
+
+
+Definice je uvedena na řádku 29 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a200a436f1833a712239f1ae5bec608db}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!debug@{debug}}
+\index{debug@{debug}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{debug}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf debug = true}}\label{font__dump_8php_a200a436f1833a712239f1ae5bec608db}
+
+
+Definice je uvedena na řádku 38 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_aa378ca8ac707e59c3887cf4c96cc1724}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!else@{else}}
+\index{else@{else}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$smp) else}}\label{font__dump_8php_aa378ca8ac707e59c3887cf4c96cc1724}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+\{ 
+    $max = 65535
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 85 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a6733eb5f605d09eaede9845835d71c4e}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!exit@{exit}}
+\index{exit@{exit}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{exit}]{\setlength{\rightskip}{0pt plus 5cm}exit}}\label{font__dump_8php_a6733eb5f605d09eaede9845835d71c4e}
+
+
+Definice je uvedena na řádku 214 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_afa3e0d7f4c07331bb8ee7bd7e2008de6}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!foreach@{foreach}}
+\index{foreach@{foreach}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{foreach}]{\setlength{\rightskip}{0pt plus 5cm}foreach(\$unifile A\-S \$line)}}\label{font__dump_8php_afa3e0d7f4c07331bb8ee7bd7e2008de6}
+
+
+Definice je uvedena na řádku 59 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a6a35a9ff62c890b69a1774f6435e4e6d}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!percent\-Subset@{percent\-Subset}}
+\index{percent\-Subset@{percent\-Subset}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{percent\-Subset}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf percent\-Subset = 0}}\label{font__dump_8php_a6a35a9ff62c890b69a1774f6435e4e6d}
+
+
+Definice je uvedena na řádku 41 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_a87bf4d3d8114a506fea7f0fc5f0714f6}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!simple\-Tables@{simple\-Tables}}
+\index{simple\-Tables@{simple\-Tables}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{simple\-Tables}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf simple\-Tables = true}}\label{font__dump_8php_a87bf4d3d8114a506fea7f0fc5f0714f6}
+
+
+Definice je uvedena na řádku 39 v souboru font\-\_\-dump.\-php.
+
+\hypertarget{font__dump_8php_aa2ce4c2c0ab99d3365e4d7366a9be33a}{\index{font\-\_\-dump.\-php@{font\-\_\-dump.\-php}!use\-Substitutions@{use\-Substitutions}}
+\index{use\-Substitutions@{use\-Substitutions}!font_dump.php@{font\-\_\-dump.\-php}}
+\subsubsection[{use\-Substitutions}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf use\-Substitutions = true}}\label{font__dump_8php_aa2ce4c2c0ab99d3365e4d7366a9be33a}
+
+
+Definice je uvedena na řádku 37 v souboru font\-\_\-dump.\-php.
+

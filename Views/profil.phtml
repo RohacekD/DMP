@@ -1,0 +1,38 @@
+<table style="width:100%">
+	<caption><h2>Osobní údaje</h2></caption>
+	<tr>
+		<td  style="width:30%">
+			Uživatelské jméno:
+		</td>
+		<td>
+			<?= $name;?>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Jméno a příjmení:
+		</td>
+		<td>
+			<?=$fullName;?>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Úroveň oprávnění:
+		</td>
+		<td>
+			<?= $access;?>
+		</td>
+	</tr>
+	<tr>
+		<td>Poslední přihlášení:</td>
+		<td><?= $lastLogIn;?></td>
+	</tr>
+</table>
+<table style="width:100%">
+	<caption><h2>Žádanky</h2></caption>
+	<tr>
+		<td  style="width:30%">Podáno žádanek:</td>
+		<td><?= $requests;?></td>
+	</tr>
+</table>

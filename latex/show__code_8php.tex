@@ -1,0 +1,123 @@
+\hypertarget{show__code_8php}{\section{Dokumentace souboru Models/\-M\-P\-D\-F/examples/show\-\_\-code.php}
+\label{show__code_8php}\index{Models/\-M\-P\-D\-F/examples/show\-\_\-code.\-php@{Models/\-M\-P\-D\-F/examples/show\-\_\-code.\-php}}
+}
+\subsection*{Proměnné}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'filename'\mbox{]}) \hyperlink{show__code_8php_a3c8ec87efb7bfeaea8b9ec9c7c3ef10f}{else} \{ die(\char`\"{}No file specified\char`\"{})
+\item 
+\hyperlink{show__code_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\$mpdf} =new \hyperlink{classm_p_d_f}{m\-P\-D\-F}('utf-\/8-\/s')
+\item 
+\$mpdf \hyperlink{show__code_8php_a200a436f1833a712239f1ae5bec608db}{debug} =true
+\item 
+\$mpdf \hyperlink{show__code_8php_ab4e4c4f5a4a02d8b15368b16f6a0d60c}{tab\-Spaces} = 6
+\item 
+\$mpdf \hyperlink{show__code_8php_abef25a78e171b6e37513665f692d1960}{allow\-\_\-charset\-\_\-conversion} =true
+\item 
+\$mpdf \hyperlink{show__code_8php_a2ee5c294694d309db57ff7d247030461}{charset\-\_\-in} ='windows-\/1252'
+\item 
+\hyperlink{show__code_8php_a606c9dff2aade84f01338c3c4cd8016b}{\$num} = intval(\$m\mbox{[}1\mbox{]})
+\item 
+\hyperlink{show__code_8php_ada57e7bb7c152edad18fe2f166188691}{\$title} = ucfirst(preg\-\_\-replace('/\-\_\-/',' ',\$m\mbox{[}2\mbox{]}))
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!\$num$|$$|$!\$title) \hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(preg\-\_\-match('/\textbackslash{}//', \\*
+\$filename)$|$$|$!preg\-\_\-match('/\textbackslash{}.php \\*
+\$/', \$filename)) \hyperlink{show__code_8php_a6f96e7fc92441776c9d1cd3386663b40}{\$html}
+\item 
+\hyperlink{show__code_8php_a470f99c17f2e6f0a5a7b96f44cfc46a5}{\$lines} = file(\$filename)
+\item 
+\hyperlink{show__code_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentace proměnných}
+\hypertarget{show__code_8php_a6f96e7fc92441776c9d1cd3386663b40}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!\$html@{\$html}}
+\index{\$html@{\$html}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{\$html}]{\setlength{\rightskip}{0pt plus 5cm}\$html}}\label{show__code_8php_a6f96e7fc92441776c9d1cd3386663b40}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{'}
+\textcolor{stringliteral}{<h1>mPDF</h1>}
+\textcolor{stringliteral}{<h2>Example '}.$num.\textcolor{stringliteral}{'. '}.\hyperlink{tuto3_8php_ada57e7bb7c152edad18fe2f166188691}{$title}.\textcolor{stringliteral}{'</h2>}
+\textcolor{stringliteral}{<div style="border:1px solid #555555; background-color: #DDDDDD; padding: 1em; font-size:8pt; font-family:
+       lucidaconsole, mono;">}
+\textcolor{stringliteral}{'}
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 23 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_a470f99c17f2e6f0a5a7b96f44cfc46a5}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!\$lines@{\$lines}}
+\index{\$lines@{\$lines}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{\$lines}]{\setlength{\rightskip}{0pt plus 5cm}\$lines = file(\$filename)}}\label{show__code_8php_a470f99c17f2e6f0a5a7b96f44cfc46a5}
+
+
+Definice je uvedena na řádku 28 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!\$mpdf@{\$mpdf}}
+\index{\$mpdf@{\$mpdf}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{\$mpdf}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf =new {\bf m\-P\-D\-F}('utf-\/8-\/s')}}\label{show__code_8php_ad028f81910d6cbab9b184d2214b3a8f8}
+
+
+Definice je uvedena na řádku 8 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_a606c9dff2aade84f01338c3c4cd8016b}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!\$num@{\$num}}
+\index{\$num@{\$num}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{\$num}]{\setlength{\rightskip}{0pt plus 5cm}\$num = intval(\$m\mbox{[}1\mbox{]})}}\label{show__code_8php_a606c9dff2aade84f01338c3c4cd8016b}
+
+
+Definice je uvedena na řádku 17 v souboru show\-\_\-code.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}dec2other(), m\-P\-D\-F\textbackslash{}doc\-Page\-Num(), m\-P\-D\-F\textbackslash{}doc\-Page\-Num\-Total(), m\-P\-D\-F\textbackslash{}doc\-Page\-Settings(), P\-D\-F\-Barcode\textbackslash{}imb\-\_\-reverse\-\_\-us(), User\-Manager\textbackslash{}\-Is\-Logged(), C\-G\-I\-F\-C\-O\-L\-O\-R\-T\-A\-B\-L\-E\textbackslash{}load(), P\-D\-F\textbackslash{}\-Print\-Chapter(), m\-P\-D\-F\textbackslash{}printlistbuffer(), bmp\textbackslash{}rle4\-\_\-decode() a bmp\textbackslash{}rle8\-\_\-decode().
+
+\hypertarget{show__code_8php_ada57e7bb7c152edad18fe2f166188691}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!\$title@{\$title}}
+\index{\$title@{\$title}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{\$title}]{\setlength{\rightskip}{0pt plus 5cm}\$title = ucfirst(preg\-\_\-replace('/\-\_\-/',' ',\$m\mbox{[}2\mbox{]}))}}\label{show__code_8php_ada57e7bb7c152edad18fe2f166188691}
+
+
+Definice je uvedena na řádku 18 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_abef25a78e171b6e37513665f692d1960}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!allow\-\_\-charset\-\_\-conversion@{allow\-\_\-charset\-\_\-conversion}}
+\index{allow\-\_\-charset\-\_\-conversion@{allow\-\_\-charset\-\_\-conversion}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{allow\-\_\-charset\-\_\-conversion}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf allow\-\_\-charset\-\_\-conversion =true}}\label{show__code_8php_abef25a78e171b6e37513665f692d1960}
+
+
+Definice je uvedena na řádku 12 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_a2ee5c294694d309db57ff7d247030461}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!charset\-\_\-in@{charset\-\_\-in}}
+\index{charset\-\_\-in@{charset\-\_\-in}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{charset\-\_\-in}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf charset\-\_\-in ='windows-\/1252'}}\label{show__code_8php_a2ee5c294694d309db57ff7d247030461}
+
+
+Definice je uvedena na řádku 13 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_a200a436f1833a712239f1ae5bec608db}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!debug@{debug}}
+\index{debug@{debug}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{debug}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf debug =true}}\label{show__code_8php_a200a436f1833a712239f1ae5bec608db}
+
+
+Definice je uvedena na řádku 9 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_a3c8ec87efb7bfeaea8b9ec9c7c3ef10f}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!else@{else}}
+\index{else@{else}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'filename'\mbox{]}) else \{ die(\char`\"{}No file specified\char`\"{})}}\label{show__code_8php_a3c8ec87efb7bfeaea8b9ec9c7c3ef10f}
+
+
+Definice je uvedena na řádku 4 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_a6733eb5f605d09eaede9845835d71c4e}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!exit@{exit}}
+\index{exit@{exit}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{exit}]{\setlength{\rightskip}{0pt plus 5cm}exit}}\label{show__code_8php_a6733eb5f605d09eaede9845835d71c4e}
+
+
+Definice je uvedena na řádku 40 v souboru show\-\_\-code.\-php.
+
+\hypertarget{show__code_8php_ab4e4c4f5a4a02d8b15368b16f6a0d60c}{\index{show\-\_\-code.\-php@{show\-\_\-code.\-php}!tab\-Spaces@{tab\-Spaces}}
+\index{tab\-Spaces@{tab\-Spaces}!show_code.php@{show\-\_\-code.\-php}}
+\subsubsection[{tab\-Spaces}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf tab\-Spaces = 6}}\label{show__code_8php_ab4e4c4f5a4a02d8b15368b16f6a0d60c}
+
+
+Definice je uvedena na řádku 10 v souboru show\-\_\-code.\-php.
+

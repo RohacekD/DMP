@@ -1,0 +1,484 @@
+@charset "UTF-8";
+/*Lehký*/
+* {
+	margin: 0;
+	padding: 0;
+    color:#FFF;
+   
+}
+
+body, html{
+	background: #888;
+	color: #FFF;
+	height: 100%;
+	padding: 0;
+	font-size: 14px;
+}
+
+.button{
+	color: #888;
+    padding:3px;
+    margin: 4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    
+    background: #f8f8f8;
+    
+    margin-top: 100px;
+    text-decoration: none;
+}
+
+h1, h2{
+	color: #888;
+	text-shadow: 1px 1px 1px #333;
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    
+    background: #f8f8f8;
+    border:none;
+    outline:none;
+}
+
+h1{
+	font-size: 20px;
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	padding: 3px 20px 3px 20px;
+}
+
+h2 {
+	font-size: 17px;
+	padding: 3px 10px 3px 10px;
+	text-align: left;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.show{
+	height: 30px;
+}
+
+.error{
+	color: red;
+	font-weight: bolder;
+	padding: 2px 10px 2px 10px;
+	text-align: center;
+
+	background: #f8f8f8;
+	width: 60%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+	
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+}
+
+
+/* -------------layout---------------*/
+
+#content{
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 0 -44px;
+	padding: 0px;
+	display: inline-block;
+}
+
+header#top_panel{
+	z-index: 10;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background: #666;
+	-moz-box-shadow:    0px 5px 10px 6px #666;
+	-webkit-box-shadow: 0px 5px 10px 6px #666;
+	box-shadow:         0px 5px 10px 6px #666;
+}
+
+footer{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background: #666;
+	bottom: 0;
+	display: block;
+	-moz-box-shadow:    0px -5px 10px 6px #666;
+	-webkit-box-shadow: 0px -5px 10px 6px #666;
+	box-shadow:         0px -5px 10px 6px #666;
+}
+
+#top{
+	height: 110px;
+	width: 100%;
+}
+
+#bottom{
+	
+	height: 110px;
+	width: 100%
+}
+
+
+.garbage{
+	clear: both;
+}
+
+.nextto{
+	float: left;
+}
+
+article{
+	display: inline-block;
+}
+
+.center_content{
+	display:box;
+	box-pack:center;
+	box-align:center;
+}
+
+.center_content{
+	display:box;
+	box-pack:center;
+	box-align:center;
+}
+
+.content{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+/* ------------end layout ---------------*/
+
+/* ---------------requests ----------------*/
+.request{
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    color: #AAA;
+    
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	
+	background: #f8f8f8;
+	text-align: left;
+	margin: 10px;
+	max-width: 215px;
+}
+
+.request p, details, summary{
+	color: #AAA;
+}
+
+.active{
+	background: #AAA;
+}
+
+.request header{
+	background: #EEE;
+    color: #888;
+	
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+	
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+}
+
+.request header a , .request header b{
+	color: #AAA;
+	text-decoration: none;
+}
+
+.fragment{
+	display: block;
+	float: left;
+}
+/* -------------end requests ---------------*/
+
+/* --------------USER PANEL -----------------*/
+
+section#user_panel{
+	float: right;
+	display: block;
+
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+section#logo{
+	margin-top: 5px;
+	float: left;
+	display: block;
+	background-image: url("../Resources/images/logo3.png");
+	background-size: contain;
+	height: 55px;
+	width: 126px;
+}
+
+/* --------------END USER PANEL ------------*/
+	
+/* ------------forms--------------------*/
+form table td, form table th{
+	padding: 5px 10px 5px 10px;
+}
+
+#login_l td, #login_l th{
+	padding: 0px 5px 0px 5px;
+}
+option{
+	color: #888;
+}
+input[type="text"], input[type="password"],input[type="email"], input[type="submit"], select, button, input[type="number"], textarea{
+	color: #888;
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    
+    background: #f8f8f8;
+    border:none;
+    outline:none;
+    display: inline-block;
+}
+input[type="text"]:focus, input[type="password"]:focus,input[type="email"]:focus, input[type="submit"]:focus, button:focus, input[type="number"]:focus, textarea:focus{
+    -webkit-box-shadow: 0 3px 0 #AAA, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #AAA, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #AAA, 0 -1px #fff inset;
+}
+
+
+input[type="submit"]{
+	cursor: pointer;
+}
+
+label{
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+}
+	
+
+select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+select::-ms-expand{
+	display: none;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+label.select {
+	position: relative;
+}
+label.select:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+	text-shadow: none;
+}
+label.select:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+select::-ms-expand{
+	display: none;
+}
+
+/* --------------Bubbles -------------------------*/
+
+.Whisper {
+	position:absolute;
+	float: right;
+    background: #f8f8f8;
+    border:none;
+	
+	color: #888;
+    padding:3px;
+    margin: 0;
+
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    margin-left: 8px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    display: none;
+}
+.Whisper p b{
+	color: red;
+}
+
+.Whisper:after {
+  content:"";
+  position:absolute;
+  border-style:solid;
+  /* reduce the damage in FF3.0 */
+  display:inline-block;
+  width:0;
+  top:6px; /* controls vertical position */
+  left:-10px; /* value = - border-left-width - border-right-width */
+  bottom:auto;
+  border-width:5px 10px 5px 0;
+  border-color:transparent #f8f8f8;
+}
+
+/* ----------------- Calendar -------------------*/
+	#CalendarControlIFrame {
+    display: none;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    height: 250px;
+    width: 250px;
+    z-index: 99;
+}
+#CalendarControl {
+    position:absolute;
+    margin:0;
+    padding:0;
+    display:none;
+    z-index: 100;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    
+    background: #f8f8f8;
+}
+#CalendarControl table {
+    font-family: arial, verdana, helvetica, sans-serif;
+    font-size: 8pt;
+}
+#CalendarControl th {
+    font-weight: normal;
+    color: #888;
+}
+#CalendarControl th a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #888;
+    padding: 1px;
+}
+#CalendarControl td {
+    text-align: center;
+    color: #888;
+}
+
+#CalendarControl td a{
+    text-align: center;
+    color: #888;
+}
+
+#CalendarControl .calendar_header {
+    background-color: #f8f8f8;
+}
+#CalendarControl .calendar_weekday {
+    background-color: #f8f8f8;
+    color: #888;
+}
+#CalendarControl .calendar_weekend {
+    background-color: #e8e8e8;
+    color: #888;
+}
+#CalendarControl .calendar_current {
+    background-color: #888;
+    color: #eee;
+}
+#CalendarControl .calendar_weekday,
+#CalendarControl .calendar_weekend,
+#CalendarControl .calendar_current {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #000;
+    width: 2em;
+}
+#CalendarControl .calendar_weekday:hover,
+#CalendarControl .calendar_weekend:hover,
+#CalendarControl .calendar_current:hover {
+    color: #eee;
+    background-color: #777;
+}
+#CalendarControl .calendar_previous {
+    text-align: left;
+}
+#CalendarControl .calendar_next {
+    text-align: right;
+}
+#CalendarControl .calendar_previous,
+#CalendarControl .calendar_next {
+    padding: 1px 3px 1px 3px;
+    font-size: 1.4em;
+}
+#CalendarControl .calendar_previous a,
+#CalendarControl .calendar_next a {
+    color: #888;
+    text-decoration: none;
+    font-weight: bold;
+}
+#CalendarControl .calendar_title {
+    text-align: center;
+    font-weight: bold;
+    color: #888;
+}
+#CalendarControl .calendar_empty {
+    background-color: #f8f8f8;
+}

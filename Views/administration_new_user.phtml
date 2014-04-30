@@ -1,0 +1,101 @@
+<article class="fragment" style="width: 100%">
+	<h1>Vytváření nových uživatelů</h1>
+<?php if($error):?>
+	<p class="error">Některý z uživatelů je zadán špatně.</p>
+<?php endif;?>
+	<form method="post" id="new-user">
+	<table>
+		<thead>
+			<tr>
+				<th>Přihlašovací jméno</th>
+				<th>Titul</th>
+				<th>Jméno</th>
+				<th>Příjmení</th>
+				<th>Email</th>
+				<th>Úroveň oprávnění</th>
+				<th nowrap>Odeslat email o registraci <input type="checkbox" name="info_email" id="info_email" onChange="Submit_all(this)" <?php if(isset($info_email)) echo "checked=\"checked\""?>/></th>
+			</tr>
+		</thead>
+		<tbody>
+<?php if(isset($count)){
+	foreach ($name as $n => $value):
+?>
+			<tr>
+				<td><input type="text" name="name[]" id="name[]" value="<?php if(isset($name[$n])) echo $name[$n];?>" /></td>
+				<td>
+					<label class="select">
+						<select name="title[]">
+							<option value="NULL" <?php if($title[$n]=="NULL") echo "selected=\"selected\"";?>>Žádný</option>
+							<option value="Bc." <?php if($title[$n]=="Bc.") echo "selected=\"selected\"";?>>Bc.</option>
+							<option value="Ing." <?php if($title[$n]=="Ing.") echo "selected=\"selected\"";?>>Ing.</option>
+							<option value="Mgr." <?php if($title[$n]=="Mgr.") echo "selected=\"selected\"";?>>Mgr.</option>
+							<option value="PhDr."<?php if($title[$n]=="PhDr.") echo "selected=\"selected\"";?> >PhDr.</option>
+						</select>
+					</label>
+				</td>
+				<td><input type="text" name="firstName[]" id="firstName[]" value="<?=$firstName[$n]?>" /></td>
+				<td><input type="text" name="lastName[]" id="lastName[]" value="<?=$lastName[$n]?>" /></td>
+				<td><input type="text" name="email[]" id="[][email]" value="<?=$email[$n]?>" /></td>
+				<td>
+					<label class="select">
+						<select name="access[]">
+<?php 
+require_once 'Settings.class.php';
+foreach (Settings::$access_levels as $key=>$val):?>
+							<option value="<?= $key;?>" <?php if($access[$n]==$key) echo "selected"?>><?=$val;?></option>
+<?php endforeach;?>
+						</select>
+					</label>
+				</td>
+				<td><input type="checkbox" name="info_email[]" id="info_email[]" <?php if(isset($info_email[$n])) echo "checked=\"checked\"";?>/></td>
+			</tr>
+<?php endforeach;}
+else{
+?>
+			<tr>
+				<td><input type="text" name="name[]" id="[][name]" /></td>
+				<td>
+					<label class="select">
+						<select name="title[]">
+							<option value="NULL">Žádný</option>
+							<option value="Bc.">Bc.</option>
+							<option value="Ing.">Ing.</option>
+							<option value="Mgr.">Mgr.</option>
+							<option value="PhDr.">PhDr.</option>
+						</select>
+					</label>
+				</td>
+				<td><input type="text" name="firstName[]" id="firstName[]" /></td>
+				<td><input type="text" name="lastName[]" id="lastName[]" /></td>
+				<td><input type="text" name="email[]" id="[][email]" /></td>
+				<td>
+					<label class="select">
+						<select name="access[]">
+<?php 
+require_once 'Settings.class.php';
+foreach (Settings::$access_levels as $key=>$val):?>
+							<option value="<?= $key;?>"><?=$val;?></option>
+<?php endforeach;?>
+						</select>
+					</label>
+				</td>
+				<td align="center"><input type="checkbox" name="info_email[]" id="[][info_email]" /></td>
+			</tr>
+<?php }?>
+			<tr>
+				<td colspan="4">
+					<a onclick="Next_User(this);" class="button">Další uživatel</a>
+				</td>
+				
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">
+					<input type="submit" name="submit" value="Odeslat" />
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	</form>
+</article>

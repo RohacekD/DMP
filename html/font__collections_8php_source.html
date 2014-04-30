@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Dlouhodob�maturitn�pr�ce: Zdrojový soubor Models/MPDF/utils/font_collections.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Dlouhodob�maturitn�pr�ce
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Hledat');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hlavní&#160;stránka</span></a></li>
+      <li><a href="pages.html"><span>Ostatní&#160;stránky</span></a></li>
+      <li><a href="annotated.html"><span>Třídy</span></a></li>
+      <li class="current"><a href="files.html"><span>Soubory</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Hledat" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Seznam&#160;souborů</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Vše</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Třídy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkce</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Stránky</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_22305cb0964bbe63c21991dd2265ce48.html">Models</a></li><li class="navelem"><a class="el" href="dir_3bbafe8f21523ffdb3cd429dbb168c71.html">MPDF</a></li><li class="navelem"><a class="el" href="dir_3345fa1ae578a65f4f02f9d46fccd183.html">utils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">font_collections.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/* This script prints out details of any TrueType collection font files</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">   in your font directory. Files ending wih .otc are examined.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">   Point your browser to </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">   http://your.domain/your_path_to _mpdf/utils/font_collections.php</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">   By default this will examine the folder /ttfonts/ (or the default font</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">   directory defined by _MPDF_TTFONTPATH.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">   You can optionally define an alternative folder to examine by setting </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">   the variable below (must be a relative path, or filesystem path):</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;$checkdir = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>,<span class="stringliteral">&quot;256M&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;define(<span class="stringliteral">&#39;_MPDF_PATH&#39;</span>,<span class="stringliteral">&#39;../&#39;</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;include(<span class="stringliteral">&quot;../mpdf.php&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;$mpdf=<span class="keyword">new</span> mPDF(<span class="stringliteral">&#39;&#39;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordflow">if</span> ($checkdir) { </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    $ttfdir = $checkdir;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordflow">else</span> { $ttfdir = _MPDF_TTFONTPATH; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;$mqr=ini_get(<span class="stringliteral">&quot;magic_quotes_runtime&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordflow">if</span> ($mqr) { set_magic_quotes_runtime(0); }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordflow">if</span> (!class_exists(<span class="stringliteral">&#39;TTFontFile_Analysis&#39;</span>, <span class="keyword">false</span>)) { include(_MPDF_PATH .<span class="stringliteral">&#39;classes/ttfontsuni_analysis.php&#39;</span>); }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;$ttf = <span class="keyword">new</span> TTFontFile_Analysis();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;$ff = scandir($ttfdir);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;echo <span class="stringliteral">&#39;&lt;h3&gt;Font collection files found in &#39;</span>.$ttfdir.<span class="stringliteral">&#39; directory&lt;/h3&gt;&#39;</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordflow">foreach</span>($ff AS $f) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    $ret = array();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (strtolower(substr($f,-4,4))==<span class="stringliteral">&#39;.ttc&#39;</span> || strtolower(substr($f,-4,4))==<span class="stringliteral">&#39;.ttcf&#39;</span>) {  <span class="comment">// Mac ttcf</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        $ttf-&gt;getTTCFonts($ttfdir.$f);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        $nf = $ttf-&gt;numTTCFonts;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        echo <span class="stringliteral">&#39;&lt;p&gt;Font collection file (&#39;</span>.$f.<span class="stringliteral">&#39;) contains the following fonts:&lt;/p&gt;&#39;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> ($i=1; $i&lt;=$nf; $i++) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            $ret = $ttf-&gt;extractCoreInfo($ttfdir.$f, $i);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            $tfname = $ret[0];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            $bold = $ret[1];</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            $italic = $ret[2];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            $fname = strtolower($tfname );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            $fname = preg_replace(<span class="stringliteral">&#39;/[ ()]/&#39;</span>,<span class="stringliteral">&#39;&#39;</span>,$fname );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            $style = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> ($bold) { $style .= <span class="stringliteral">&#39;Bold&#39;</span>; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> ($italic) { $style .= <span class="stringliteral">&#39;Italic&#39;</span>; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span> (!$style) { $style = <span class="stringliteral">&#39;Regular&#39;</span>; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            echo <span class="stringliteral">&#39;&lt;div&gt;[&#39;</span>.$i.<span class="stringliteral">&#39;] &#39;</span>.$tfname.<span class="stringliteral">&#39; (&#39;</span>.$fname.<span class="stringliteral">&#39;) &#39;</span>.$style.<span class="stringliteral">&#39;&lt;/div&gt;&#39;</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        echo <span class="stringliteral">&#39;&lt;hr /&gt;&#39;</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;exit;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;?&gt;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno ne 13. dub 2014 14.02:15 pro projekt Dlouhodob�maturitn�pr�ce programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

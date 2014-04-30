@@ -1,0 +1,382 @@
+\hypertarget{classpdf__parser}{\section{Dokumentace třídy pdf\-\_\-parser}
+\label{classpdf__parser}\index{pdf\-\_\-parser@{pdf\-\_\-parser}}
+}
+Diagram dědičnosti pro třídu pdf\-\_\-parser\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpdf__parser}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpdf__parser_a74fd454ee64e0f41ee56dc58e73232cf}{pdf\-\_\-parser} (\$filename)
+\item 
+\hyperlink{classpdf__parser_afe0987ccabd61827f57a410ebb261e0c}{close\-File} ()
+\item 
+\hyperlink{classpdf__parser_a13021b68f6fc88fea1af03853eb80c4c}{error} (\$msg)
+\item 
+\hyperlink{classpdf__parser_a7d8708c0d4a88ee03e3bbd2fb0d77527}{get\-Encryption} ()
+\item 
+\hyperlink{classpdf__parser_a7fda6bf08150ce77b966567c4f34ad6c}{pdf\-\_\-find\-\_\-root} ()
+\item 
+\hyperlink{classpdf__parser_ab9a412b4b73487ee6777921365675552}{pdf\-\_\-read\-\_\-root} ()
+\item 
+\hyperlink{classpdf__parser_a91175d0a4309e83393ef9c8ad7fcf4db}{pdf\-\_\-find\-\_\-xref} ()
+\item 
+\hyperlink{classpdf__parser_a14a16067f93e11997d707b431d4abf52}{pdf\-\_\-read\-\_\-xref} (\&\$result, \$offset, \$start=null, \$end=null)
+\item 
+\hyperlink{classpdf__parser_a5239f58da56320d9958215ac0c6ebe7f}{pdf\-\_\-read\-\_\-value} (\&\$c, \$token=null)
+\item 
+\hyperlink{classpdf__parser_a90f2d44c253fdde584e23679ceb1f538}{pdf\-\_\-resolve\-\_\-object} (\&\$c, \$obj\-\_\-spec, \$encapsulate=true)
+\item 
+\hyperlink{classpdf__parser_a14878a92d114fe2d266af4958fbec792}{pdf\-\_\-read\-\_\-token} (\&\$c)
+\end{DoxyCompactItemize}
+\subsection*{Veřejné atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpdf__parser_a5b89d1e46a5b6f7a1986432c034c3887}{\$filename}
+\item 
+\hyperlink{classpdf__parser_a09220ff1ed240dcfd2ee1df7ccbd9a7b}{\$f}
+\item 
+\hyperlink{classpdf__parser_a500d261de630e6f82e73926e2c1a440e}{\$c}
+\item 
+\hyperlink{classpdf__parser_a9591e309725fa7b418e25b48b933587b}{\$xref}
+\item 
+\hyperlink{classpdf__parser_a08f56dfcce505a3d13c04144a6490cc7}{\$root}
+\item 
+\hyperlink{classpdf__parser_a4bbb3b441beee94e1bc4ca2d628526bd}{\$success}
+\item 
+\hyperlink{classpdf__parser_a1d781fd6f727bd64d7f05be1e41eb970}{\$errormsg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+
+
+Definice je uvedena na řádku 44 v souboru pdf\-\_\-parser.\-php.
+
+
+
+\subsection{Dokumentace k metodám}
+\hypertarget{classpdf__parser_afe0987ccabd61827f57a410ebb261e0c}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!close\-File@{close\-File}}
+\index{close\-File@{close\-File}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{close\-File}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::close\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_afe0987ccabd61827f57a410ebb261e0c}
+Close the opened file 
+
+Definice je uvedena na řádku 121 v souboru pdf\-\_\-parser.\-php.
+
+\hypertarget{classpdf__parser_a13021b68f6fc88fea1af03853eb80c4c}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!error@{error}}
+\index{error@{error}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::error (
+\begin{DoxyParamCaption}
+\item[{}]{\$msg}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a13021b68f6fc88fea1af03853eb80c4c}
+Print Error and die
+
+
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$msg} & Error-\/\-Message \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 133 v souboru pdf\-\_\-parser.\-php.
+
+\hypertarget{classpdf__parser_a7d8708c0d4a88ee03e3bbd2fb0d77527}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!get\-Encryption@{get\-Encryption}}
+\index{get\-Encryption@{get\-Encryption}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{get\-Encryption}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::get\-Encryption (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a7d8708c0d4a88ee03e3bbd2fb0d77527}
+Check Trailer for Encryption 
+
+Definice je uvedena na řádku 140 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Používá se v pdf\-\_\-parser().
+
+\hypertarget{classpdf__parser_a7fda6bf08150ce77b966567c4f34ad6c}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf\-\_\-find\-\_\-root@{pdf\-\_\-find\-\_\-root}}
+\index{pdf\-\_\-find\-\_\-root@{pdf\-\_\-find\-\_\-root}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{pdf\-\_\-find\-\_\-root}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::pdf\-\_\-find\-\_\-root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a7fda6bf08150ce77b966567c4f34ad6c}
+Find/\-Return /\-Root
+
+\begin{DoxyReturn}{Návratová hodnota}
+array 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 154 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Používá se v pdf\-\_\-read\-\_\-root().
+
+\hypertarget{classpdf__parser_a91175d0a4309e83393ef9c8ad7fcf4db}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf\-\_\-find\-\_\-xref@{pdf\-\_\-find\-\_\-xref}}
+\index{pdf\-\_\-find\-\_\-xref@{pdf\-\_\-find\-\_\-xref}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{pdf\-\_\-find\-\_\-xref}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::pdf\-\_\-find\-\_\-xref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a91175d0a4309e83393ef9c8ad7fcf4db}
+Find the xref-\/\-Table 
+
+Definice je uvedena na řádku 180 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$data.
+
+
+
+Používá se v pdf\-\_\-parser().
+
+\hypertarget{classpdf__parser_a74fd454ee64e0f41ee56dc58e73232cf}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf\-\_\-parser@{pdf\-\_\-parser}}
+\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{pdf\-\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::pdf\-\_\-parser (
+\begin{DoxyParamCaption}
+\item[{}]{\$filename}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a74fd454ee64e0f41ee56dc58e73232cf}
+Constructor
+
+
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$filename} & Source-\/\-Filename \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 85 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$filename, get\-Encryption(), pdf\-\_\-find\-\_\-xref(), pdf\-\_\-read\-\_\-root() a pdf\-\_\-read\-\_\-xref().
+
+\hypertarget{classpdf__parser_ab9a412b4b73487ee6777921365675552}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf\-\_\-read\-\_\-root@{pdf\-\_\-read\-\_\-root}}
+\index{pdf\-\_\-read\-\_\-root@{pdf\-\_\-read\-\_\-root}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{pdf\-\_\-read\-\_\-root}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::pdf\-\_\-read\-\_\-root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_ab9a412b4b73487ee6777921365675552}
+Read the /\-Root 
+
+Definice je uvedena na řádku 167 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$root, pdf\-\_\-find\-\_\-root() a pdf\-\_\-resolve\-\_\-object().
+
+
+
+Používá se v pdf\-\_\-parser().
+
+\hypertarget{classpdf__parser_a14878a92d114fe2d266af4958fbec792}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf\-\_\-read\-\_\-token@{pdf\-\_\-read\-\_\-token}}
+\index{pdf\-\_\-read\-\_\-token@{pdf\-\_\-read\-\_\-token}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{pdf\-\_\-read\-\_\-token}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::pdf\-\_\-read\-\_\-token (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$c}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a14878a92d114fe2d266af4958fbec792}
+Reads a token from the file
+
+
+\begin{DoxyParams}[1]{Parametry}
+object & {\em \$c} & \hyperlink{classpdf__context}{pdf\-\_\-context} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+mixed 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 600 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$c, \-\_\-strcspn() a \-\_\-strspn().
+
+
+
+Používá se v pdf\-\_\-read\-\_\-value().
+
+\hypertarget{classpdf__parser_a5239f58da56320d9958215ac0c6ebe7f}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf\-\_\-read\-\_\-value@{pdf\-\_\-read\-\_\-value}}
+\index{pdf\-\_\-read\-\_\-value@{pdf\-\_\-read\-\_\-value}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{pdf\-\_\-read\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::pdf\-\_\-read\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$c, }
+\item[{}]{\$token = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a5239f58da56320d9958215ac0c6ebe7f}
+Reads an Value
+
+
+\begin{DoxyParams}[1]{Parametry}
+object & {\em \$c} & \hyperlink{classpdf__context}{pdf\-\_\-context} \\
+\hline
+string & {\em \$token} & a Token \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+mixed 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 319 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$c, pdf\-\_\-read\-\_\-token() a pdf\-\_\-resolve\-\_\-object().
+
+
+
+Používá se v pdf\-\_\-read\-\_\-xref() a pdf\-\_\-resolve\-\_\-object().
+
+\hypertarget{classpdf__parser_a14a16067f93e11997d707b431d4abf52}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf\-\_\-read\-\_\-xref@{pdf\-\_\-read\-\_\-xref}}
+\index{pdf\-\_\-read\-\_\-xref@{pdf\-\_\-read\-\_\-xref}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{pdf\-\_\-read\-\_\-xref}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::pdf\-\_\-read\-\_\-xref (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$result, }
+\item[{}]{\$offset, }
+\item[{}]{\$start = {\ttfamily null}, }
+\item[{}]{\$end = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a14a16067f93e11997d707b431d4abf52}
+Read xref-\/table
+
+
+\begin{DoxyParams}[1]{Parametry}
+array & {\em \$result} & Array of xref-\/table \\
+\hline
+integer & {\em \$offset} & of xref-\/table \\
+\hline
+integer & {\em \$start} & start-\/position in xref-\/table \\
+\hline
+integer & {\em \$end} & end-\/position in xref-\/table \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 205 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$c, \$data, \-\_\-fgets() a pdf\-\_\-read\-\_\-value().
+
+
+
+Používá se v pdf\-\_\-parser().
+
+\hypertarget{classpdf__parser_a90f2d44c253fdde584e23679ceb1f538}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!pdf\-\_\-resolve\-\_\-object@{pdf\-\_\-resolve\-\_\-object}}
+\index{pdf\-\_\-resolve\-\_\-object@{pdf\-\_\-resolve\-\_\-object}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{pdf\-\_\-resolve\-\_\-object}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::pdf\-\_\-resolve\-\_\-object (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$c, }
+\item[{}]{\$obj\-\_\-spec, }
+\item[{}]{\$encapsulate = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classpdf__parser_a90f2d44c253fdde584e23679ceb1f538}
+Resolve an object
+
+
+\begin{DoxyParams}[1]{Parametry}
+object & {\em \$c} & \hyperlink{classpdf__context}{pdf\-\_\-context} \\
+\hline
+array & {\em \$obj\-\_\-spec} & The object-\/data \\
+\hline
+boolean & {\em \$encapsulate} & Must set to true, cause the parsing and fpdi use this method only without this para \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 516 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Odkazuje se na \$c, \$header a pdf\-\_\-read\-\_\-value().
+
+
+
+Používá se v fpdi\-\_\-pdf\-\_\-parser\textbackslash{}\-\_\-get\-Page\-Content(), fpdi\-\_\-pdf\-\_\-parser\textbackslash{}\-\_\-get\-Page\-Resources(), fpdi\-\_\-pdf\-\_\-parser\textbackslash{}\-\_\-get\-Page\-Rotation(), fpdi\-\_\-pdf\-\_\-parser\textbackslash{}fpdi\-\_\-pdf\-\_\-parser(), fpdi\-\_\-pdf\-\_\-parser\textbackslash{}get\-Page\-Box(), pdf\-\_\-read\-\_\-root(), pdf\-\_\-read\-\_\-value() a fpdi\-\_\-pdf\-\_\-parser\textbackslash{}read\-\_\-pages().
+
+
+
+\subsection{Dokumentace k datovým členům}
+\hypertarget{classpdf__parser_a500d261de630e6f82e73926e2c1a440e}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!\$c@{\$c}}
+\index{\$c@{\$c}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{\$c}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::\$c}}\label{classpdf__parser_a500d261de630e6f82e73926e2c1a440e}
+
+
+Definice je uvedena na řádku 62 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Používá se v pdf\-\_\-read\-\_\-token(), pdf\-\_\-read\-\_\-value(), pdf\-\_\-read\-\_\-xref(), pdf\-\_\-resolve\-\_\-object() a fpdi\-\_\-pdf\-\_\-parser\textbackslash{}read\-\_\-pages().
+
+\hypertarget{classpdf__parser_a1d781fd6f727bd64d7f05be1e41eb970}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!\$errormsg@{\$errormsg}}
+\index{\$errormsg@{\$errormsg}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{\$errormsg}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::\$errormsg}}\label{classpdf__parser_a1d781fd6f727bd64d7f05be1e41eb970}
+
+
+Definice je uvedena na řádku 78 v souboru pdf\-\_\-parser.\-php.
+
+\hypertarget{classpdf__parser_a09220ff1ed240dcfd2ee1df7ccbd9a7b}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!\$f@{\$f}}
+\index{\$f@{\$f}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{\$f}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::\$f}}\label{classpdf__parser_a09220ff1ed240dcfd2ee1df7ccbd9a7b}
+
+
+Definice je uvedena na řádku 56 v souboru pdf\-\_\-parser.\-php.
+
+\hypertarget{classpdf__parser_a5b89d1e46a5b6f7a1986432c034c3887}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!\$filename@{\$filename}}
+\index{\$filename@{\$filename}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{\$filename}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::\$filename}}\label{classpdf__parser_a5b89d1e46a5b6f7a1986432c034c3887}
+
+
+Definice je uvedena na řádku 50 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Používá se v fpdi\-\_\-pdf\-\_\-parser\textbackslash{}fpdi\-\_\-pdf\-\_\-parser() a pdf\-\_\-parser().
+
+\hypertarget{classpdf__parser_a08f56dfcce505a3d13c04144a6490cc7}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!\$root@{\$root}}
+\index{\$root@{\$root}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{\$root}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::\$root}}\label{classpdf__parser_a08f56dfcce505a3d13c04144a6490cc7}
+
+
+Definice je uvedena na řádku 74 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Používá se v pdf\-\_\-read\-\_\-root().
+
+\hypertarget{classpdf__parser_a4bbb3b441beee94e1bc4ca2d628526bd}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!\$success@{\$success}}
+\index{\$success@{\$success}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{\$success}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::\$success}}\label{classpdf__parser_a4bbb3b441beee94e1bc4ca2d628526bd}
+
+
+Definice je uvedena na řádku 77 v souboru pdf\-\_\-parser.\-php.
+
+\hypertarget{classpdf__parser_a9591e309725fa7b418e25b48b933587b}{\index{pdf\-\_\-parser@{pdf\-\_\-parser}!\$xref@{\$xref}}
+\index{\$xref@{\$xref}!pdf_parser@{pdf\-\_\-parser}}
+\subsubsection[{\$xref}]{\setlength{\rightskip}{0pt plus 5cm}pdf\-\_\-parser\-::\$xref}}\label{classpdf__parser_a9591e309725fa7b418e25b48b933587b}
+
+
+Definice je uvedena na řádku 68 v souboru pdf\-\_\-parser.\-php.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+Models/\-M\-P\-D\-F/mpdfi/\hyperlink{pdf__parser_8php}{pdf\-\_\-parser.\-php}\end{DoxyCompactItemize}

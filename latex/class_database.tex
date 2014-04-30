@@ -1,0 +1,199 @@
+\hypertarget{class_database}{\section{Dokumentace třídy Database}
+\label{class_database}\index{Database@{Database}}
+}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_a2852f635197e76a838486e64e00aac9f}{\-\_\-\-\_\-construct} ()
+\end{DoxyCompactItemize}
+\subsection*{Statické veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_database_a1157c79cc2e8e5a1940c1ecfd82608c2}{One\-Row\-Query} (\$query, \$parameters=array())
+\item 
+static \hyperlink{class_database_a642336028812c2acb456877d24061a8e}{Query} (\$query, \$parameters=array())
+\item 
+static \hyperlink{class_database_a54d8af24f74fdfbf623c24884a6a61ab}{Insert} (\$query, \$parameters=array())
+\item 
+static \hyperlink{class_database_a594755e05aa391f91e3965e3d7f401e2}{Update} (\$query, \$parameters=array())
+\item 
+static \hyperlink{class_database_a378c729b8dc50a07964df3a2455d6040}{Delete\-One} (\$query, \$parameters=array())
+\item 
+static \hyperlink{class_database_a67c93de11b18d8fc9667cc7e63f3a014}{To\-Our\-Date} (\$date)
+\end{DoxyCompactItemize}
+\subsection*{Statické veřejné atributy}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_database_a6c6ec1bb30526f5e9a2d5ccfd6dbcc2b}{\$connection}
+\end{DoxyCompactItemize}
+\subsection*{Statické privátní metody}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_database_a49e19ec965f11acb29631e3a613d1bad}{pripoj} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+
+
+Definice je uvedena na řádku 4 v souboru Database.\-php.
+
+
+
+\subsection{Dokumentace konstruktoru a destruktoru}
+\hypertarget{class_database_a2852f635197e76a838486e64e00aac9f}{\index{Database@{Database}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!Database@{Database}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}Database\-::\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_database_a2852f635197e76a838486e64e00aac9f}
+
+
+Definice je uvedena na řádku 13 v souboru Database.\-php.
+
+
+
+\subsection{Dokumentace k metodám}
+\hypertarget{class_database_a378c729b8dc50a07964df3a2455d6040}{\index{Database@{Database}!Delete\-One@{Delete\-One}}
+\index{Delete\-One@{Delete\-One}!Database@{Database}}
+\subsubsection[{Delete\-One}]{\setlength{\rightskip}{0pt plus 5cm}static Database\-::\-Delete\-One (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$parameters = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_database_a378c729b8dc50a07964df3a2455d6040}
+
+
+Definice je uvedena na řádku 72 v souboru Database.\-php.
+
+
+
+Používá se v Administration\-Controller\textbackslash{}run().
+
+\hypertarget{class_database_a54d8af24f74fdfbf623c24884a6a61ab}{\index{Database@{Database}!Insert@{Insert}}
+\index{Insert@{Insert}!Database@{Database}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}static Database\-::\-Insert (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$parameters = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_database_a54d8af24f74fdfbf623c24884a6a61ab}
+
+
+Definice je uvedena na řádku 61 v souboru Database.\-php.
+
+
+
+Používá se v Requests\-Manager\textbackslash{}\-Confirm(), Requests\-Editor\-Controller\textbackslash{}run() a User\-Manager\textbackslash{}\-User\-To\-D\-B().
+
+\hypertarget{class_database_a1157c79cc2e8e5a1940c1ecfd82608c2}{\index{Database@{Database}!One\-Row\-Query@{One\-Row\-Query}}
+\index{One\-Row\-Query@{One\-Row\-Query}!Database@{Database}}
+\subsubsection[{One\-Row\-Query}]{\setlength{\rightskip}{0pt plus 5cm}static Database\-::\-One\-Row\-Query (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$parameters = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_database_a1157c79cc2e8e5a1940c1ecfd82608c2}
+
+
+Definice je uvedena na řádku 31 v souboru Database.\-php.
+
+
+
+Používá se v User\-Manager\textbackslash{}\-Access\-Level\-By\-Id(), Requests\-Manager\textbackslash{}\-Ask\-D\-B(), Requests\-Manager\textbackslash{}\-Can\-Confirm(), User\textbackslash{}\-Choose\-User\-From\-D\-B(), Requests\-Manager\textbackslash{}\-Is\-Editable(), User\-Manager\textbackslash{}\-Is\-Logged(), User\-Manager\textbackslash{}\-Log\-In(), User\textbackslash{}\-Num\-Requests(), Administration\-Controller\textbackslash{}run(), Requests\-Editor\-Controller\textbackslash{}run(), User\-Manager\textbackslash{}\-Settings\-\_\-acc(), User\-Manager\textbackslash{}\-Uniq\-Email() a User\-Manager\textbackslash{}\-Uniq\-Name().
+
+\hypertarget{class_database_a49e19ec965f11acb29631e3a613d1bad}{\index{Database@{Database}!pripoj@{pripoj}}
+\index{pripoj@{pripoj}!Database@{Database}}
+\subsubsection[{pripoj}]{\setlength{\rightskip}{0pt plus 5cm}static Database\-::pripoj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_database_a49e19ec965f11acb29631e3a613d1bad}
+
+
+Definice je uvedena na řádku 17 v souboru Database.\-php.
+
+
+
+Odkazuje se na Settings\textbackslash{}\$\-D\-Bsettings a exit.
+
+\hypertarget{class_database_a642336028812c2acb456877d24061a8e}{\index{Database@{Database}!Query@{Query}}
+\index{Query@{Query}!Database@{Database}}
+\subsubsection[{Query}]{\setlength{\rightskip}{0pt plus 5cm}static Database\-::\-Query (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$parameters = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_database_a642336028812c2acb456877d24061a8e}
+Dotaze se na D\-B a vrati vsechny vybrane radky. Rozhodne jeslti parametr neni int aby fungovalo strankovani. \begin{DoxyRefDesc}{Chyba}
+\item[\hyperlink{bug__bug000002}{Chyba}]P\-D\-O nepodporuje L\-I\-M\-I\-T\-Y z nejakeho duvodu tam da uvozovky pokud nebindnete parametr s parametrem P\-D\-O\-::\-P\-A\-R\-A\-M\-\_\-\-I\-N\-T \end{DoxyRefDesc}
+
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$query} & S\-Q\-L dotaz \\
+\hline
+array & {\em \$parameters} & Parametry pro dotaz \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 44 v souboru Database.\-php.
+
+
+
+Používá se v Requests\-Manager\textbackslash{}\-Ask\-D\-B(), Requests\-Manager\textbackslash{}\-Is\-Printable(), Request\textbackslash{}\-Make\-Confirms() a Administration\-Controller\textbackslash{}run().
+
+\hypertarget{class_database_a67c93de11b18d8fc9667cc7e63f3a014}{\index{Database@{Database}!To\-Our\-Date@{To\-Our\-Date}}
+\index{To\-Our\-Date@{To\-Our\-Date}!Database@{Database}}
+\subsubsection[{To\-Our\-Date}]{\setlength{\rightskip}{0pt plus 5cm}static Database\-::\-To\-Our\-Date (
+\begin{DoxyParamCaption}
+\item[{}]{\$date}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_database_a67c93de11b18d8fc9667cc7e63f3a014}
+Returns date in our format 
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+string Date 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 83 v souboru Database.\-php.
+
+
+
+Používá se v Request\textbackslash{}\-Make\-Confirms(), Profil\-Controller\textbackslash{}run() a Requests\-Manager\textbackslash{}\-Select\-Requests().
+
+\hypertarget{class_database_a594755e05aa391f91e3965e3d7f401e2}{\index{Database@{Database}!Update@{Update}}
+\index{Update@{Update}!Database@{Database}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}static Database\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$parameters = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_database_a594755e05aa391f91e3965e3d7f401e2}
+
+
+Definice je uvedena na řádku 67 v souboru Database.\-php.
+
+
+
+Používá se v User\-Manager\textbackslash{}\-Log\-Out(), Administration\-Controller\textbackslash{}run(), Requests\-Editor\-Controller\textbackslash{}run(), User\-Manager\textbackslash{}\-Settings\-\_\-acc() a User\-Manager\textbackslash{}\-Settings\-\_\-set().
+
+
+
+\subsection{Dokumentace k datovým členům}
+\hypertarget{class_database_a6c6ec1bb30526f5e9a2d5ccfd6dbcc2b}{\index{Database@{Database}!\$connection@{\$connection}}
+\index{\$connection@{\$connection}!Database@{Database}}
+\subsubsection[{\$connection}]{\setlength{\rightskip}{0pt plus 5cm}Database\-::\$connection\hspace{0.3cm}{\ttfamily [static]}}}\label{class_database_a6c6ec1bb30526f5e9a2d5ccfd6dbcc2b}
+
+
+Definice je uvedena na řádku 10 v souboru Database.\-php.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+Models/\hyperlink{_database_8php}{Database.\-php}\end{DoxyCompactItemize}

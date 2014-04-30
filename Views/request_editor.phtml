@@ -1,0 +1,50 @@
+			<article class="fragment" style="width: 100%">
+				<h1>Přidat novou žádost</h1>
+				<article class="fragment" style="width: 50%;">
+					<?php if(isset($error)):					
+						foreach ($error as $val):?>
+						<p class="error"><?=$val;?></p>
+						<?php endforeach;
+					endif;?>
+					<form method="post" name="myform">
+						<table class="odsad">
+							<tr>
+								<td>
+									<label for="Name">Název</label>
+								</td>
+								<td>
+									<input type="text" name="Name" id="Name" value="<?php if(isset($Name)) echo $Name;?>" required />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="Need">Požadovaná částka</label>
+								</td>
+								<td>
+									<input type="number" step="0.5" value="1000" id="Need" name="Need" value="<?php if(isset($Need)) echo $Need;?>" required />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<textarea name="Description" id="Description" rows="10" cols="50" required><?php if(isset($Description)) echo $Description;?></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input type="hidden" name="id" value="<?php if(isset($id)) echo $id;?>" />
+									<input type="submit" name="submit" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</article>
+
+				<article class="fragment" style="width: 50%;">
+					<script type="text/javascript">
+						
+					</script>
+					<p id="name">Zde uveďte krátké a výstižné jméno pro vaši žádost. Jméno by nemělo přesáhnout více jak 150 znaků, ovšem kratší jméno bude čitelnější.</p>
+					<p id="need">Zde uveďte požadovanou částku. Rozumně zvažte její výši. Pokud ji zvolíte moc vysokou nemusí být schválena. Naopak pokud bude nízká, nudete ji muset měnit a vyřizivat další potvrzení...</p>
+					<p id="description">Zde můžete uvést delší popis, důvodu žádosti nebo podrobnosti o zařízení, které chcete pořídit.</p>
+				</article>
+			</article>

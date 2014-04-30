@@ -1,0 +1,132 @@
+				<div class="fragment" style="width: 100%">
+				<h1>Nastavení</h1>
+
+				<article class="fragment" style="width: 50%;">
+					<h2>Nastavení prostředí</h2>
+					<section class="content">
+						<?php if(isset($account_error)):?><p class="error"><?=$account_error?></p><?php endif;?>
+						<form method="post">
+							<table>
+								<tr>
+									<td>
+										<label for="style">Styl stránky: </label>
+									</td>
+									<td>
+										<label class="select">
+											<select name="style" id="style">
+												<option <?php if($user->Style()=="none") echo "selected ";?>value="none">Čisté html</option>
+												<option <?php if($user->Style()=="default") echo "selected ";?>value="default">Výchozí</option>
+												<option <?php if($user->Style()=="light") echo "selected ";?>value="light">Lehký</option>
+												
+											</select>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="email">Posílat upozornění emailem: </label>
+									</td>
+									<td>
+										<input type="checkbox" name="email" <?php if($user->Send()) echo "checked ";?>/>
+									</td>
+								</tr>
+								<tr>
+									<td>
+									</td>
+									<td>
+										<input type="submit" name="settings" value="Nastavit" />
+									</td>
+								</tr>
+							</table>
+						</form>
+					</section>
+				</article>
+				<article class="fragment" style="width: 50%;">
+					<h2>Nastavení uživatele</h2>
+					<section class="content">
+						<?php if(isset($settings_error)):?><p class="error"><?=$settings_error?></p><?php endif;?>
+						<form method="post">
+							<table>
+								<tr>
+									<td>
+										<label for="name">Uživatelské jméno:</label>
+									</td>
+									<td>
+										<input type="text" name="name" id="name" placeholder="Jméno pro přihlášení" onChange="Whisper(this, 'user');" required value="<?= $user->Name();?>" /><div id="name-whisper" class="Whisper"><p><b>Ahoj</b></p></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="title">Titul:</label>
+									</td>
+									<td>
+										<label class="select">
+											<select name="title">
+												<option value="NULL"<?php if($user->GetTitle()==null) echo " selected=\"selected\""?>>Žádný</option>
+												<option value="Bc."<?php if($user->GetTitle()=="Bc.") echo " selected=\"selected\""?>>Bc.</option>
+												<option value="Ing."<?php if($user->GetTitle()=="Ing.") echo " selected=\"selected\""?>>Ing.</option>
+												<option value="Mgr."<?php if($user->GetTitle()=="Mgr.") echo " selected=\"selected\""?>>Mgr.</option>
+												<option value="PhDr."<?php if($user->GetTitle()=="PhDr.") echo " selected=\"selected\""?>>PhDr.</option>
+											</select>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="name">Jméno:</label>
+									</td>
+									<td>
+										<input type="text" name="first_name" id="first_name" placeholder="Vaše jméno" onChange="Whisper_notNull(this);" required value="<?= $user->GetFirstName();?>" /><div id="first_name-whisper" class="Whisper"><p><b>Ahoj</b></p></div>
+									</td>
+								</tr>								<tr>
+									<td>
+										<label for="name">Příjmení:</label>
+									</td>
+									<td>
+										<input type="text" name="last_name" id="last_name" placeholder="Vaše příjmení" onChange="Whisper_notNull(this);" required value="<?= $user->GetLastName();?>" /><div id="last_name-whisper" class="Whisper"><p><b>Ahoj</b></p></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="email">Email:</label>
+									</td>
+									<td>
+										<input type="email" name="email" id="email" placeholder="Váš email" onChange="Whisper_email(this, 'user')" required value="<?= $user->Email();?>" /><div id="email-whisper" class="Whisper"><p><b>Ahoj</b></p></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label  for="old_pass">Zadejte své heslo</label>
+									</td>
+									<td>
+										<input type="password" id="old_pass" name="old_pass" placeholder="Zadejte své heslo" required />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label  for="pass">Zadejte prosím heslo</label>
+									</td>
+									<td>
+										<input type="password" id="pass" name="pass" placeholder="Zadejte nové heslo" onInput="Whisper_pass(this, 'pass_r');" /><div id="pass-whisper" class="Whisper"><p><b>Ahoj</b></p></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="pass_r">Zadejte znovu heslo</label>
+									</td>
+									<td>
+										<input type="password" name="pass_r" id="pass_r" placeholder="Zadejte znovu heslo" onInput="Whisper_pass_repeat(this, 'pass');" /><div id="pass_r-whisper" class="Whisper"><p><b>Ahoj</b></p></div>
+									</td>
+								</tr>	
+								<tr>
+									<td>
+									</td>
+									<td>
+										<input type="submit" name="account" value="Nastavit" />
+									</td>
+								</tr>
+							</table>
+						</form>
+					</section>
+				</article>
+				</div>

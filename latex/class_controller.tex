@@ -1,0 +1,184 @@
+\hypertarget{class_controller}{\section{Dokumentace třídy Controller}
+\label{class_controller}\index{Controller@{Controller}}
+}
+Diagram dědičnosti pro třídu Controller\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.000000cm]{class_controller}
+\end{center}
+\end{figure}
+\subsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controller_a9293a00d446117a5d1e3d081a62c2494}{show} ()
+\item 
+\hyperlink{class_controller_aa6adbd0431cdfb376a6e45bff607ee01}{redirect} (\$address)
+\item 
+\hyperlink{class_controller_aa244fd76011be76c98c0eb49069b41e3}{run} (\$parameters)
+\item 
+\hyperlink{class_controller_a505db1405269584edbd26f3e97d4ac80}{\-\_\-\-\_\-to\-String} ()
+\end{DoxyCompactItemize}
+\subsection*{Statické veřejné atributy}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_controller_a27b4bba4d04b0ddc7a71e8e8e61a2a0c}{\$user}
+\end{DoxyCompactItemize}
+\subsection*{Chráněné atributy}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controller_ac9073fdd6603617ab015c968f0add014}{\$data} = array()
+\item 
+\hyperlink{class_controller_a32cd7b776cbce922386fca162f061960}{\$user\-\_\-panel}
+\item 
+\hyperlink{class_controller_aeb713d8b3c9bf61c72c4fcabd0e1e48a}{\$view} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{class_controller_a69fa8da70e30696113dd91420b680f42}{\$head}
+\end{DoxyCompactItemize}
+\subsection*{Statické chráněné atributy}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_controller_af3a3a4c0b2661eaae8e21eb0a1cce7d5}{\$header}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+
+
+Definice je uvedena na řádku 3 v souboru Controller.\-php.
+
+
+
+\subsection{Dokumentace k metodám}
+\hypertarget{class_controller_a505db1405269584edbd26f3e97d4ac80}{\index{Controller@{Controller}!\-\_\-\-\_\-to\-String@{\-\_\-\-\_\-to\-String}}
+\index{\-\_\-\-\_\-to\-String@{\-\_\-\-\_\-to\-String}!Controller@{Controller}}
+\subsubsection[{\-\_\-\-\_\-to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\-\_\-\-\_\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_controller_a505db1405269584edbd26f3e97d4ac80}
+
+
+Definice je uvedena na řádku 70 v souboru Controller.\-php.
+
+
+
+Odkazuje se na show().
+
+\hypertarget{class_controller_aa6adbd0431cdfb376a6e45bff607ee01}{\index{Controller@{Controller}!redirect@{redirect}}
+\index{redirect@{redirect}!Controller@{Controller}}
+\subsubsection[{redirect}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::redirect (
+\begin{DoxyParamCaption}
+\item[{}]{\$address}
+\end{DoxyParamCaption}
+)}}\label{class_controller_aa6adbd0431cdfb376a6e45bff607ee01}
+Přesměrování \begin{DoxyRefDesc}{Chyba}
+\item[\hyperlink{bug__bug000001}{Chyba}]Dlouho nefungovalo tak jsem nepoužíval.. \end{DoxyRefDesc}
+
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$address} & \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 56 v souboru Controller.\-php.
+
+
+
+Používá se v Router\-Controller\textbackslash{}\-Choose\-Controller(), User\-Controller\textbackslash{}\-Choose\-View(), Requests\-Controller\textbackslash{}\-No\-Data(), Administration\-Controller\textbackslash{}run(), Profil\-Controller\textbackslash{}run(), Requests\-Editor\-Controller\textbackslash{}run(), Requests\-Controller\textbackslash{}run() a show().
+
+\hypertarget{class_controller_aa244fd76011be76c98c0eb49069b41e3}{\index{Controller@{Controller}!run@{run}}
+\index{run@{run}!Controller@{Controller}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::run (
+\begin{DoxyParamCaption}
+\item[{}]{\$parameters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{class_controller_aa244fd76011be76c98c0eb49069b41e3}
+Tuto metodu musí předefinovat každý controller. Slouží k vytvoření dat, které se dostadí do šablony, kterou si musí \hyperlink{class_controller}{Controller} v této metodě také zvolit. Pokud chce controller pracovat s uživatelskými daty, musí zde do \hyperlink{class_controller_a27b4bba4d04b0ddc7a71e8e8e61a2a0c}{\$user} uložit novou instanci class \hyperlink{class_user}{User}. Pokud chce controller, aby v záhlaví stránky byl panel s možnostmi uživatele, musí do \hyperlink{class_controller_a32cd7b776cbce922386fca162f061960}{\$user\-\_\-panel} vytvořit novou instanci class \hyperlink{class_user_controller}{User\-Controller}. 
+\begin{DoxyParams}[1]{Parametry}
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_controller_a9293a00d446117a5d1e3d081a62c2494}{\index{Controller@{Controller}!show@{show}}
+\index{show@{show}!Controller@{Controller}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_controller_a9293a00d446117a5d1e3d081a62c2494}
+Vypisuje \hyperlink{class_controller_ac9073fdd6603617ab015c968f0add014}{\$data} do šablony vybrané ve \hyperlink{class_controller_aeb713d8b3c9bf61c72c4fcabd0e1e48a}{\$view}. 
+
+Definice je uvedena na řádku 38 v souboru Controller.\-php.
+
+
+
+Odkazuje se na \$header a redirect().
+
+
+
+Používá se v \-\_\-\-\_\-to\-String().
+
+
+
+\subsection{Dokumentace k datovým členům}
+\hypertarget{class_controller_ac9073fdd6603617ab015c968f0add014}{\index{Controller@{Controller}!\$data@{\$data}}
+\index{\$data@{\$data}!Controller@{Controller}}
+\subsubsection[{\$data}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\$data = array()\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_controller_ac9073fdd6603617ab015c968f0add014}
+Drží proměnné pro pattern. 
+
+Definice je uvedena na řádku 4 v souboru Controller.\-php.
+
+\hypertarget{class_controller_a69fa8da70e30696113dd91420b680f42}{\index{Controller@{Controller}!\$head@{\$head}}
+\index{\$head@{\$head}!Controller@{Controller}}
+\subsubsection[{\$head}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\$head\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_controller_a69fa8da70e30696113dd91420b680f42}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'title'} => \textcolor{stringliteral}{''},
+        \textcolor{stringliteral}{'style'} => \textcolor{stringliteral}{'css/default.css'}
+    )
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 27 v souboru Controller.\-php.
+
+\hypertarget{class_controller_af3a3a4c0b2661eaae8e21eb0a1cce7d5}{\index{Controller@{Controller}!\$header@{\$header}}
+\index{\$header@{\$header}!Controller@{Controller}}
+\subsubsection[{\$header}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\$header\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_controller_af3a3a4c0b2661eaae8e21eb0a1cce7d5}
+
+
+Definice je uvedena na řádku 32 v souboru Controller.\-php.
+
+\hypertarget{class_controller_a27b4bba4d04b0ddc7a71e8e8e61a2a0c}{\index{Controller@{Controller}!\$user@{\$user}}
+\index{\$user@{\$user}!Controller@{Controller}}
+\subsubsection[{\$user}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\$user\hspace{0.3cm}{\ttfamily [static]}}}\label{class_controller_a27b4bba4d04b0ddc7a71e8e8e61a2a0c}
+
+
+Definice je uvedena na řádku 11 v souboru Controller.\-php.
+
+
+
+Používá se v Requests\-Manager\textbackslash{}\-Can\-Confirm(), Requests\-Manager\textbackslash{}\-Confirm(), Requests\-Manager\textbackslash{}\-Is\-Editable(), Administration\-Controller\textbackslash{}run(), Requests\-Controller\textbackslash{}run(), Requests\-Manager\textbackslash{}\-Select\-Requests(), User\-Manager\textbackslash{}\-Settings\-\_\-acc() a User\-Manager\textbackslash{}\-Settings\-\_\-set().
+
+\hypertarget{class_controller_a32cd7b776cbce922386fca162f061960}{\index{Controller@{Controller}!\$user\-\_\-panel@{\$user\-\_\-panel}}
+\index{\$user\-\_\-panel@{\$user\-\_\-panel}!Controller@{Controller}}
+\subsubsection[{\$user\-\_\-panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\-Controller} Controller\-::\$user\-\_\-panel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_controller_a32cd7b776cbce922386fca162f061960}
+Sem se uloží \hyperlink{class_user_controller}{User\-Controller} s parametrem panel pokud chci uživatelský panel. Pokud ne tak s parametrem none. 
+
+Definice je uvedena na řádku 18 v souboru Controller.\-php.
+
+
+
+Používá se v Error\-Controller\textbackslash{}run().
+
+\hypertarget{class_controller_aeb713d8b3c9bf61c72c4fcabd0e1e48a}{\index{Controller@{Controller}!\$view@{\$view}}
+\index{\$view@{\$view}!Controller@{Controller}}
+\subsubsection[{\$view}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\$view = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_controller_aeb713d8b3c9bf61c72c4fcabd0e1e48a}
+
+
+Definice je uvedena na řádku 25 v souboru Controller.\-php.
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+Controllers/\hyperlink{_controller_8php}{Controller.\-php}\end{DoxyCompactItemize}

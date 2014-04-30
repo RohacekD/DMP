@@ -1,0 +1,328 @@
+\hypertarget{example43___m_p_d_f_i__booklet_8php}{\section{Dokumentace souboru Models/\-M\-P\-D\-F/examples/example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.php}
+\label{example43___m_p_d_f_i__booklet_8php}\index{Models/\-M\-P\-D\-F/examples/example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{Models/\-M\-P\-D\-F/examples/example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+}
+\subsection*{Funkce}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_a1b9720554576ed902f1b644fbdf6ce8f}{Get\-Booklet\-Pages} (\$np, \$backcover=true)
+\end{DoxyCompactItemize}
+\subsection*{Proměnné}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_a6f96e7fc92441776c9d1cd3386663b40}{\$html}
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\$mpdf} =new \hyperlink{classm_p_d_f}{m\-P\-D\-F}('c','A4','','',32,25,27,25,16,13)
+\item 
+\$mpdf \hyperlink{example43___m_p_d_f_i__booklet_8php_a24c284cb7774410f65953584ea1fd9c1}{mirror\-Margins} = 1
+\item 
+\$mpdf \hyperlink{example43___m_p_d_f_i__booklet_8php_af2f1fce5e41ebb499bcff9cc6f865a19}{use\-Only\-Core\-Fonts} = true
+\item 
+\$mpdf \hyperlink{example43___m_p_d_f_i__booklet_8php_af908f917e35d865734d31eecf6841116}{defaultfooterfontsize} = 13
+\item 
+\$mpdf \hyperlink{example43___m_p_d_f_i__booklet_8php_a3f83be162d14f38451e1bc419fbbbcbc}{y} = 70
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_a07c2862e5c638968feec8053b50abae5}{\$ow} = \$mpdf-\/$>$h
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_ab09fc7575b29981b0adffe6e400fdd8e}{\$oh} = \$mpdf-\/$>$w
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_a4a84bb9d73addd9e90f2f34c36035df4}{\$pw} = \$mpdf-\/$>$w / 2
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_ac1d420fcdb8b362b7909b4f257c9b916}{\$ph} = \$mpdf-\/$>$h
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_a905390c82ddf2d57cc0c524f4e5b0425}{\$pagecount} = \$mpdf-\/$>$Set\-Source\-File('test.\-pdf')
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_afdc7058c7adc87561bca9d538b13632e}{\$pp} = \hyperlink{example43___m_p_d_f_i__booklet_8php_a1b9720554576ed902f1b644fbdf6ce8f}{Get\-Booklet\-Pages}(\$pagecount)
+\item 
+\hyperlink{example43___m_p_d_f_i__booklet_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentace funkcí}
+\hypertarget{example43___m_p_d_f_i__booklet_8php_a1b9720554576ed902f1b644fbdf6ce8f}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!Get\-Booklet\-Pages@{Get\-Booklet\-Pages}}
+\index{Get\-Booklet\-Pages@{Get\-Booklet\-Pages}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{Get\-Booklet\-Pages}]{\setlength{\rightskip}{0pt plus 5cm}Get\-Booklet\-Pages (
+\begin{DoxyParamCaption}
+\item[{}]{\$np, }
+\item[{}]{\$backcover = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{example43___m_p_d_f_i__booklet_8php_a1b9720554576ed902f1b644fbdf6ce8f}
+
+
+Definice je uvedena na řádku 71 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+
+
+Odkazuje se na \$pp.
+
+
+
+\subsection{Dokumentace proměnných}
+\hypertarget{example43___m_p_d_f_i__booklet_8php_a6f96e7fc92441776c9d1cd3386663b40}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!\$html@{\$html}}
+\index{\$html@{\$html}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{\$html}]{\setlength{\rightskip}{0pt plus 5cm}\$html}}\label{example43___m_p_d_f_i__booklet_8php_a6f96e7fc92441776c9d1cd3386663b40}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{'}
+\textcolor{stringliteral}{<html><head>}
+\textcolor{stringliteral}{    <meta http-equiv="Content-Language" content="en-GB">}
+\textcolor{stringliteral}{    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">}
+\textcolor{stringliteral}{    <style>}
+\textcolor{stringliteral}{        body \{ font-family:"Times New Roman"; font-size:14pt; \}}
+\textcolor{stringliteral}{        p \{ margin: 0; \}}
+\textcolor{stringliteral}{    </style>}
+\textcolor{stringliteral}{</head><body>}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{<!-- SECTION 1 -->}
+\textcolor{stringliteral}{<h1>mPDF Example Booklet</h1>}
+\textcolor{stringliteral}{<p>Nulla felis erat, imperdiet eu, ullamcorper non, nonummy quis, elit. Suspendisse potenti. Ut a eros at
+       ligula vehicula pretium. Maecenas feugiat pede vel risus. Nulla et lectus. Fusce eleifend neque sit amet
+       erat. Integer consectetuer nulla non orci. Morbi feugiat pulvinar dolor. Cras odio. Donec mattis, nisi id
+       euismod auctor, neque metus pellentesque risus, at eleifend lacus sapien et risus. Phasellus metus. Phasellus
+       feugiat, lectus ac aliquam molestie, leo lacus tincidunt turpis, vel aliquam quam odio et sapien. Mauris ante
+       pede, auctor ac, suscipit quis, malesuada sed, nulla. Integer sit amet odio sit amet lectus luctus euismod.
+       Donec et nulla. Sed quis orci. </p>}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{<p>Sed bibendum. Nunc eleifend ornare velit. Sed consectetuer urna in erat. Class aptent taciti sociosqu ad
+       litora torquent per conubia nostra, per inceptos hymenaeos. Mauris sodales semper metus. Maecenas justo
+       libero, pretium at, malesuada eu, mollis et, arcu. Ut suscipit pede in nulla. Praesent elementum, dolor ac
+       fringilla posuere, elit libero rutrum massa, vel tincidunt dui tellus a ante. Sed aliquet euismod dolor.
+       Vestibulum sed dui. Duis lobortis hendrerit quam. Donec tempus orci ut libero. Pellentesque suscipit malesuada
+       nisi. </p>}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{<h4>Little Women - Chapter One - Playing Pilgrims</h4>}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{<p> Christmas won\(\backslash\)'t be Christmas without any presents,  grumbled Jo, lying on the rug.</p><p> It\(\backslash\)'s so
+       dreadful to be poor!  sighed Meg, looking down at her old dress.</p><p> I don\(\backslash\)'t think it\(\backslash\)'s fair for some
+       girls to have plenty of pretty things, and other girls nothing at all,  added little Amy, with an injured
+       sniff.</p><p> We\(\backslash\)'ve got Father and Mother, and each other,  said Beth contentedly from her corner.</p><p>The four
+       young faces on which the firelight shone brightened at the cheerful words, but darkened again as Jo said
+       sadly,  We haven\(\backslash\)'t got Father, and shall not have him for a long time.  She didn\(\backslash\)'t say  perhaps never,  but
+       each silently added it, thinking of Father far away, where the fighting was.</p><p>Nobody spoke for a
+       minute; then Meg said in an altered tone,  You know the reason Mother proposed not having any presents this
+       Christmas was because it is going to be a hard winter for everyone; and she thinks we ought not to spend money for
+       pleasure, when our men are suffering so in the army. We can\(\backslash\)'t do much, but we can make our little
+       sacrifices, and ought to do it gladly. But I am afraid I don\(\backslash\)'t  And Meg shook her head, as she thought regretfully
+       of all the pretty things she wanted.</p><p> But I don\(\backslash\)'t think the little we should spend would do any good.
+       We\(\backslash\)'ve each got a dollar, and the army wouldn\(\backslash\)'t be much helped by our giving that. I agree not to expect
+       anything from Mother or you, but I do want to buy UNDINE AND SINTRAM for myself. I\(\backslash\)'ve wanted it so long, 
+       said Jo, who was a bookworm.</p><p> I planned to spend mine in new music,  said Beth, with a little sigh,
+       which no one heard but the hearth brush and kettle holder.</p><p> I shall get a nice box of Faber\(\backslash\)'s drawing
+       pencils. I really need them,  said Amy decidedly.</p><p> Mother didn\(\backslash\)'t say anything about our money, and she
+       won\(\backslash\)'t wish us to give up everything. Let\(\backslash\)'s each buy what we want, and have a little fun. I\(\backslash\)'m sure we work
+       hard enough to earn it,  cried Jo, examining the heels of her shoes in a gentlemanly manner.</p><p> I know I
+       do&mdash;teaching those tiresome children nearly all day, when I\(\backslash\)'m longing to enjoy myself at home,  began
+       Meg, in the complaining tone again.</p><p> You don\(\backslash\)'t have half such a hard time as I do,  said Jo.  How
+       would you like to be shut up for hours with a nervous, fussy old lady, who keeps you trotting, is never
+       satisfied, and worries you till you you\(\backslash\)'re ready to fly out the window or cry? </p><p> It\(\backslash\)'s naughty to fret, but
+       I do think washing dishes and keeping things tidy is the worst work in the world.  It makes me cross, and
+       my hands get so stiff, I can\(\backslash\)'t practice well at all.  And Beth looked at her rough hands with a sigh that
+       any one could hear that time.</p><p> I don\(\backslash\)'t believe any of you suffer as I do,  cried Amy,  for you don\(\backslash\)'t
+       have to go to school with impertinent girls, who plague you if you don\(\backslash\)'t know your lessons, and laugh at
+       your dresses, and label your father if he isn\(\backslash\)'t rich, and insult you when your nose isn\(\backslash\)'t nice. </p><p> If
+       you mean libel, I\(\backslash\)'d say so, and not talk about labels, as if Papa was a pickle bottle,  advised Jo,
+       laughing.</p><p> I know what I mean, and you needn\(\backslash\)'t be satirical about it. It\(\backslash\)'s proper to use good words, and
+       improve your vocabulary,  returned Amy, with dignity.</p><p> Don\(\backslash\)'t peck at one another, children. Don\(\backslash\)'t you
+       wish we had the money Papa lost when we were little, Jo? Dear me! How happy and good we\(\backslash\)'d be, if we had no
+       worries!  said Meg, who could remember better times.</p><p> You said the other day you thought we were a deal
+       happier than the King children, for they were fighting and fretting all the time, in spite of their money.
+       </p><p> So I did, Beth. Well, I think we are. For though we do have to work, we make fun of ourselves, and
+       are a pretty jolly set, as Jo would say. </p><p> Jo does use such slang words!   observed Amy, with a
+       reproving look at the long figure stretched on the rug.</p><p>Jo immediately sat up, put her hands in her pockets,
+       and began to whistle.</p><p> Don\(\backslash\)'t, Jo. It\(\backslash\)'s so boyish! </p><p> That\(\backslash\)'s why I do it. </p><p> I detest rude,
+       unladylike girls! </p><p> I hate affected, niminy-piminy chits! </p><p> Birds in their little nests agree, 
+       sang Beth, the peacemaker, with such a funny face that both sharp voices softened to a laugh, and the 
+       pecking  ended for that time.</p><p> Really, girls, you are both to be blamed,  said Meg, beginning to lecture
+       in her elder-sisterly fashion. You are old enough to leave off boyish tricks, and to behave better,
+       Josephine. It didn\(\backslash\)'t matter so much when you were a little girl, but now you are so tall, and turn up your hair, you
+       should remember that you are a young lady. </p><p> I\(\backslash\)'m not!  And if turning up my hair makes me one, I\(\backslash\)'ll
+       wear it in two tails till I\(\backslash\)'m twenty,  cried Jo, pulling off her net, and shaking down a chestnut mane.  
+       I hate to think I\(\backslash\)'ve got to grow up, and be Miss March, and wear long gowns, and look as prim as a China
+       Aster! It\(\backslash\)'s bad enough to be a girl, anyway, when I like boy\(\backslash\)'s games and work and manners! I can\(\backslash\)'t get over
+       my disappointment in not being a boy. And it\(\backslash\)'s worse than ever now, for I\(\backslash\)'m dying to go and fight with
+       Papa. And I can only stay home and knit, like a poky old woman! </p><p>And Jo shook the blue army sock till
+       the needles rattled like castanets, and her ball bounded across the room.</p><p> Poor Jo! It\(\backslash\)'s too bad, but
+       it can\(\backslash\)'t be helped. So you must try to be contented with making your name boyish, and playing brother to us
+       girls,  said Beth, stroking the rough head with a hand that all the dish washing and dusting in the world
+       could not make ungentle in its touch.</p><p> As for you, Amy,  continued Meg,  you are altogether to
+       particular and prim. Your airs are funny now, but you\(\backslash\)'ll grow up an affected little goose, if you don\(\backslash\)'t take care.
+       I I like your nice manners and refined ways of speaking, when you don\(\backslash\)'t try to be elegant. But your absurd
+       words are as bad as Jo\(\backslash\)'s slang. </p><p> If Jo is a tomboy and Amy a goose, what am I, please?  asked Beth,
+       ready to share the lecture.</p><p> You\(\backslash\)'re a dear, and nothing else,  answered Meg warmly, and no one
+       contradicted her, for the \(\backslash\)'Mouse\(\backslash\)' was the pet of the family.</p>}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{<h4>Little Women - Chapter One - Playing Pilgrims</h4>}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{<p> Christmas won\(\backslash\)'t be Christmas without any presents,  grumbled Jo, lying on the rug.</p><p> It\(\backslash\)'s so
+       dreadful to be poor!  sighed Meg, looking down at her old dress.</p><p> I don\(\backslash\)'t think it\(\backslash\)'s fair for some
+       girls to have plenty of pretty things, and other girls nothing at all,  added little Amy, with an injured
+       sniff.</p><p> We\(\backslash\)'ve got Father and Mother, and each other,  said Beth contentedly from her corner.</p><p>The four
+       young faces on which the firelight shone brightened at the cheerful words, but darkened again as Jo said
+       sadly,  We haven\(\backslash\)'t got Father, and shall not have him for a long time.  She didn\(\backslash\)'t say  perhaps never,  but
+       each silently added it, thinking of Father far away, where the fighting was.</p><p>Nobody spoke for a
+       minute; then Meg said in an altered tone,  You know the reason Mother proposed not having any presents this
+       Christmas was because it is going to be a hard winter for everyone; and she thinks we ought not to spend money for
+       pleasure, when our men are suffering so in the army. We can\(\backslash\)'t do much, but we can make our little
+       sacrifices, and ought to do it gladly. But I am afraid I don\(\backslash\)'t  And Meg shook her head, as she thought regretfully
+       of all the pretty things she wanted.</p><p> But I don\(\backslash\)'t think the little we should spend would do any good.
+       We\(\backslash\)'ve each got a dollar, and the army wouldn\(\backslash\)'t be much helped by our giving that. I agree not to expect
+       anything from Mother or you, but I do want to buy UNDINE AND SINTRAM for myself. I\(\backslash\)'ve wanted it so long, 
+       said Jo, who was a bookworm.</p><p> I planned to spend mine in new music,  said Beth, with a little sigh,
+       which no one heard but the hearth brush and kettle holder.</p><p> I shall get a nice box of Faber\(\backslash\)'s drawing
+       pencils. I really need them,  said Amy decidedly.</p><p> Mother didn\(\backslash\)'t say anything about our money, and she
+       won\(\backslash\)'t wish us to give up everything. Let\(\backslash\)'s each buy what we want, and have a little fun. I\(\backslash\)'m sure we work
+       hard enough to earn it,  cried Jo, examining the heels of her shoes in a gentlemanly manner.</p><p> I know I
+       do&mdash;teaching those tiresome children nearly all day, when I\(\backslash\)'m longing to enjoy myself at home,  began
+       Meg, in the complaining tone again.</p><p> You don\(\backslash\)'t have half such a hard time as I do,  said Jo.  How
+       would you like to be shut up for hours with a nervous, fussy old lady, who keeps you trotting, is never
+       satisfied, and worries you till you you\(\backslash\)'re ready to fly out the window or cry? </p><p> It\(\backslash\)'s naughty to fret, but
+       I do think washing dishes and keeping things tidy is the worst work in the world.  It makes me cross, and
+       my hands get so stiff, I can\(\backslash\)'t practice well at all.  And Beth looked at her rough hands with a sigh that
+       any one could hear that time.</p><p> I don\(\backslash\)'t believe any of you suffer as I do,  cried Amy,  for you don\(\backslash\)'t
+       have to go to school with impertinent girls, who plague you if you don\(\backslash\)'t know your lessons, and laugh at
+       your dresses, and label your father if he isn\(\backslash\)'t rich, and insult you when your nose isn\(\backslash\)'t nice. </p><p> If
+       you mean libel, I\(\backslash\)'d say so, and not talk about labels, as if Papa was a pickle bottle,  advised Jo,
+       laughing.</p><p> I know what I mean, and you needn\(\backslash\)'t be satirical about it. It\(\backslash\)'s proper to use good words, and
+       improve your vocabulary,  returned Amy, with dignity.</p><p> Don\(\backslash\)'t peck at one another, children. Don\(\backslash\)'t you
+       wish we had the money Papa lost when we were little, Jo? Dear me! How happy and good we\(\backslash\)'d be, if we had no
+       worries!  said Meg, who could remember better times.</p><p> You said the other day you thought we were a deal
+       happier than the King children, for they were fighting and fretting all the time, in spite of their money.
+       </p><p> So I did, Beth. Well, I think we are. For though we do have to work, we make fun of ourselves, and
+       are a pretty jolly set, as Jo would say. </p><p> Jo does use such slang words!   observed Amy, with a
+       reproving look at the long figure stretched on the rug.</p><p>Jo immediately sat up, put her hands in her pockets,
+       and began to whistle.</p><p> Don\(\backslash\)'t, Jo. It\(\backslash\)'s so boyish! </p><p> That\(\backslash\)'s why I do it. </p><p> I detest rude,
+       unladylike girls! </p><p> I hate affected, niminy-piminy chits! </p><p> Birds in their little nests agree, 
+       sang Beth, the peacemaker, with such a funny face that both sharp voices softened to a laugh, and the 
+       pecking  ended for that time.</p><p> Really, girls, you are both to be blamed,  said Meg, beginning to lecture
+       in her elder-sisterly fashion. You are old enough to leave off boyish tricks, and to behave better,
+       Josephine. It didn\(\backslash\)'t matter so much when you were a little girl, but now you are so tall, and turn up your hair, you
+       should remember that you are a young lady. </p><p> I\(\backslash\)'m not!  And if turning up my hair makes me one, I\(\backslash\)'ll
+       wear it in two tails till I\(\backslash\)'m twenty,  cried Jo, pulling off her net, and shaking down a chestnut mane.  
+       I hate to think I\(\backslash\)'ve got to grow up, and be Miss March, and wear long gowns, and look as prim as a China
+       Aster! It\(\backslash\)'s bad enough to be a girl, anyway, when I like boy\(\backslash\)'s games and work and manners! I can\(\backslash\)'t get over
+       my disappointment in not being a boy. And it\(\backslash\)'s worse than ever now, for I\(\backslash\)'m dying to go and fight with
+       Papa. And I can only stay home and knit, like a poky old woman! </p><p>And Jo shook the blue army sock till
+       the needles rattled like castanets, and her ball bounded across the room.</p><p> Poor Jo! It\(\backslash\)'s too bad, but
+       it can\(\backslash\)'t be helped. So you must try to be contented with making your name boyish, and playing brother to us
+       girls,  said Beth, stroking the rough head with a hand that all the dish washing and dusting in the world
+       could not make ungentle in its touch.</p><p> As for you, Amy,  continued Meg,  you are altogether to
+       particular and prim. Your airs are funny now, but you\(\backslash\)'ll grow up an affected little goose, if you don\(\backslash\)'t take care.
+       I I like your nice manners and refined ways of speaking, when you don\(\backslash\)'t try to be elegant. But your absurd
+       words are as bad as Jo\(\backslash\)'s slang. </p><p> If Jo is a tomboy and Amy a goose, what am I, please?  asked Beth,
+       ready to share the lecture.</p><p> You\(\backslash\)'re a dear, and nothing else,  answered Meg warmly, and no one
+       contradicted her, for the \(\backslash\)'Mouse\(\backslash\)' was the pet of the family.</p>}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{</body></html>'}
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 3 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!\$mpdf@{\$mpdf}}
+\index{\$mpdf@{\$mpdf}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{\$mpdf}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf =new {\bf m\-P\-D\-F}('c','A4','','',32,25,27,25,16,13)}}\label{example43___m_p_d_f_i__booklet_8php_ad028f81910d6cbab9b184d2214b3a8f8}
+
+
+Definice je uvedena na řádku 37 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_ab09fc7575b29981b0adffe6e400fdd8e}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!\$oh@{\$oh}}
+\index{\$oh@{\$oh}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{\$oh}]{\setlength{\rightskip}{0pt plus 5cm}\$oh = \$mpdf-\/$>$w}}\label{example43___m_p_d_f_i__booklet_8php_ab09fc7575b29981b0adffe6e400fdd8e}
+
+
+Definice je uvedena na řádku 96 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}finish\-Flowing\-Block(), m\-P\-D\-F\textbackslash{}\-Write\-Barcode() a m\-P\-D\-F\textbackslash{}\-Write\-Flowing\-Block().
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_a07c2862e5c638968feec8053b50abae5}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!\$ow@{\$ow}}
+\index{\$ow@{\$ow}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{\$ow}]{\setlength{\rightskip}{0pt plus 5cm}\$ow = \$mpdf-\/$>$h}}\label{example43___m_p_d_f_i__booklet_8php_a07c2862e5c638968feec8053b50abae5}
+
+
+Definice je uvedena na řádku 95 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-Write\-Barcode().
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_a905390c82ddf2d57cc0c524f4e5b0425}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!\$pagecount@{\$pagecount}}
+\index{\$pagecount@{\$pagecount}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{\$pagecount}]{\setlength{\rightskip}{0pt plus 5cm}\$pagecount = \$mpdf-\/$>$Set\-Source\-File('test.\-pdf')}}\label{example43___m_p_d_f_i__booklet_8php_a905390c82ddf2d57cc0c524f4e5b0425}
+
+
+Definice je uvedena na řádku 102 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_ac1d420fcdb8b362b7909b4f257c9b916}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!\$ph@{\$ph}}
+\index{\$ph@{\$ph}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{\$ph}]{\setlength{\rightskip}{0pt plus 5cm}\$ph = \$mpdf-\/$>$h}}\label{example43___m_p_d_f_i__booklet_8php_ac1d420fcdb8b362b7909b4f257c9b916}
+
+
+Definice je uvedena na řádku 98 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), Single\-Page() a m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer().
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_afdc7058c7adc87561bca9d538b13632e}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!\$pp@{\$pp}}
+\index{\$pp@{\$pp}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{\$pp}]{\setlength{\rightskip}{0pt plus 5cm}\$pp = {\bf Get\-Booklet\-Pages}(\$pagecount)}}\label{example43___m_p_d_f_i__booklet_8php_afdc7058c7adc87561bca9d538b13632e}
+
+
+Definice je uvedena na řádku 103 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+
+
+Používá se v Get\-Booklet\-Pages().
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_a4a84bb9d73addd9e90f2f34c36035df4}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!\$pw@{\$pw}}
+\index{\$pw@{\$pw}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{\$pw}]{\setlength{\rightskip}{0pt plus 5cm}\$pw = \$mpdf-\/$>$w / 2}}\label{example43___m_p_d_f_i__booklet_8php_a4a84bb9d73addd9e90f2f34c36035df4}
+
+
+Definice je uvedena na řádku 97 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), m\-P\-D\-F\textbackslash{}printtablebuffer(), Single\-Page() a m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer().
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_af908f917e35d865734d31eecf6841116}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!defaultfooterfontsize@{defaultfooterfontsize}}
+\index{defaultfooterfontsize@{defaultfooterfontsize}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{defaultfooterfontsize}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf defaultfooterfontsize = 13}}\label{example43___m_p_d_f_i__booklet_8php_af908f917e35d865734d31eecf6841116}
+
+
+Definice je uvedena na řádku 42 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_a6733eb5f605d09eaede9845835d71c4e}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!exit@{exit}}
+\index{exit@{exit}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{exit}]{\setlength{\rightskip}{0pt plus 5cm}exit}}\label{example43___m_p_d_f_i__booklet_8php_a6733eb5f605d09eaede9845835d71c4e}
+
+
+Definice je uvedena na řádku 119 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_a24c284cb7774410f65953584ea1fd9c1}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!mirror\-Margins@{mirror\-Margins}}
+\index{mirror\-Margins@{mirror\-Margins}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{mirror\-Margins}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf mirror\-Margins = 1}}\label{example43___m_p_d_f_i__booklet_8php_a24c284cb7774410f65953584ea1fd9c1}
+
+
+Definice je uvedena na řádku 39 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_af2f1fce5e41ebb499bcff9cc6f865a19}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!use\-Only\-Core\-Fonts@{use\-Only\-Core\-Fonts}}
+\index{use\-Only\-Core\-Fonts@{use\-Only\-Core\-Fonts}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{use\-Only\-Core\-Fonts}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf use\-Only\-Core\-Fonts = true}}\label{example43___m_p_d_f_i__booklet_8php_af2f1fce5e41ebb499bcff9cc6f865a19}
+
+
+Definice je uvedena na řádku 41 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+\hypertarget{example43___m_p_d_f_i__booklet_8php_a3f83be162d14f38451e1bc419fbbbcbc}{\index{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}!y@{y}}
+\index{y@{y}!example43_MPDFI_booklet.php@{example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf y = 70}}\label{example43___m_p_d_f_i__booklet_8php_a3f83be162d14f38451e1bc419fbbbcbc}
+
+
+Definice je uvedena na řádku 45 v souboru example43\-\_\-\-M\-P\-D\-F\-I\-\_\-booklet.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-advance\-Float\-Margins(), F\-P\-D\-F\textbackslash{}\-\_\-beginpage(), m\-P\-D\-F\textbackslash{}\-\_\-beginpage(), m\-P\-D\-F\textbackslash{}\-\_\-get\-Html\-Height(), m\-P\-D\-F\textbackslash{}\-\_\-out(), m\-P\-D\-F\textbackslash{}\-\_\-puthtmlheaders(), m\-P\-D\-F\textbackslash{}\-\_\-small\-Caps(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), m\-P\-D\-F\textbackslash{}\-Accept\-Page\-Break(), m\-P\-D\-F\textbackslash{}\-Add\-Page(), m\-P\-D\-F\textbackslash{}\-Annotation(), Calendar\-Control(), F\-P\-D\-F\textbackslash{}\-Cell(), m\-P\-D\-F\textbackslash{}\-Cell(), m\-P\-D\-F\textbackslash{}\-Clear\-Floats(), m\-P\-D\-F\textbackslash{}\-Close\-Tag(), m\-P\-D\-F\textbackslash{}\-Div\-Ln(), m\-P\-D\-F\textbackslash{}finish\-Flowing\-Block(), m\-P\-D\-F\textbackslash{}\-Footer(), m\-P\-D\-F\textbackslash{}\-Header(), F\-P\-D\-F\textbackslash{}\-Image(), m\-P\-D\-F\textbackslash{}\-Image(), m\-P\-D\-F\textbackslash{}\-Link(), F\-P\-D\-F\textbackslash{}\-Ln(), m\-P\-D\-F\textbackslash{}\-Ln(), m\-P\-D\-F\textbackslash{}\-New\-Column(), m\-P\-D\-F\textbackslash{}\-Open\-Tag(), m\-P\-D\-F\textbackslash{}\-Paint\-Div\-B\-B(), m\-P\-D\-F\textbackslash{}\-Paint\-Div\-Ln\-Border(), position\-Info(), m\-P\-D\-F\textbackslash{}printbuffer(), m\-P\-D\-F\textbackslash{}printcolumnbuffer(), m\-P\-D\-F\textbackslash{}printdivbuffer(), m\-P\-D\-F\textbackslash{}printkwtbuffer(), m\-P\-D\-F\textbackslash{}printobjectbuffer(), m\-P\-D\-F\textbackslash{}printtablebuffer(), m\-P\-D\-F\textbackslash{}\-Set\-Columns(), F\-P\-D\-F\textbackslash{}\-Set\-Y(), m\-P\-D\-F\textbackslash{}\-Set\-Y(), m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer(), m\-P\-D\-F\textbackslash{}\-Thumbnail(), m\-P\-D\-F\textbackslash{}\-T\-O\-Cpagebreak(), F\-P\-D\-F\textbackslash{}\-Write(), m\-P\-D\-F\textbackslash{}\-Write\-Barcode(), m\-P\-D\-F\textbackslash{}\-Write\-Fixed\-Pos\-H\-T\-M\-L(), m\-P\-D\-F\textbackslash{}\-Write\-Flowing\-Block() a m\-P\-D\-F\textbackslash{}\-Write\-H\-T\-M\-L().
+

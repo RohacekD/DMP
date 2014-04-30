@@ -1,0 +1,55 @@
+			<section id="user_panel">
+				<form method="post">
+					<table id="login_l">
+						<tr>
+							<td>
+								<label for="requests">Žádanky</label>
+							</td>
+<?php if($user->GetAccess()==4):?>
+							<td>
+								<label for="administration">Administrace</label>
+							</td>
+<?php endif;?>
+							<td colspan="2">
+								<label for="user">Správa účtu</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="select">
+									<select name="requests" id="requests" onChange="jsRedirect(this)">
+										<option selected value="default">Vyberte možnost</option>
+										<option value="My-requests">Moje žádanky</option>
+										<option value="New-requests">Nové žádanky</option>
+										<option value="New">Přidat žádanku</option>
+										<option value="history">Historie žádanek</option>
+									</select>
+								</label>
+							</td>
+<?php if($user->GetAccess()==4):?>
+							<td>
+								<label class="select">
+									<select name="administration" id="administration" onChange="jsRedirect(this)">
+										<option selected value="default">Vyberte možnost</option>
+										<option value="New-user">Nový uživatel</option>
+										<option value="users">Správa uživatelů</option>
+									</select>
+								</label>
+							</td>
+<?php endif;?>
+							<td>
+								<label class="select">
+									<select name="user" id="user" onChange="jsRedirect(this)">
+										<option selected value="default">Vyberte možnost</option>
+										<option value="profil">Přehled účtu</option>
+										<option value="settings">Nastavení účtu</option>
+									</select>
+								</label>
+							</td>
+							<td>
+								<input type="submit" value="Odhlásit" name="logout">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</section>

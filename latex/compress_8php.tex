@@ -1,0 +1,133 @@
+\hypertarget{compress_8php}{\section{Dokumentace souboru Models/\-M\-P\-D\-F/compress.php}
+\label{compress_8php}\index{Models/\-M\-P\-D\-F/compress.\-php@{Models/\-M\-P\-D\-F/compress.\-php}}
+}
+\subsection*{Proměnné}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{compress_8php_a06e94f7ec9d696fff3dcad27ba6b6d61}{\$excl}
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'generate'\mbox{]})$|$$|$\$\-\_\-\-P\-O\-S\-T\mbox{[}'generate'\mbox{]}!='generate') \hyperlink{compress_8php_abd0a3dd79eead9d44a0c329f65d5370f}{\$inc} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'inc'\mbox{]}
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(is\-\_\-array(\$inc)\&\&count(\$inc)$>$\\*
+0) \hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!defined('P\-H\-P\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-\-I\-D')) \\*
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(P\-H\-P\-\_\-\-V\-E\-R\-S\-I\-O\-N\-\_\-\-I\-D$<$ 50300) \hyperlink{compress_8php_af82782656503b252ac8af7dce0ca4bba}{else} \{ \$mqr=0
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(\$mqr) \hyperlink{compress_8php_af45644c73f443e318c38efee2cb538bc}{\$l} = file('mpdf\-\_\-source.\-php')
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!count(\$l)) \hyperlink{compress_8php_a4907d78471b733b785612f142bb48713}{\$exclflags} = array()
+\item 
+\hyperlink{compress_8php_af3a16c5f0dd7a74cf9acf6a49fff73a7}{\$x} = ''
+\item 
+\hyperlink{compress_8php_a830cf70d25fefacddcf4c6bc3fd7a0e0}{\$check} = fwrite(\$f, \$x)
+\item 
+\hyperlink{compress_8php_a0ad06318b1464b4cece76cd1bb53ca79}{if} (!\$check) = array\-\_\-unique(\$excl)
+\item 
+\hyperlink{compress_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\$mpdf} = new \hyperlink{classm_p_d_f}{m\-P\-D\-F}()
+\item 
+\hyperlink{compress_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentace proměnných}
+\hypertarget{compress_8php_a830cf70d25fefacddcf4c6bc3fd7a0e0}{\index{compress.\-php@{compress.\-php}!\$check@{\$check}}
+\index{\$check@{\$check}!compress.php@{compress.\-php}}
+\subsubsection[{\$check}]{\setlength{\rightskip}{0pt plus 5cm}\$check = fwrite(\$f, \$x)}}\label{compress_8php_a830cf70d25fefacddcf4c6bc3fd7a0e0}
+
+
+Definice je uvedena na řádku 155 v souboru compress.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-get\-Image(), P\-D\-F\-Barcode\textbackslash{}barcode\-\_\-c128(), P\-D\-F\-Barcode\textbackslash{}barcode\-\_\-code11(), P\-D\-F\-Barcode\textbackslash{}barcode\-\_\-msi(), P\-D\-F\-Barcode\textbackslash{}checksum\-\_\-code93(), m\-P\-D\-F\textbackslash{}\-Close\-Tag(), m\-P\-D\-F\textbackslash{}finish\-Flowing\-Block() a grad\textbackslash{}parse\-Moz\-Gradient().
+
+\hypertarget{compress_8php_a06e94f7ec9d696fff3dcad27ba6b6d61}{\index{compress.\-php@{compress.\-php}!\$excl@{\$excl}}
+\index{\$excl@{\$excl}!compress.php@{compress.\-php}}
+\subsubsection[{\$excl}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$excl\mbox{[}0\mbox{]}=='H\-T\-M\-L-\/C\-S\-S') \$excl}}\label{compress_8php_a06e94f7ec9d696fff3dcad27ba6b6d61}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+= array( \textcolor{stringliteral}{'HTML-CSS'}, \textcolor{stringliteral}{'DIRECTW'}, \textcolor{stringliteral}{'TABLES'}, \textcolor{stringliteral}{'LISTS'}, \textcolor{stringliteral}{'IMAGES-CORE'}, 
+\textcolor{stringliteral}{'IMAGES-BMP'}, \textcolor{stringliteral}{'IMAGES-WMF'}, \textcolor{stringliteral}{'TABLES-ADVANCED-BORDERS'}, \textcolor{stringliteral}{'HTMLHEADERS-FOOTERS'}, \textcolor{stringliteral}{'COLUMNS'}, \textcolor{stringliteral}{'TOC'}, \textcolor{stringliteral}{'INDEX'}, \textcolor{stringliteral}{'
+      BOOKMARKS'}, \textcolor{stringliteral}{'BARCODES'}, \textcolor{stringliteral}{'FORMS'}, \textcolor{stringliteral}{'WATERMARK'}, \textcolor{stringliteral}{'CJK-FONTS'}, \textcolor{stringliteral}{'RTL'}, \textcolor{stringliteral}{'INDIC'}, \textcolor{stringliteral}{'ANNOTATIONS'}, \textcolor{stringliteral}{'BACKGROUNDS'}, \textcolor{stringliteral}{'
+      CSS-FLOAT'}, \textcolor{stringliteral}{'CSS-IMAGE-FLOAT'}, \textcolor{stringliteral}{'CSS-POSITION'}, \textcolor{stringliteral}{'CSS-PAGE'}, \textcolor{stringliteral}{'BORDER-RADIUS'}, \textcolor{stringliteral}{'HYPHENATION'}, \textcolor{stringliteral}{'ENCRYPTION'}, \textcolor{stringliteral}{'
+      IMPORTS'}, \textcolor{stringliteral}{'PROGRESS-BAR'})
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 3 v souboru compress.\-php.
+
+\hypertarget{compress_8php_a4907d78471b733b785612f142bb48713}{\index{compress.\-php@{compress.\-php}!\$exclflags@{\$exclflags}}
+\index{\$exclflags@{\$exclflags}!compress.php@{compress.\-php}}
+\subsubsection[{\$exclflags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!count(\$l)) \$exclflags = array()}}\label{compress_8php_a4907d78471b733b785612f142bb48713}
+
+
+Definice je uvedena na řádku 100 v souboru compress.\-php.
+
+\hypertarget{compress_8php_abd0a3dd79eead9d44a0c329f65d5370f}{\index{compress.\-php@{compress.\-php}!\$inc@{\$inc}}
+\index{\$inc@{\$inc}!compress.php@{compress.\-php}}
+\subsubsection[{\$inc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'generate'\mbox{]})$|$$|$\$\-\_\-\-P\-O\-S\-T\mbox{[}'generate'\mbox{]}!='generate') \$inc = \$\-\_\-\-P\-O\-S\-T\mbox{[}'inc'\mbox{]}}}\label{compress_8php_abd0a3dd79eead9d44a0c329f65d5370f}
+
+
+Definice je uvedena na řádku 82 v souboru compress.\-php.
+
+
+
+Používá se v Single\-Page().
+
+\hypertarget{compress_8php_af45644c73f443e318c38efee2cb538bc}{\index{compress.\-php@{compress.\-php}!\$l@{\$l}}
+\index{\$l@{\$l}!compress.php@{compress.\-php}}
+\subsubsection[{\$l}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$mqr) \$l = file('mpdf\-\_\-source.\-php')}}\label{compress_8php_af45644c73f443e318c38efee2cb538bc}
+
+
+Definice je uvedena na řádku 98 v souboru compress.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-darken\-Color(), m\-P\-D\-F\textbackslash{}\-\_\-kern(), m\-P\-D\-F\textbackslash{}\-\_\-lighten\-Color(), m\-P\-D\-F\textbackslash{}\-\_\-putannots(), m\-P\-D\-F\textbackslash{}\-\_\-putcatalog(), F\-P\-D\-F\textbackslash{}\-\_\-putpages(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Rect(), Filter\-A\-S\-C\-I\-I85\textbackslash{}decode(), m\-P\-D\-F\textbackslash{}\-Footer(), F\-P\-D\-F\textbackslash{}\-Get\-String\-Width(), m\-P\-D\-F\textbackslash{}\-Get\-String\-Width(), pdf\-\_\-context\textbackslash{}increase\-\_\-length(), m\-P\-D\-F\textbackslash{}\-Link(), F\-P\-D\-F\textbackslash{}\-Multi\-Cell(), m\-P\-D\-F\textbackslash{}\-Multi\-Cell(), m\-P\-D\-F\textbackslash{}\-Open\-Tag(), m\-P\-D\-F\textbackslash{}\-Paint\-Div\-B\-B(), m\-P\-D\-F\textbackslash{}printdivbuffer(), m\-P\-D\-F\textbackslash{}printkwtbuffer(), m\-P\-D\-F\textbackslash{}printtablebuffer(), pdf\-\_\-context\textbackslash{}reset(), m\-P\-D\-F\textbackslash{}rgb2hsl(), m\-P\-D\-F\textbackslash{}\-Substitute\-Chars\-M\-B(), m\-P\-D\-F\textbackslash{}\-Substitute\-Chars\-Non\-Core(), directw\textbackslash{}\-Write(), F\-P\-D\-F\textbackslash{}\-Write() a m\-P\-D\-F\textbackslash{}\-Write\-Fixed\-Pos\-H\-T\-M\-L().
+
+\hypertarget{compress_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\index{compress.\-php@{compress.\-php}!\$mpdf@{\$mpdf}}
+\index{\$mpdf@{\$mpdf}!compress.php@{compress.\-php}}
+\subsubsection[{\$mpdf}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf = new {\bf m\-P\-D\-F}()}}\label{compress_8php_ad028f81910d6cbab9b184d2214b3a8f8}
+
+
+Definice je uvedena na řádku 166 v souboru compress.\-php.
+
+
+
+Používá se v Administration\-Controller\textbackslash{}run(), Requests\-Controller\textbackslash{}run(), Single\-Page() a S\-V\-G\textbackslash{}\-S\-V\-G().
+
+\hypertarget{compress_8php_af3a16c5f0dd7a74cf9acf6a49fff73a7}{\index{compress.\-php@{compress.\-php}!\$x@{\$x}}
+\index{\$x@{\$x}!compress.php@{compress.\-php}}
+\subsubsection[{\$x}]{\setlength{\rightskip}{0pt plus 5cm}\$x = ''}}\label{compress_8php_af3a16c5f0dd7a74cf9acf6a49fff73a7}
+
+
+Definice je uvedena na řádku 101 v souboru compress.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-border\-Padding(), form\textbackslash{}\-\_\-form\-\_\-rect(), bmp\textbackslash{}\-\_\-get\-B\-M\-Pimage(), m\-P\-D\-F\textbackslash{}\-\_\-get\-Html\-Height(), m\-P\-D\-F\textbackslash{}\-\_\-putpatterns(), m\-P\-D\-F\textbackslash{}\-\_\-split\-Table\-Get\-Width(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Get\-Width(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Height(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Rect(), m\-P\-D\-F\textbackslash{}\-\_\-table\-Write(), \-\_\-test\-Intersect(), P\-D\-F\-Barcode\textbackslash{}barcode\-\_\-codabar(), P\-D\-F\-Barcode\textbackslash{}barcode\-\_\-code11(), P\-D\-F\-Barcode\textbackslash{}barcode\-\_\-code39(), P\-D\-F\-Barcode\textbackslash{}barcode\-\_\-i25(), calc\-\_\-bezier\-\_\-bbox(), m\-P\-D\-F\textbackslash{}\-Circle(), directw\textbackslash{}\-Circular\-Text(), m\-P\-D\-F\textbackslash{}\-Circular\-Text(), grad\textbackslash{}\-Coons\-Patch\-Mesh(), m\-P\-D\-F\textbackslash{}\-Ellipse(), grad\textbackslash{}\-Gradient(), m\-P\-D\-F\textbackslash{}\-Import\-Page(), m\-P\-D\-F\textbackslash{}\-Open\-Tag(), m\-P\-D\-F\textbackslash{}\-Over\-Write(), m\-P\-D\-F\textbackslash{}\-Paint\-Div\-B\-B(), m\-P\-D\-F\textbackslash{}\-Paint\-Div\-Ln\-Border(), form\textbackslash{}print\-\_\-ob\-\_\-checkbox(), form\textbackslash{}print\-\_\-ob\-\_\-radio(), m\-P\-D\-F\textbackslash{}printbuffer(), m\-P\-D\-F\textbackslash{}printcolumnbuffer(), m\-P\-D\-F\textbackslash{}printlistbuffer(), cssmgr\textbackslash{}\-Read\-C\-S\-S(), m\-P\-D\-F\textbackslash{}\-Rotate(), m\-P\-D\-F\textbackslash{}\-Rounded\-Rect(), m\-P\-D\-F\textbackslash{}\-Set\-Col(), cssmgr\textbackslash{}set\-C\-S\-Sboxshadow(), cssmgr\textbackslash{}set\-C\-S\-Stextshadow(), T\-T\-Font\-File\textbackslash{}sub32(), S\-V\-G\textbackslash{}svg\-\_\-overflow(), S\-V\-G\textbackslash{}svg\-Path(), S\-V\-G\textbackslash{}svg\-Rect(), S\-V\-G\textbackslash{}svg\-Text(), m\-P\-D\-F\textbackslash{}\-Table\-Header\-Footer(), m\-P\-D\-F\textbackslash{}tbsqrt(), m\-P\-D\-F\textbackslash{}\-Thumbnail(), m\-P\-D\-F\textbackslash{}transform\-Rotate(), m\-P\-D\-F\textbackslash{}transform\-Scale(), m\-P\-D\-F\textbackslash{}\-Use\-Template(), m\-P\-D\-F\textbackslash{}\-Write\-Barcode(), m\-P\-D\-F\textbackslash{}\-Write\-Barcode2() a m\-P\-D\-F\textbackslash{}\-Write\-Fixed\-Pos\-H\-T\-M\-L().
+
+\hypertarget{compress_8php_af82782656503b252ac8af7dce0ca4bba}{\index{compress.\-php@{compress.\-php}!else@{else}}
+\index{else@{else}!compress.php@{compress.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}{\bf foreach} (\$l A\-S \$k=$>$ \$ln) {\bf if} (function\-\_\-exists('file\-\_\-put\-\_\-contents')) else \{ \$mqr=0}}\label{compress_8php_af82782656503b252ac8af7dce0ca4bba}
+
+
+Definice je uvedena na řádku 95 v souboru compress.\-php.
+
+\hypertarget{compress_8php_a6733eb5f605d09eaede9845835d71c4e}{\index{compress.\-php@{compress.\-php}!exit@{exit}}
+\index{exit@{exit}!compress.php@{compress.\-php}}
+\subsubsection[{exit}]{\setlength{\rightskip}{0pt plus 5cm}exit}}\label{compress_8php_a6733eb5f605d09eaede9845835d71c4e}
+
+
+Definice je uvedena na řádku 168 v souboru compress.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-putpatterns(), Error(), m\-P\-D\-F\textbackslash{}\-Output() a Database\textbackslash{}pripoj().
+
+\hypertarget{compress_8php_a0ad06318b1464b4cece76cd1bb53ca79}{\index{compress.\-php@{compress.\-php}!if@{if}}
+\index{if@{if}!compress.php@{compress.\-php}}
+\subsubsection[{if}]{\setlength{\rightskip}{0pt plus 5cm}if = array\-\_\-unique(\$excl)}}\label{compress_8php_a0ad06318b1464b4cece76cd1bb53ca79}
+
+
+Definice je uvedena na řádku 158 v souboru compress.\-php.
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Dlouhodob�maturitn�pr�ce: Zdrojový soubor Models/MPDF/examples/example20_justify.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Dlouhodob�maturitn�pr�ce
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Hledat');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hlavní&#160;stránka</span></a></li>
+      <li><a href="pages.html"><span>Ostatní&#160;stránky</span></a></li>
+      <li><a href="annotated.html"><span>Třídy</span></a></li>
+      <li class="current"><a href="files.html"><span>Soubory</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Hledat" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Seznam&#160;souborů</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Vše</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Třídy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkce</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Stránky</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_22305cb0964bbe63c21991dd2265ce48.html">Models</a></li><li class="navelem"><a class="el" href="dir_3bbafe8f21523ffdb3cd429dbb168c71.html">MPDF</a></li><li class="navelem"><a class="el" href="dir_8006e7390ac448d67fc1c2e293cbc210.html">examples</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">example20_justify.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;$html = <span class="stringliteral">&#39;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="stringliteral">&lt;h1&gt;mPDF&lt;/h1&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="stringliteral">&lt;h2&gt;Justification&lt;/h2&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="stringliteral">&lt;h4&gt;Tables&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">&lt;p&gt;Text can be justified in table cells using in-line or stylesheet CSS. (Note that &amp;lt;p&amp;gt; tags are removed within cells along with any style definition or attributes.)&lt;/p&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">&lt;table class=&quot;bpmTopnTailC&quot;&gt;&lt;thead&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="stringliteral">&lt;tr class=&quot;headerrow&quot;&gt;&lt;th&gt;Col/Row Header&lt;/th&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="stringliteral">&lt;td&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="stringliteral">&lt;p&gt;Second column header p&lt;/p&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="stringliteral">&lt;/td&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="stringliteral">&lt;td&gt;Third column header&lt;/td&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="stringliteral">&lt;/thead&gt;&lt;tbody&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="stringliteral">&lt;tr class=&quot;oddrow&quot;&gt;&lt;th&gt;Row header 1&lt;/th&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="stringliteral">&lt;td&gt;This is data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">&lt;td&gt;This is data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">&lt;tr class=&quot;evenrow&quot;&gt;&lt;th&gt;Row header 2&lt;/th&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">&lt;td&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">&lt;p&gt;This is data p&lt;/p&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">&lt;/td&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral">&lt;td&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="stringliteral">&lt;p&gt;This is data&lt;/p&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="stringliteral">&lt;/td&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">&lt;tr class=&quot;oddrow&quot;&gt;&lt;th&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">&lt;p&gt;Row header 3&lt;/p&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">&lt;/th&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">&lt;td&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral">&lt;p&gt;This is long data&lt;/p&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">&lt;/td&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">&lt;td&gt;This is data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">&lt;tr class=&quot;evenrow&quot;&gt;&lt;th&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">&lt;p&gt;Row header 4&lt;/p&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">&lt;p&gt;&amp;lt;th&amp;gt; cell acting as header&lt;/p&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">&lt;/th&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">&lt;td style=&quot;text-align:justify;&quot;&gt;&lt;p&gt;Proin aliquet lorem id felis. Curabitur vel libero at mauris nonummy tincidunt. Donec imperdiet. Vestibulum sem sem, lacinia vel, molestie et, laoreet eget, urna. Curabitur viverra faucibus pede. Morbi lobortis. Donec dapibus. Donec tempus. Ut arcu enim, rhoncus ac, venenatis eu, porttitor mollis, dui. Sed vitae risus. In elementum sem placerat dui. Nam tristique eros in nisl. Nulla cursus sapien non quam porta porttitor. Quisque dictum ipsum ornare tortor. Fusce ornare tempus enim. &lt;/p&gt;&lt;/td&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">&lt;td&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">&lt;p&gt;This is data&lt;/p&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">&lt;/td&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">&lt;tr class=&quot;oddrow&quot;&gt;&lt;th&gt;Row header 5&lt;/th&gt;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">&lt;td&gt;Also data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral">&lt;td&gt;Also data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="stringliteral">&lt;tr class=&quot;evenrow&quot;&gt;&lt;th&gt;Row header 6&lt;/th&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="stringliteral">&lt;td&gt;Also data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">&lt;td&gt;Also data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="stringliteral">&lt;tr class=&quot;oddrow&quot;&gt;&lt;th&gt;Row header 7&lt;/th&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="stringliteral">&lt;td&gt;Also data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="stringliteral">&lt;td&gt;Also data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="stringliteral">&lt;tr class=&quot;evenrow&quot;&gt;&lt;th&gt;Row header 8&lt;/th&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="stringliteral">&lt;td&gt;Also data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="stringliteral">&lt;td&gt;Also data&lt;/td&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="stringliteral">&lt;/tr&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="stringliteral">&lt;/tbody&gt;&lt;/table&gt;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="stringliteral">&lt;p&gt;&amp;nbsp;&lt;/p&gt;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="stringliteral">&lt;h4&gt;Testing Justification with Long Words&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="stringliteral">&lt;p&gt;http://www-950.ibm.com/software/globalization/icu/demo/converters?s=ALL&amp;amp;snd=4356&amp;amp;dnd=4356&lt;/p&gt;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="stringliteral">&lt;h5&gt;Should not split&lt;/h5&gt;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="stringliteral">&lt;p&gt;Maecenas feugiat pede vel risus. Nulla et lectus eleifend &lt;i&gt;verylongwordthatwontsplit&lt;/i&gt; neque sit amet erat&lt;/p&gt;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="stringliteral">&lt;p&gt;Maecenas feugiat pede vel risus. Nulla et lectus eleifend et &lt;i&gt;verylongwordthatwontsplit&lt;/i&gt; neque sit amet erat&lt;/p&gt;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="stringliteral">&lt;h5&gt;Non-breaking Space &amp;amp;nbsp;&lt;/h5&gt;&lt;p&gt;The next example has a non-breaking space between &lt;i&gt;eleifend&lt;/i&gt; and the very long word.&lt;/p&gt;&lt;p&gt;Maecenas feugiat pede vel risus. Nulla et lectus eleifend&amp;nbsp;verylongwordthatwontsplitanywhere neque sit amet erat&lt;/p&gt;&lt;p&gt;Nbsp will only work in fonts that have a glyph to represent the character i.e. not in the CJK languages nor some Unicode fonts.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="stringliteral">&lt;h4&gt;Testing Justification with mixed Styles&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="stringliteral">&lt;p&gt;This is &lt;s&gt;strikethrough&lt;/s&gt; in &lt;b&gt;&lt;s&gt;block&lt;/s&gt;&lt;/b&gt; and &lt;small&gt;small &lt;s&gt;strikethrough&lt;/s&gt; in &lt;i&gt;small span&lt;/i&gt;&lt;/small&gt; and &lt;big&gt;big &lt;s&gt;strikethrough&lt;/s&gt; in big span&lt;/big&gt; and then &lt;u&gt;underline&lt;/u&gt; but out of span again but &lt;font color=&quot;#000088&quot;&gt;blue&lt;/font&gt; font and &lt;acronym&gt;ACRONYM&lt;/acronym&gt; text&lt;/p&gt;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="stringliteral">&lt;p&gt;This is a &lt;font color=&quot;#008800&quot;&gt;green reference&lt;sup&gt;32-47&lt;/sup&gt;&lt;/font&gt; and &lt;u&gt;underlined reference&lt;sup&gt;32-47&lt;/sup&gt;&lt;/u&gt; then reference&lt;sub&gt;32-47&lt;/sub&gt; and &lt;u&gt;underlined reference&lt;sub&gt;32-47&lt;/sub&gt;&lt;/u&gt; then &lt;s&gt;Strikethrough reference&lt;sup&gt;32-47&lt;/sup&gt;&lt;/s&gt; and &lt;s&gt;strikethrough reference&lt;sub&gt;32-47&lt;/sub&gt;&lt;/s&gt; and then more text.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="stringliteral">&lt;/p&gt; </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="stringliteral">&lt;p&gt;&lt;big&gt;Repeated in &lt;u&gt;BIG&lt;/u&gt;: This is reference&lt;sup&gt;32-47&lt;/sup&gt; and &lt;u&gt;underlined reference&lt;sup&gt;32-47&lt;/sup&gt;&lt;/u&gt; then reference&lt;sub&gt;32-47&lt;/sub&gt; and &lt;u&gt;underlined reference&lt;sub&gt;32-47&lt;/sub&gt;&lt;/u&gt; but out of span again but &lt;font color=&quot;#000088&quot;&gt;blue&lt;/font&gt; font and &lt;acronym&gt;ACRONYM&lt;/acronym&gt; text&lt;/big&gt;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="stringliteral">&lt;/p&gt; </span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="stringliteral">&lt;p&gt;&lt;small&gt;Repeated in small: This is reference&lt;sup&gt;32-47&lt;/sup&gt; and &lt;u&gt;underlined reference&lt;sup&gt;32-47&lt;/sup&gt;&lt;/u&gt; then reference&lt;sub&gt;32-47&lt;/sub&gt; and &lt;u&gt;underlined reference&lt;sub&gt;32-47&lt;/sub&gt;&lt;/u&gt; but out of span again but &lt;font color=&quot;#000088&quot;&gt;blue&lt;/font&gt; font and &lt;acronym&gt;ACRONYM&lt;/acronym&gt; text&lt;/small&gt; </span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="stringliteral">&lt;/p&gt;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="stringliteral">&lt;p style=&quot;font-size:7pt;&quot;&gt;This is &lt;s&gt;strikethrough&lt;/s&gt; in block and &lt;big&gt;big &lt;s&gt;strikethrough&lt;/s&gt; in big span&lt;/big&gt; and then &lt;u&gt;underline&lt;/u&gt; but out of span again but &lt;font color=&quot;#000088&quot;&gt;blue&lt;/font&gt; font and &lt;acronym&gt;ACRONYM&lt;/acronym&gt; text&lt;/p&gt;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="stringliteral">&lt;p style=&quot;font-size:7pt;&quot;&gt;This is reference&lt;sup&gt;32-47&lt;/sup&gt; and &lt;u&gt;underlined reference&lt;sup&gt;32-47&lt;/sup&gt;&lt;/u&gt; then reference&lt;sub&gt;32-47&lt;/sub&gt; and &lt;u&gt;underlined reference&lt;sub&gt;32-47&lt;/sub&gt;&lt;/u&gt; then &lt;s&gt;Strikethrough reference&lt;sup&gt;32-47&lt;/sup&gt;&lt;/s&gt; and &lt;s&gt;strikethrough reference&lt;sub&gt;32-47&lt;/sub&gt;&lt;/s&gt; then more text.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="stringliteral">&lt;/p&gt; </span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="stringliteral">&lt;p&gt;&lt;/p&gt;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="stringliteral">&lt;p style=&quot;font-size:7pt;&quot;&gt;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral">&lt;big&gt;Repeated in BIG: This is reference&lt;sup&gt;32-47&lt;/sup&gt; and &lt;u&gt;underlined reference&lt;sup&gt;32-47&lt;/sup&gt;&lt;/u&gt; then reference&lt;sub&gt;32-47&lt;/sub&gt; and &lt;u&gt;underlined reference&lt;sub&gt;32-47&lt;/sub&gt;&lt;/u&gt; but out of span again but &lt;font color=&quot;#000088&quot;&gt;blue&lt;/font&gt; font and &lt;acronym&gt;ACRONYM&lt;/acronym&gt; text&lt;/big&gt;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="stringliteral">&lt;/p&gt;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">&#39;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;include(<span class="stringliteral">&quot;../mpdf.php&quot;</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;$mpdf=<span class="keyword">new</span> mPDF(<span class="charliteral">&#39;c&#39;</span>,<span class="stringliteral">&#39;A4&#39;</span>,<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;&#39;</span>,32,25,27,25,16,13); </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;$mpdf-&gt;SetDisplayMode(<span class="stringliteral">&#39;fullpage&#39;</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">// LOAD a stylesheet</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;$stylesheet = file_get_contents(<span class="stringliteral">&#39;mpdfstyletables.css&#39;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;$mpdf-&gt;WriteHTML($stylesheet,1);    <span class="comment">// The parameter 1 tells that this is css/style only and no body/html/text</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;$mpdf-&gt;WriteHTML($html);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">// SPACING</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;$mpdf-&gt;WriteHTML(<span class="stringliteral">&quot;&lt;h4&gt;Spacing&lt;/h4&gt;&lt;p&gt;mPDF uses both letter- and word-spacing for text justification. The default is a mixture of both, set by the configurable values jSWord and jSmaxChar. (Only word spacing is used when cursive languages such as Arabic or Indic are detected.) &lt;/p&gt;&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;$mpdf-&gt;jSWord = 0;  <span class="comment">// Proportion (/1) of space (when justifying margins) to allocate to Word vs. Character</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;$mpdf-&gt;jSmaxChar = 0;   <span class="comment">// Maximum spacing to allocate to character spacing. (0 = no maximum)</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;$mpdf-&gt;WriteHTML(<span class="stringliteral">&quot;&lt;h5&gt;Character spacing&lt;/h5&gt;&lt;p&gt;Maecenas feugiat pede vel risus. Nulla et lectus eleifend &lt;i&gt;verylongwordthatwontsplitanywhere&lt;/i&gt; neque sit amet erat&lt;/p&gt;&quot;</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// Back to default settings</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;$mpdf-&gt;jSWord = 0.4;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;$mpdf-&gt;jSmaxChar = 2;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;$mpdf-&gt;WriteHTML(<span class="stringliteral">&quot;&lt;h5&gt;Word spacing&lt;/h5&gt;&lt;p style=\&quot;letter-spacing:0\&quot;&gt;Maecenas feugiat pede vel risus. Nulla et lectus eleifend &lt;i&gt;verylongwordthatwontsplitanywhere&lt;/i&gt; neque sit amet erat&lt;/p&gt;&quot;</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;$mpdf-&gt;WriteHTML(<span class="stringliteral">&quot;&lt;h5&gt;Mixed Character and Word spacing&lt;/h5&gt;&lt;p&gt;Maecenas feugiat pede vel risus. Nulla et lectus eleifend &lt;i&gt;verylongwordthatwontsplitanywhere&lt;/i&gt; neque sit amet erat&lt;/p&gt;&quot;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;$mpdf-&gt;Output();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;exit;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;?&gt;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno ne 13. dub 2014 14.01:49 pro projekt Dlouhodob�maturitn�pr�ce programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

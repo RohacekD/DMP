@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['allow_5fcharset_5fconversion',['allow_charset_conversion',['../config_8php.html#acf49acd024290d78ee8b94459a4ae703',1,'allow_charset_conversion():&#160;config.php'],['../example49__changelog_8php.html#abef25a78e171b6e37513665f692d1960',1,'allow_charset_conversion():&#160;example49_changelog.php'],['../show__code_8php.html#abef25a78e171b6e37513665f692d1960',1,'allow_charset_conversion():&#160;show_code.php']]],
+  ['allow_5fhtml_5foptional_5fendtags',['allow_html_optional_endtags',['../config_8php.html#a0c175fde7f6392aaa72e9cf5d933cf5b',1,'config.php']]],
+  ['allow_5foutput_5fbuffering',['allow_output_buffering',['../config_8php.html#a06a3a32a809fb752defc67c71c2e3f3d',1,'config.php']]],
+  ['allowcjkorphans',['allowCJKorphans',['../config_8php.html#ac3c778769cee991acbddda70d97d2d05',1,'config.php']]],
+  ['allowcjkoverflow',['allowCJKoverflow',['../config_8php.html#a4fe056d3dd16ea78955159e107a42a63',1,'config.php']]],
+  ['allowedcsstags',['allowedCSStags',['../config_8php.html#a47f216504b9328e6307ee0d9d3cbe0ba',1,'config.php']]],
+  ['anchor2bookmark',['anchor2Bookmark',['../config_8php.html#a8ac4678cf6d870bd789cf4ea72236a70',1,'config.php']]],
+  ['annotmargin',['annotMargin',['../config_8php.html#ad2857b9ce8d1f02a000da38c1ac8fc8c',1,'config.php']]],
+  ['annotopacity',['annotOpacity',['../config_8php.html#a388cb87bb22aff4bd572cb98d06f8ed8',1,'config.php']]],
+  ['annotsize',['annotSize',['../config_8php.html#aec87d4b571fd919d5940c9dd44756157',1,'config.php']]],
+  ['autofont_5fall',['AUTOFONT_ALL',['../mpdf_8php.html#a7610702a00ad8f89228d9bcd7d2402e3',1,'mpdf.php']]],
+  ['autofont_5fcjk',['AUTOFONT_CJK',['../mpdf_8php.html#af3d2249ee24b8699ac31e465e2e91369',1,'mpdf.php']]],
+  ['autofont_5findic',['AUTOFONT_INDIC',['../mpdf_8php.html#a77d04295862453c15c32c84b67c1616d',1,'mpdf.php']]],
+  ['autofont_5frtl',['AUTOFONT_RTL',['../mpdf_8php.html#adf1bd08e567f41674b63d1ad2bc6c031',1,'mpdf.php']]],
+  ['autofont_5fthaiviet',['AUTOFONT_THAIVIET',['../mpdf_8php.html#aa2ebc1164b8aefa9886f0824e66cc49a',1,'mpdf.php']]],
+  ['autofontgroupsize',['autoFontGroupSize',['../config_8php.html#aca0ab44e957d771fe1126cb55d31ce80',1,'config.php']]],
+  ['automarginpadding',['autoMarginPadding',['../config_8php.html#a96413d9f2536e015ab6e9aa606d776f1',1,'config.php']]],
+  ['autopadding',['autoPadding',['../config_8php.html#a44467dd3722584e4e362e081f16caf23',1,'config.php']]],
+  ['available_5funifonts',['available_unifonts',['../font__names_8php.html#a049dd680083527692e7216f4666de169',1,'font_names.php']]]
+];

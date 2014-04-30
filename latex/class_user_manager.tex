@@ -1,0 +1,291 @@
+\hypertarget{class_user_manager}{\subsection{Dokumentace třídy User\-Manager}
+\label{class_user_manager}\index{User\-Manager@{User\-Manager}}
+}
+\subsubsection*{Veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_user_manager_a6db6a45346931bb3981be2db41c91632}{Log\-Out} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Statické veřejné metody}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_user_manager_af9b7469e087532077755302c649c33f5}{Log\-In} (\$login, \$password)
+\item 
+static \hyperlink{class_user_manager_afb9466d8ab2c831f39dce61d75e311a2}{Want\-Something} ()
+\item 
+static \hyperlink{class_user_manager_a591da89b9f5821a5cd5b128053d85288}{Is\-Logged} ()
+\item 
+static \hyperlink{class_user_manager_ae27411cd0d85f59baacc609d2a68f6ef}{Access\-Level\-By\-Id} (\$id)
+\item 
+static \hyperlink{class_user_manager_a0d41a9f7e30ab5ef491473e165feba72}{Settings} ()
+\item 
+static \hyperlink{class_user_manager_affaf39c1c3d2737c120b42ea519426cd}{Uniq\-Name} (\$name, \$actual\-\_\-user)
+\item 
+static \hyperlink{class_user_manager_ad0ad8e9939e50edddd9e974166c64cae}{Uniq\-Email} (\$email, \$actual\-\_\-user)
+\item 
+static \hyperlink{class_user_manager_a4ba3218781f8d248ccf97b95dd728b66}{Valid\-Email} (\$email)
+\item 
+static \hyperlink{class_user_manager_a8db66f709a79d60e871d816253dabf1f}{Valid\-Pass} (\$pass)
+\item 
+static \hyperlink{class_user_manager_a9f8ffffb65641f622d58a6a68c2992db}{User\-To\-D\-B} (\$user)
+\item 
+static \hyperlink{class_user_manager_a90514aa811f656596a7940a4383c5307}{Print\-User} (\$user, \$html)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailní popis}
+Třída sloužící k manipulaci s uživateli. K ukládání používá Class \hyperlink{class_user}{User} \begin{DoxyAuthor}{Autor}
+Ratan 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Chyba}
+\item[\hyperlink{bug__bug000006}{Chyba}]Need refactor\end{DoxyRefDesc}
+
+
+Definice je uvedena na řádku 9 v souboru User\-Manager.\-php.
+
+
+
+\subsubsection{Dokumentace k metodám}
+\hypertarget{class_user_manager_ae27411cd0d85f59baacc609d2a68f6ef}{\index{User\-Manager@{User\-Manager}!Access\-Level\-By\-Id@{Access\-Level\-By\-Id}}
+\index{Access\-Level\-By\-Id@{Access\-Level\-By\-Id}!UserManager@{User\-Manager}}
+\paragraph[{Access\-Level\-By\-Id}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Access\-Level\-By\-Id (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_ae27411cd0d85f59baacc609d2a68f6ef}
+Vrací access level uživatele podle jeho zadaného id. 
+\begin{DoxyParams}[1]{Parametry}
+int & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 70 v souboru User\-Manager.\-php.
+
+\hypertarget{class_user_manager_a591da89b9f5821a5cd5b128053d85288}{\index{User\-Manager@{User\-Manager}!Is\-Logged@{Is\-Logged}}
+\index{Is\-Logged@{Is\-Logged}!UserManager@{User\-Manager}}
+\paragraph[{Is\-Logged}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Is\-Logged (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_a591da89b9f5821a5cd5b128053d85288}
+Vrací true pokud je uživatel přihlášen a provede kontrolu platnosti přihlášení. 
+
+Definice je uvedena na řádku 56 v souboru User\-Manager.\-php.
+
+
+
+Používá se v Requests\-Controller\textbackslash{}run().
+
+\hypertarget{class_user_manager_af9b7469e087532077755302c649c33f5}{\index{User\-Manager@{User\-Manager}!Log\-In@{Log\-In}}
+\index{Log\-In@{Log\-In}!UserManager@{User\-Manager}}
+\paragraph[{Log\-In}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Log\-In (
+\begin{DoxyParamCaption}
+\item[{}]{\$login, }
+\item[{}]{\$password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_af9b7469e087532077755302c649c33f5}
+Validace přihlášení. Pokud je přihlášení validní vrátí true a přihlásí uživatele, jinak přesměruje na chybovou hlášku. 
+\begin{DoxyParams}{Parametry}
+{\em \$login} & Přihlašovací jméno \\
+\hline
+{\em \$password} & Přihlašovací heslo \\
+\hline
+\end{DoxyParams}
+
+
+Definice je uvedena na řádku 15 v souboru User\-Manager.\-php.
+
+
+
+Používá se v Want\-Something().
+
+\hypertarget{class_user_manager_a6db6a45346931bb3981be2db41c91632}{\index{User\-Manager@{User\-Manager}!Log\-Out@{Log\-Out}}
+\index{Log\-Out@{Log\-Out}!UserManager@{User\-Manager}}
+\paragraph[{Log\-Out}]{\setlength{\rightskip}{0pt plus 5cm}User\-Manager\-::\-Log\-Out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_user_manager_a6db6a45346931bb3981be2db41c91632}
+Odhlásí aktuálního uživatele 
+
+Definice je uvedena na řádku 46 v souboru User\-Manager.\-php.
+
+
+
+Používá se v Want\-Something().
+
+\hypertarget{class_user_manager_a90514aa811f656596a7940a4383c5307}{\index{User\-Manager@{User\-Manager}!Print\-User@{Print\-User}}
+\index{Print\-User@{Print\-User}!UserManager@{User\-Manager}}
+\paragraph[{Print\-User}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Print\-User (
+\begin{DoxyParamCaption}
+\item[{}]{\$user, }
+\item[{}]{\$html}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_a90514aa811f656596a7940a4383c5307}
+Převede data o uživateli do vytisknutelné podoby. 
+\begin{DoxyParams}[1]{Parametry}
+\hyperlink{class_user}{User} & {\em \$user} & \\
+\hline
+string & {\em \$html} & H\-T\-M\-L code with tags for insert data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+string H\-T\-M\-L kod pro tisk 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 213 v souboru User\-Manager.\-php.
+
+\hypertarget{class_user_manager_a0d41a9f7e30ab5ef491473e165feba72}{\index{User\-Manager@{User\-Manager}!Settings@{Settings}}
+\index{Settings@{Settings}!UserManager@{User\-Manager}}
+\paragraph[{Settings}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_a0d41a9f7e30ab5ef491473e165feba72}
+Zjistí jestli bylo požádáno o změnu nastavení a o jakou se jedná. $<$ Něco je špatně s částí settings
+
+$<$ Něco je špatně s částí account 
+
+Definice je uvedena na řádku 78 v souboru User\-Manager.\-php.
+
+\hypertarget{class_user_manager_ad0ad8e9939e50edddd9e974166c64cae}{\index{User\-Manager@{User\-Manager}!Uniq\-Email@{Uniq\-Email}}
+\index{Uniq\-Email@{Uniq\-Email}!UserManager@{User\-Manager}}
+\paragraph[{Uniq\-Email}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Uniq\-Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$actual\-\_\-user}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_ad0ad8e9939e50edddd9e974166c64cae}
+Zjišťuje jestli stejný email má již někdo jiný než dotazovaný user. 
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$email} & \\
+\hline
+int & {\em \$actual\-\_\-user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+boolean 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 161 v souboru User\-Manager.\-php.
+
+
+
+Používá se v User\textbackslash{}\-Set\-Email().
+
+\hypertarget{class_user_manager_affaf39c1c3d2737c120b42ea519426cd}{\index{User\-Manager@{User\-Manager}!Uniq\-Name@{Uniq\-Name}}
+\index{Uniq\-Name@{Uniq\-Name}!UserManager@{User\-Manager}}
+\paragraph[{Uniq\-Name}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Uniq\-Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$actual\-\_\-user}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_affaf39c1c3d2737c120b42ea519426cd}
+Zjišťuje jestli stejné jméno má již někdo jiný než dotayovaný user. 
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$name} & \\
+\hline
+int & {\em \$actual\-\_\-user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+boolean 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 148 v souboru User\-Manager.\-php.
+
+
+
+Používá se v User\textbackslash{}\-Set\-Name().
+
+\hypertarget{class_user_manager_a9f8ffffb65641f622d58a6a68c2992db}{\index{User\-Manager@{User\-Manager}!User\-To\-D\-B@{User\-To\-D\-B}}
+\index{User\-To\-D\-B@{User\-To\-D\-B}!UserManager@{User\-Manager}}
+\paragraph[{User\-To\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-User\-To\-D\-B (
+\begin{DoxyParamCaption}
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_a9f8ffffb65641f622d58a6a68c2992db}
+Podle přijatého objektu zapíše uživatele do D\-B. 
+\begin{DoxyParams}[1]{Parametry}
+\hyperlink{class_user}{User} & {\em \$user} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Výjimky}
+{\em Exception} & \{\char`\"{}\-Attribute 1 of User\-Manager\-::\-User\-To\-D\-B must be object\char`\"{}, 1\} \\
+\hline
+{\em Exception} & \{\char`\"{}\-Bad attribute type\char`\"{}, 1\} \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyRefDesc}{Chyba}
+\item[\hyperlink{bug__bug000007}{Chyba}]Nedodělaná vertze pro editaci uživatele, není potřeba jen pokud by někdo rozšiřoval. \end{DoxyRefDesc}
+
+
+Definice je uvedena na řádku 195 v souboru User\-Manager.\-php.
+
+\hypertarget{class_user_manager_a4ba3218781f8d248ccf97b95dd728b66}{\index{User\-Manager@{User\-Manager}!Valid\-Email@{Valid\-Email}}
+\index{Valid\-Email@{Valid\-Email}!UserManager@{User\-Manager}}
+\paragraph[{Valid\-Email}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Valid\-Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_a4ba3218781f8d248ccf97b95dd728b66}
+Zjišťuje jestli je email validní. 
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+boolean 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 173 v souboru User\-Manager.\-php.
+
+
+
+Používá se v User\textbackslash{}\-Set\-Email().
+
+\hypertarget{class_user_manager_a8db66f709a79d60e871d816253dabf1f}{\index{User\-Manager@{User\-Manager}!Valid\-Pass@{Valid\-Pass}}
+\index{Valid\-Pass@{Valid\-Pass}!UserManager@{User\-Manager}}
+\paragraph[{Valid\-Pass}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Valid\-Pass (
+\begin{DoxyParamCaption}
+\item[{}]{\$pass}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_a8db66f709a79d60e871d816253dabf1f}
+Tests if passwrod is longer than 9 characters 
+\begin{DoxyParams}[1]{Parametry}
+string & {\em \$pass} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Návratová hodnota}
+boolean 
+\end{DoxyReturn}
+
+
+Definice je uvedena na řádku 183 v souboru User\-Manager.\-php.
+
+\hypertarget{class_user_manager_afb9466d8ab2c831f39dce61d75e311a2}{\index{User\-Manager@{User\-Manager}!Want\-Something@{Want\-Something}}
+\index{Want\-Something@{Want\-Something}!UserManager@{User\-Manager}}
+\paragraph[{Want\-Something}]{\setlength{\rightskip}{0pt plus 5cm}static User\-Manager\-::\-Want\-Something (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_manager_afb9466d8ab2c831f39dce61d75e311a2}
+Volá se na začátku scriptu. Zjišťuje jestli uživatel chce něco jako třeba\-: Přihlásit se odhlásit... 
+
+Definice je uvedena na řádku 32 v souboru User\-Manager.\-php.
+
+
+
+Odkazuje se na Log\-In() a Log\-Out().
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+Models/User\-Manager.\-php\end{DoxyCompactItemize}

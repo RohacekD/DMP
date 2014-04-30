@@ -1,0 +1,45 @@
+<article class="fragment" style="width: 100%">
+<h1>Správa uživatelů</h1>
+<table>
+	<thead>
+		<tr>
+			<th>
+			Uživ jméno
+			</th>
+			<th>
+			Jméno
+			</th>
+			<th>
+			Restartovat heslo
+			</th>
+			<th>
+			Editovat
+			</th>
+			<th>
+			Smazat uživatele
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php if(false):?>
+<?php 
+else:
+foreach($users as $u):?>
+		<tr class="show">
+			<td><?=$u->Name();?></td>
+			<td><?=$u->GetFullName();?></td>
+			<td><a class="button" href="<?=Settings::$url_base."/administration/Reset-Pass/".$u->id()."/".$limit."/".$page;?>" onclick="return confirm('Opravdu chcete restartovat heslo uživatele <?=$u->Name()?>')">Restartovat heslo</a></td>
+			<td><a class="button" href="<?=Settings::$url_base."/administration/Edit-Users/".($u->id());?>">Editovat</a></td>
+			<td><a class="button" href="<?=Settings::$url_base."/administration/Delete-Users/".$u->id()."/".$limit."/".$page;?>" onclick="return confirm('Opravdu chcete smazat uživatele <?=$u->Name()?>')">Smazat</a></td>
+		</tr>
+<?php endforeach;
+endif;?>
+	</tbody>
+</table>
+<?php if ($page!=1):?>
+<a href="<?=Settings::$url_base."/administration/users/".$limit."/".($page-1);?>" class="button">Předchozí stránka</a>
+<?php endif;
+if($next):?>
+<a href="<?=Settings::$url_base."/administration/users/".$limit."/".($page+1);?>" class="button">Další stránka</a>
+<?php endif;?>
+</article>

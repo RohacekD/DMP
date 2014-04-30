@@ -1,0 +1,61 @@
+<article class="fragment" style="width: 100%">
+	<h1>Editace uživatele <?=$user_e->GetFullName();?></h1>
+	<form method="post">
+		<table>
+			<tr>
+				<td>
+					<label for="title">Titul</label>
+				</td>
+				<td>
+					<label class="select">
+						<select name="title">
+							<option value="NULL" <?php if($user_e->GetTitle()=="NULL") echo "selected=\"selected\"";?>>Žádný</option>
+							<option value="Bc." <?php if($user_e->GetTitle()=="Bc.") echo "selected=\"selected\"";?>>Bc.</option>
+							<option value="Ing." <?php if($user_e->GetTitle()=="Ing.") echo "selected=\"selected\"";?>>Ing.</option>
+							<option value="Mgr." <?php if($user_e->GetTitle()=="Mgr.") echo "selected=\"selected\"";?>>Mgr.</option>
+							<option value="PhDr."<?php if($user_e->GetTitle()=="PhDr.") echo "selected=\"selected\"";?> >PhDr.</option>
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="firstName">Křestní jméno:</label>
+				</td>
+				<td><input type="text" name="firstName" id="firstName" value="<?=$user_e->GetFirstName()?>" onChange="Whisper_notNull(this);" required /><div id="firstName-whisper" class="Whisper"><p><b>Ahoj</b></p></div></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="lastName">Příjmení:</label>
+				</td>
+				<td><input type="text" name="lastName" id="lastName" value="<?=$user_e->GetLastName()?>" onChange="Whisper_notNull(this);" required /><div id="lastName-whisper" class="Whisper"><p><b>Ahoj</b></p></div></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="email">Email:</label>
+				</td>
+				<td><input type="text" name="email" id="email" value="<?=$user_e->Email();?>" onChange="Whisper_email(this, 'user');" required /><div id="email-whisper" class="Whisper"><p><b>Ahoj</b></p></div></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="access">Oprávnění:</label>
+				</td>
+				<td>
+					<label class="select">
+						<select name="access">
+<?php 
+require_once 'Settings.class.php';
+foreach (Settings::$access_levels as $key=>$val):?>
+							<option value="<?= $key;?>" <?php if($user_e->GetAccess()==$key) echo "selected"?>><?=$val;?></option>
+<?php endforeach;?>
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="submit" value="Nastavit" /></td>
+			</tr>
+		</table>
+	</form>
+</article>

@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Dlouhodob�maturitn�pr�ce: Zdrojový soubor Models/MPDF/examples/example53_new_mPDF_v5-0_fonts.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Dlouhodob�maturitn�pr�ce
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Hledat');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hlavní&#160;stránka</span></a></li>
+      <li><a href="pages.html"><span>Ostatní&#160;stránky</span></a></li>
+      <li><a href="annotated.html"><span>Třídy</span></a></li>
+      <li class="current"><a href="files.html"><span>Soubory</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Hledat" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Seznam&#160;souborů</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Vše</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Třídy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkce</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Stránky</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_22305cb0964bbe63c21991dd2265ce48.html">Models</a></li><li class="navelem"><a class="el" href="dir_3bbafe8f21523ffdb3cd429dbb168c71.html">MPDF</a></li><li class="navelem"><a class="el" href="dir_8006e7390ac448d67fc1c2e293cbc210.html">examples</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">example53_new_mPDF_v5-0_fonts.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ini_set(<span class="stringliteral">&quot;memory_limit&quot;</span>,<span class="stringliteral">&quot;128M&quot;</span>);</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;$html = <span class="stringliteral">&#39;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="stringliteral">&lt;style&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="stringliteral">body {</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="stringliteral">    font-family: sans-serif;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">    font-size: 10pt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="stringliteral">h4 {</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="stringliteral">    font-variant: small-caps; </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="stringliteral">h5 {</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="stringliteral">    margin-bottom: 0;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">    color: #110044;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="stringliteral">dl {</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="stringliteral">    margin: 0;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">}</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">&lt;/style&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">&lt;h1&gt;&lt;/a&gt;mPDF&lt;/h1&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">&lt;h2&gt;Fonts in mPDF Version 5.x&lt;/h2&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">&lt;p style=&quot;color: red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This example will only display correctly if you have all the fonts installed in mPDF&lt;/p&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral">&lt;p&gt;mPDF version 5 supports Truetype fonts, reading and embedding directly from the .ttf font files. Fonts must follow the Truetype specification and use Unicode mapping to the characters. Truetype collections (.ttc files) and Opentype files (.otf) in Truetype format are also supported.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="stringliteral">&lt;h4&gt;Easy to add new fonts&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">&lt;ol&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">&lt;li&gt;Upload the Truetype font file to the fonts directory (/ttfonts)&lt;/li&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">&lt;li&gt;Define the font file details in the configuration file (config_fonts.php)&lt;/li&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">&lt;li&gt;Access the font by specifying it in your HTML code as the CSS font-family&lt;/li&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">&lt;/ol&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">&lt;div&gt;These are some examples of Windows fonts:&lt;/div&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE;&quot;&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family: Arial&quot;&gt;Arial - The quick, sly fox jumped over the lazy brown dog.&lt;/div&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family: \&#39;Comic Sans MS\&#39;&quot;&gt;Comic Sans MS - The quick, sly fox jumped over the lazy brown dog.&lt;/div&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family: \&#39;Trebuchet MS\&#39;&quot;&gt;Trebuchet - The quick, sly fox jumped over the lazy brown dog.&lt;/div&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family: Calibri&quot;&gt;Calibri - The quick, sly fox jumped over the lazy brown dog.&lt;/div&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family: Quillscript&quot;&gt;QuillScript - The quick, sly fox jumped over the lazy brown dog.&lt;/div&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family: \&#39;Lucida Console\&#39;&quot;&gt;Lucidaconsole - The quick, sly fox jumped over the lazy brown dog.&lt;/div&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family: Tahoma&quot;&gt;Tahoma - The quick, sly fox jumped over the lazy brown dog.&lt;/div&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">&lt;h4&gt;Full Unicode support&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">&lt;p&gt;The DejaVu fonts distributed with mPDF contain an extensive set of characters, but it is easy to add fonts to access uncommon characters.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE;&quot;&gt;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="stringliteral">&lt;dl&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="stringliteral">&lt;dt&gt;Georgian (DejaVuSansCondensed)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:\&#39;Dejavu Sans Condensed\&#39;;&quot;&gt;&amp;#4256; &amp;#4257; &amp;#4258; &amp;#4259; &amp;#4260; &amp;#4261; &amp;#4262; &amp;#4263; &amp;#4264; &amp;#4265; &amp;#4266; &amp;#4267; &amp;#4268; &amp;#4269; &amp;#4270; &amp;#4271; &amp;#4272; &amp;#4273; &amp;#4274; &amp;#4275;&lt;/dd&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="stringliteral">&lt;dt&gt;Runic (Junicode)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:junicode;&quot;&gt;&amp;#5792; &amp;#5793; &amp;#5794; &amp;#5795; &amp;#5796; &amp;#5797; &amp;#5798; &amp;#5799; &amp;#5800; &amp;#5801; &amp;#5802; &amp;#5803; &amp;#5804; &amp;#5805; &amp;#5806; &amp;#5807; &amp;#5808; &amp;#5809; &amp;#5810; &amp;#5811; &amp;#5812; &amp;#5813; &amp;#5814; &amp;#5815; &amp;#5816; &amp;#5817; &amp;#5818; &amp;#5819; &amp;#5820;&lt;/dd&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="stringliteral">&lt;dt&gt;Greek Extended (Quivira)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:quivira;&quot;&gt;&amp;#7936; &amp;#7937; &amp;#7938; &amp;#7939; &amp;#7940; &amp;#7941; &amp;#7942; &amp;#7943; &amp;#7944; &amp;#7945; &amp;#7946; &amp;#7947; &amp;#7948; &amp;#7949; &amp;#7950; &amp;#7951; &amp;#7952; &amp;#7953; &amp;#7954; &amp;#7955; &amp;#7956; &amp;#7957; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="stringliteral">&lt;dt&gt;IPA Extensions (Quivira)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:quivira;&quot;&gt;&amp;#592; &amp;#593; &amp;#594; &amp;#595; &amp;#596; &amp;#597; &amp;#598; &amp;#599; &amp;#600; &amp;#601; &amp;#602; &amp;#603; &amp;#604; &amp;#675; &amp;#676; &amp;#677; &amp;#678; &amp;#679; &amp;#680; &amp;#681; &amp;#682; &amp;#683; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="stringliteral">&lt;dt&gt;Letterlike Symbols (Symbola)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:symbola;&quot;&gt;&amp;#8448; &amp;#8449; &amp;#8450; &amp;#8451; &amp;#8452; &amp;#8453; &amp;#8454; &amp;#8455; &amp;#8456; &amp;#8457; &amp;#8458; &amp;#8459; &amp;#8460; &amp;#8461; &amp;#8462; &amp;#8463; &amp;#8464; &amp;#8465; &amp;#8466; &amp;#8467; &amp;#8468; &amp;#8469; &amp;#8470; &amp;#8471; &amp;#8472; &amp;#8473; &amp;#8474; &amp;#8475; &amp;#8476; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="stringliteral">&lt;dt&gt;Mathematical Operators (Symbola)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:symbola;&quot;&gt;&amp;#8704; &amp;#8705; &amp;#8706; &amp;#8707; &amp;#8708; &amp;#8709; &amp;#8710; &amp;#8711; &amp;#8712; &amp;#8713; &amp;#8714; &amp;#8715; &amp;#8716; &amp;#8717; &amp;#8718; &amp;#8719; &amp;#8720; &amp;#8721; &amp;#8722; &amp;#8723; &amp;#8724; &amp;#8725; &amp;#8726; &amp;#8727; &amp;#8728; &amp;#8729; &amp;#8730; &amp;#8731; &amp;#8732; &amp;#8733; &amp;#8734; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="stringliteral">&lt;dt&gt;Miscellaneous Technical (Symbola)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:symbola;&quot;&gt;&amp;#8960; &amp;#8961; &amp;#8962; &amp;#8963; &amp;#8964; &amp;#8965; &amp;#8966; &amp;#8967;&amp;#8974; &amp;#8975; &amp;#8976; &amp;#8977; &amp;#8978; &amp;#8979; &amp;#8980; &amp;#8981; &amp;#8982; &amp;#8983; &amp;#8984; &amp;#8985; &amp;#8986; &amp;#8987; &amp;#8992; &amp;#8993; &amp;#8994; &amp;#8995; &amp;#8996; &amp;#8997; &amp;#8998; &amp;#8999; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="stringliteral">&lt;dt&gt;Enclosed Alphanumerics (Quivira)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:quivira;&quot;&gt;&amp;#9312; &amp;#9313; &amp;#9314; &amp;#9315; &amp;#9316; &amp;#9317; &amp;#9318; &amp;#9319; &amp;#9320; &amp;#9321; &amp;#9322; &amp;#9323; &amp;#9324; &amp;#9325; &amp;#9326; &amp;#9327;&lt;/dd&gt;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="stringliteral">&lt;dt&gt;Miscellaneous Symbols (DejaVuSansCondensed)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:\&#39;Dejavu Sans Condensed\&#39;;&quot;&gt;&amp;#9728; &amp;#9729; &amp;#9730; &amp;#9731; &amp;#9732; &amp;#9733; &amp;#9734; &amp;#9735; &amp;#9736; &amp;#9737; &amp;#9738; &amp;#9739; &amp;#9740; &amp;#9741; &amp;#9742; &amp;#9743; &amp;#9744; &amp;#9745; &amp;#9746; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="stringliteral">&lt;dt&gt;Supplemental Arrows-B (Symbola)&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="stringliteral">&lt;dd style=&quot;font-family:symbola;&quot;&gt;&amp;#10496; &amp;#10497; &amp;#10498; &amp;#10499; &amp;#10500; &amp;#10501; &amp;#10502; &amp;#10503; &amp;#10504; &amp;#10505; &amp;#10506; &amp;#10507; &amp;#10512; &amp;#10513; &amp;#10516; &amp;#10517; &amp;#10518; &amp;#10519; &amp;#10520; &amp;#10614; &amp;#10615; &amp;#10616; &amp;#10617; &amp;#10618; &amp;#10619; &amp;#10620; &amp;#10621; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="stringliteral">&lt;/dl&gt;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="stringliteral">The online manual lists a number of open-source fonts available to cover uncommon characters: &lt;a href=&quot;http://mpdf1.com/manual/index.php?tid=451&quot;&gt;http://mpdf1.com/manual/index.php?tid=451&lt;/a&gt;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="stringliteral">&lt;pagebreak /&gt;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="stringliteral">&lt;h2&gt;Complex scripts&lt;/h2&gt;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="stringliteral">&lt;p&gt;Although all characters may be displayed, there are various reasons why a script may not appear as expected.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="stringliteral">&lt;h4&gt;Right-to-left languages (Hebrew, Arabic etc.)&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="stringliteral">Arabic languages and Hebrew are written in a right-to-left direction (RTL). mPDF recognises both Arabic and Hebrew languages and reverses text direction automatically.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 0.5em; background-color: #EEEEEE; font-size: 18pt; font-family:tahoma; text-align: center;&quot;&gt;</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="stringliteral">&amp;#1571;&amp;#1604;&amp;#1587;&amp;#1617;&amp;#1604;&amp;#1575;&amp;#1605; &amp;#1593;&amp;#1604;&amp;#1610;&amp;#1603;&amp;#1605; &amp;nbsp; &amp;nbsp; &amp;#1513;&amp;#1500;&amp;#1493;&amp;#1501;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="stringliteral">Arabic languages (but not Hebrew) also change the form of the letter depending on its position in the text e.g. these are the initial, medial, final, and isolated forms of arabic letter \&#39;ain\&#39;:</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:xbriyaz; border:0.2mm solid #000088; padding: 0.5em; background-color: #EEEEEE; font-size: 18pt; text-align: center;&quot;&gt; &amp;#x639; &amp;#x640;&amp;#x639; &amp;#x640;&amp;#x639;&amp;#x640; &amp;#x639;&amp;#x640; &lt;/div&gt;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="stringliteral">The isolated characters are contained in the Unicode block \&#39;Arabic\&#39; U+0600 - U+06FF.&lt;br /&gt;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">The initial, medial and final forms are contained in Unicode Blocks \&#39;Arabic Presentation Forms\&#39; A and B (U+FB50 - U+FDFF, U+FE70 - U+FEFE). Note that quite a large number of fonts contain the isolated characters but not the presentation forms. Fonts used with mPDF must contain the \&#39;Arabic Presentation Forms\&#39; in order to display arabic text correctly. mPDF automatically converts letters to their initial/medial/final forms in several languages: arabic, persian/farsi, urdu, sindhi and pashto.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="stringliteral">&lt;p&gt;Arabic text is used for many different languages e.g. persian/farsi, urdu, pashto etc. These languages often contain letters unique to that language. \&#39;Arabic\&#39; fonts do not always contain the full set of arabic charcters necessary for all languages. &lt;/p&gt;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="stringliteral">&lt;p&gt;Other RTL languages (using other alphabets) are reversed in order, but not otherwise processed, by mPDF e.g. Syriac, Thaana, N\&#39;Ko, and Samaritan.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="stringliteral">&lt;h4&gt;Indic languages&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="stringliteral">Indic languages are also complex scripts which require some processing of characters before display. For example some vowels consist of 2 characters, to be placed before and after the adjacent consonant e.g.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:ind_ml_1_001; border:0.2mm solid #000088; padding: 0.5em; background-color: #EEEEEE; font-size: 18pt; text-align: center;&quot;&gt;</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral"> &lt;div style=&quot;font-family: sans; font-size:normal&quot;&gt;U+0D1C + U+0D4C [vowel AU] = [written together as &amp;amp;#x0D1C;&amp;amp;#x0D4C;]&lt;/div&gt;</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="stringliteral"> &amp;#x0D1C; + &amp;#x0D4C; = &amp;#x0D1C;&amp;#x0D4C;&lt;/div&gt;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">&lt;p style=&quot;margin-bottom: 0&quot;&gt;Consonant conjuncts are where two adjacent characters are written as a single \&#39;conjunct\&#39; form e.g.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:ind_hi_1_001; border:0.2mm solid #000088; padding: 0.5em; background-color: #EEEEEE; font-size: 18pt; text-align: center;&quot;&gt; &amp;#2346; + &amp;#2401; = &amp;#2346;&amp;#2403;&lt;/div&gt;</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral">&lt;p style=&quot;margin-bottom: 0&quot;&gt;mPDF can support some of these languages, but requires specially prepared font files that are unique to mPDF.&lt;br /&gt;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="stringliteral">Supported languages: Bengali, Devan&amp;#257;gar&amp;#299;, Gujar&amp;#257;ti, Gurmukhi, Kannada, Malayalam, Oriya, Tamil, Telugu&lt;/p&gt;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 0.5em; background-color: #EEEEEE; font-size: 18pt;&quot;&gt;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral">  &lt;span style=&quot;font-family:ind_bn_1_001;&quot;&gt;&amp;#2438;&amp;#2488;&amp;#2488;&amp;#2494;&amp;#2482;&amp;#2494;&amp;#2478;&amp;#2497; &amp;#2438;&amp;#2482;&amp;#2494;&amp;#2439;&amp;#2453;&amp;#2497;&amp;#2478; &lt;/span&gt;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="stringliteral"> &lt;span style=&quot;font-family:ind_gu_1_001;&quot;&gt;&amp;#2728;&amp;#2734;&amp;#2744;&amp;#2765;&amp;#2724;&amp;#2759; &lt;/span&gt;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="stringliteral"> &lt;span style=&quot;font-family:ind_ml_1_001;&quot;&gt;&amp;#3368;&amp;#3374;&amp;#3384;&amp;#3405;&amp;#3349;&amp;#3390;&amp;#3376;&amp;#3330; &lt;/span&gt;</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="stringliteral"> &lt;span style=&quot;font-family:ind_hi_1_001;&quot;&gt;&amp;#x0928;&amp;#x092E;&amp;#x0938;&amp;#x094D;&amp;#x0924;&amp;#x0947; &lt;/span&gt;</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="stringliteral"> &lt;span style=&quot;font-family:ind_ta_1_001;&quot;&gt;&amp;#2997;&amp;#2979;&amp;#2965;&amp;#3021;&amp;#2965;&amp;#2990;&amp;#3021;! &lt;/span&gt;</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="stringliteral">Complex scripts &lt;b&gt;not&lt;/b&gt; supported: Khmer, Sinhala, Tibetan, Myanmar (Burmese), Balinese </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="stringliteral">&lt;h4&gt;Vertical writing&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="stringliteral">&lt;div&gt;Vertical writing is not supported by mPDF (e.g. Mongolian and Phags-pa) although the individual characters can be displayed using suitable fonts.&lt;/div&gt;</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="stringliteral">&lt;pagebreak /&gt;</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="stringliteral">&lt;h4&gt;Combining diacritics&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="stringliteral">&lt;p&gt;In Unicode, letters with diacritics (e.g. &amp;#193;&amp;#225;&amp;#550;&amp;#551;&amp;#196;&amp;#228;) are usually represented as a single character e.g. Unicode U+0196 is an A Umlaut. There are 4 blocks in Unicode of diacritics or \&#39;marks\&#39; which can be used to combine with adjacent letters: Combining Diacritical Marks (U+0300 - U+036F), Combining Diacritical Marks Supplement (U+1DC0 - U+1DFF), Combining Marks for Symbols(U+20D0 - U+20FF) and Combining Half Marks (U+FE20 - U+FE2F). &lt;/p&gt;</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="stringliteral">&lt;p&gt;Software applications use special positioning information stored in OpenType font files to resposition the diacritic/mark depending on the context. mPDF does not support this repositioning and is dependent on the font design and original placement of the diacritic:</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="stringliteral">&lt;/p&gt;</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 0.5em; background-color: #EEEEEE; font-size: 14pt;&quot;&gt;</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:\&#39;Dejavu Sans Condensed\&#39;;&quot;&gt;&amp;#193; &amp;#225; &amp;#550; &amp;#551; &amp;#196; &amp;#228; &amp;iuml; (Precomposed characters: DejaVu Sans Condensed)&lt;/div&gt;</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:\&#39;Dejavu Sans Condensed\&#39;;&quot;&gt;A&amp;#769; a&amp;#769; A&amp;#x307; a&amp;#x307; A&amp;#x308; a&amp;#x308; i&amp;#x308; (Using diacritics: DejaVu Sans Condensed)&lt;/div&gt;</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:\&#39;Arial Unicode MS\&#39;;&quot;&gt;A&amp;#769; a&amp;#769; A&amp;#x307; a&amp;#x307; A&amp;#x308; a&amp;#x308; i&amp;#x308; (Arial Unicode MS)&lt;/div&gt;</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:\&#39;Times New Roman\&#39;;&quot;&gt;A&amp;#769; a&amp;#769; A&amp;#x307; a&amp;#x307; A&amp;#x308; a&amp;#x308; i&amp;#x308; (Times New Roman)&lt;/div&gt;</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:\&#39;Courier new\&#39;;&quot;&gt;A&amp;#769; a&amp;#769; A&amp;#x307; a&amp;#x307; A&amp;#x308; a&amp;#x308; i&amp;#x308; (Courier New)&lt;/div&gt;</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="stringliteral">&lt;p&gt;&lt;b&gt;It is recommended to use precomposed characters whenever possible with mPDF.&lt;/b&gt;&lt;/p&gt;</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="stringliteral">&lt;pagebreak /&gt;</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="stringliteral">&lt;h2&gt;Unicode Supplementary Planes&lt;/h2&gt;</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="stringliteral">&lt;p&gt;The original Unicode allocated characters between x0000 and xFFFF (65,536 characters). This \&#39;Basic Multilingual Plane\&#39; supported most characters in common use, including a large number of Unified Chinese-Japanese-Korean characters (CJK). Later the Unicode standard was extended to 16 Planes. &lt;/p&gt;</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="stringliteral">&lt;p&gt;The first plane (plane 0), the Basic Multilingual Plane (BMP), is where most characters have been assigned so far.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="stringliteral">&lt;p&gt;Plane 1, the Supplementary Multilingual Plane (SMP), is mostly used for historic scripts such as Linear B, but is also used for musical and mathematical symbols.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="stringliteral">&lt;p&gt;Plane 2, the Supplementary Ideographic Plane (SIP), is used for about 40,000 Unified Han (CJK) Ideographs.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="stringliteral">&lt;p&gt;mPDF version 5 supports fonts containing characters from all Unicode Planes. By choosing the correct font, almost every single character from Unicode 5 can be displayed in a PDF file.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="stringliteral">&lt;h4&gt;Unicode Supplementary Multilingual Plane (SMP or Plane 1) U+10000 - U+1FFFF&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="stringliteral">&lt;h5&gt;Gothic text&lt;/h5&gt;</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="stringliteral">&lt;div&gt;</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="stringliteral">This paragraph shows Gothic text. These characters lie in the Unicode Supplementary Multilingual Plane U+10330 - U+1034F.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE;&quot;&gt;</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:damase&quot;&gt;</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="stringliteral">&amp;#66352; &amp;#66353; &amp;#66354; &amp;#66355; &amp;#66356; &amp;#66357; &amp;#66358; &amp;#66359; &amp;#66360; &amp;#66361; &amp;#66362; &amp;#66363; &amp;#66364; &amp;#66365; &amp;#66366; &amp;#66367; &amp;#66368; &amp;#66369; &amp;#66370; &amp;#66371; &amp;#66372; &amp;#66373; &amp;#66374; &amp;#66375; &amp;#66376; &amp;#66377; &amp;#66378;</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="stringliteral">&lt;div&gt;</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="stringliteral">Font: MPH2BDamase (damase_v.2.ttf) available from: http://www.wazu.jp/gallery/views/View_MPH2BDamase.html </span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="stringliteral">&lt;h5&gt;Egyptian Hieroglyphics&lt;/h5&gt;</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="stringliteral">&lt;div&gt;</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="stringliteral">This paragraph shows Egyptian Hieroglyphics. These characters lie in the Unicode Supplementary Multilingual Plane U+13000 - U+1342F.</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE;&quot;&gt;</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:aegyptus; font-size: 24pt&quot;&gt;</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="stringliteral">&amp;#77824; &amp;#77825; &amp;#77826; &amp;#77827; &amp;#77828; &amp;#77829; &amp;#77830; &amp;#77831; &amp;#77832; &amp;#77833; &amp;#77834; &amp;#77835; &amp;#77836; &amp;#77837; &amp;#77838; &amp;#77839; &amp;#77840; &amp;#77841;</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="stringliteral">&lt;div&gt;</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="stringliteral">Font: Aegyptus.otf available from: http://users.teilar.gr/~g1951d/</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="stringliteral">&lt;p&gt;SMP contains mainly ancient scripts - see &lt;a href=&quot;http://mpdf1.com/manual/index.php?tid=451&quot;&gt;http://mpdf1.com/manual/index.php?tid=451&lt;/a&gt; for full list.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="stringliteral">&lt;p&gt;mPDF uses a different method to embed fonts in the PDF file if they include characters from SMP or SIP, because the characters cannot be represented by a 4 character hex code 0000-FFFF. This method is less eficient than the default method, and it can be suppressed by adding the font name to the array \&#39;BMPonly\&#39; in the config_fonts.php configuration file. &lt;/p&gt;</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="stringliteral">&lt;p&gt;Note that the DejaVu fonts distributed with mPDF and (GNU)FreeSans and FreeSerif fonts do contain a few characters in the SMP plane, but most users will not require them and by default they have been added to the array \&#39;BMPonly\&#39;.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="stringliteral">&lt;pagebreak /&gt;</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="stringliteral">&lt;h4&gt;CJK characters&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="stringliteral">&lt;p&gt;Below are examples of all the CJK Unicode blocks contained in the Basic Multilingual Plane and Supplemental Ideographic Plane&lt;/p&gt;</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE;&quot;&gt;</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="stringliteral">&lt;h5&gt;Plane 0 (BMP)&lt;/h5&gt;</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="stringliteral">&lt;dl style=&quot;font-family:sun-exta;&quot;&gt;</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Radicals Supplement&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#11918; &amp;#11919; &amp;#11920; &amp;#11921; &amp;#11922; &amp;#11923; &amp;#11924; &amp;#11925; &amp;#11926; &amp;#11927; &amp;#11928; &amp;#11929; &amp;#11931; &amp;#11932; &amp;#11933; &amp;#11934; &amp;#11935; &amp;#11936; &amp;#11937; &amp;#11938; &amp;#11939; &amp;#11940; &amp;#11941; &amp;#11942; &amp;#11943; &amp;#11944; &amp;#11945; &amp;#11946;  &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="stringliteral">&lt;dt&gt;Kangxi Radicals&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12083; &amp;#12084; &amp;#12085; &amp;#12086; &amp;#12087; &amp;#12088; &amp;#12089; &amp;#12090; &amp;#12091; &amp;#12092; &amp;#12093; &amp;#12094; &amp;#12095; &amp;#12096; &amp;#12097; &amp;#12098; &amp;#12099; &amp;#12100; &amp;#12101; &amp;#12102; &amp;#12103; &amp;#12104; &amp;#12105; &amp;#12106; &amp;#12107; &amp;#12108; &amp;#12109;  &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="stringliteral">&lt;dt&gt;Ideographic Description Characters&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12272; &amp;#12273; &amp;#12274; &amp;#12275; &amp;#12276; &amp;#12277; &amp;#12278; &amp;#12279; &amp;#12280; &amp;#12281; &amp;#12282; &amp;#12283; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Symbols and Punctuation&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12288;&amp;#12296; &amp;#12297; &amp;#12298; &amp;#12299; &amp;#12300; &amp;#12301; &amp;#12302; &amp;#12303; &amp;#12304; &amp;#12305; &amp;#12306; &amp;#12307; &amp;#12308; &amp;#12309; &amp;#12310; &amp;#12311; &amp;#12312; &amp;#12313; &amp;#12314; &amp;#12315; &amp;#12316; &amp;#12317; &amp;#12318; &amp;#12326; &amp;#12327; &amp;#12328; &amp;#12329; &amp;#12330; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="stringliteral">&lt;dt&gt;Hiragana&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12353; &amp;#12354; &amp;#12355; &amp;#12356; &amp;#12357; &amp;#12358; &amp;#12359; &amp;#12360; &amp;#12361; &amp;#12362; &amp;#12363; &amp;#12364; &amp;#12365; &amp;#12366; &amp;#12367; &amp;#12368; &amp;#12369; &amp;#12370; &amp;#12371; &amp;#12372; &amp;#12373; &amp;#12374; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="stringliteral">&lt;dt&gt;Katakana&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12448; &amp;#12449; &amp;#12450; &amp;#12451; &amp;#12452; &amp;#12453; &amp;#12454; &amp;#12455; &amp;#12456; &amp;#12457; &amp;#12458; &amp;#12459; &amp;#12460; &amp;#12461; &amp;#12462; &amp;#12463; &amp;#12464; &amp;#12465; &amp;#12466; &amp;#12467; &amp;#12468; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="stringliteral">&lt;dt&gt;Bopomofo&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12549; &amp;#12550; &amp;#12551; &amp;#12552; &amp;#12553; &amp;#12554; &amp;#12555; &amp;#12556; &amp;#12557; &amp;#12558; &amp;#12559; &amp;#12560; &amp;#12561; &amp;#12562; &amp;#12563; &amp;#12564; &amp;#12565; &amp;#12566; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="stringliteral">&lt;dt&gt;Hangul Compatibility Jamo&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12593; &amp;#12594; &amp;#12595; &amp;#12596; &amp;#12597; &amp;#12598; &amp;#12599; &amp;#12600; &amp;#12601; &amp;#12602; &amp;#12603; &amp;#12604; &amp;#12605; &amp;#12606; &amp;#12607; &amp;#12608; &amp;#12609; &amp;#12610; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="stringliteral">&lt;dt&gt;Kanbun&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12688; &amp;#12689; &amp;#12690; &amp;#12691; &amp;#12692; &amp;#12693; &amp;#12694; &amp;#12695; &amp;#12696; &amp;#12697; &amp;#12698; &amp;#12699; &amp;#12700; &amp;#12701; &amp;#12702; &amp;#12703; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="stringliteral">&lt;dt&gt;Bopomofo Extended&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12704; &amp;#12705; &amp;#12706; &amp;#12707; &amp;#12708; &amp;#12709; &amp;#12710; &amp;#12711; &amp;#12712; &amp;#12713; &amp;#12714; &amp;#12715; &amp;#12716; &amp;#12717; &amp;#12718; &amp;#12719; &amp;#12720; &amp;#12721; &amp;#12722; &amp;#12723; &amp;#12724; &amp;#12725; &amp;#12726; &amp;#12727; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="stringliteral">&lt;dt&gt;Katakana Phonetic Extensions&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12784; &amp;#12785; &amp;#12786; &amp;#12787; &amp;#12788; &amp;#12789; &amp;#12790; &amp;#12791; &amp;#12792; &amp;#12793; &amp;#12794; &amp;#12795; &amp;#12796; &amp;#12797; &amp;#12798; &amp;#12799; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="stringliteral">&lt;dt&gt;Enclosed CJK Letters and Months&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#12804; &amp;#12805; &amp;#12806; &amp;#12807; &amp;#12808; &amp;#12809; &amp;#12810; &amp;#12811; &amp;#12812; &amp;#12813; &amp;#12814; &amp;#12815; &amp;#12816; &amp;#12817; &amp;#12818; &amp;#12819; &amp;#12820; &amp;#12821; &amp;#12822; &amp;#12823; &amp;#12824; &amp;#12825; &amp;#12826; &amp;#12827; &amp;#12828; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Compatibility&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#13056; &amp;#13057; &amp;#13058; &amp;#13059; &amp;#13060; &amp;#13061; &amp;#13062; &amp;#13063; &amp;#13064; &amp;#13065; &amp;#13066; &amp;#13067; &amp;#13068; &amp;#13069; &amp;#13070; &amp;#13071; &amp;#13072; &amp;#13073; &amp;#13074; &amp;#13075; &amp;#13076; &amp;#13077; &amp;#13078; &amp;#13079; &amp;#13080; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Unified Ideographs Extension A&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#13312; &amp;#13313; &amp;#13314; &amp;#13315; &amp;#13316; &amp;#13317; &amp;#13318; &amp;#13319; &amp;#13320; &amp;#13321; &amp;#13322; &amp;#13323; &amp;#13324; &amp;#13325; &amp;#13326; &amp;#13327; &amp;#13328; &amp;#13329; &amp;#13330; &amp;#13331; &amp;#13332; &amp;#13333; &amp;#13334; &amp;#13335; &amp;#13336; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Unified Ideographs&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#19968; &amp;#19969; &amp;#19970; &amp;#19971; &amp;#19972; &amp;#19973; &amp;#19974; &amp;#19975; &amp;#19976; &amp;#19977; &amp;#19978; &amp;#19979; &amp;#19980; &amp;#19981; &amp;#19982; &amp;#19983; &amp;#19984; &amp;#19985; &amp;#19986; &amp;#19987; &amp;#19988; &amp;#19989; &amp;#19990; &amp;#19991; &amp;#19992; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="stringliteral">&lt;dt&gt;Yi Syllables&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#40960; &amp;#40961; &amp;#40962; &amp;#40963; &amp;#40964; &amp;#40965; &amp;#40966; &amp;#40967; &amp;#40968; &amp;#40969; &amp;#40970; &amp;#40971; &amp;#40972; &amp;#40973; &amp;#40974; &amp;#40975; &amp;#40976; &amp;#40977; &amp;#40978; &amp;#40979; &amp;#40980; &amp;#40981; &amp;#40982; &amp;#40983; &amp;#40984; &amp;#40985; &amp;#40986;  &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="stringliteral">&lt;dt&gt;Yi Radicals&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#42128; &amp;#42129; &amp;#42130; &amp;#42131; &amp;#42132; &amp;#42133; &amp;#42134; &amp;#42135; &amp;#42136; &amp;#42137; &amp;#42138; &amp;#42139; &amp;#42140; &amp;#42141; &amp;#42142; &amp;#42143; &amp;#42144; &amp;#42145; &amp;#42146; &amp;#42147; &amp;#42148; &amp;#42149; &amp;#42150; &amp;#42151; &amp;#42152; &amp;#42153;  &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="stringliteral">&lt;dt&gt;Hangul Syllables&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#44032; &amp;#44033; &amp;#44034; &amp;#44035; &amp;#44036; &amp;#44037; &amp;#44038; &amp;#44039; &amp;#44040; &amp;#44041; &amp;#44042; &amp;#44043; &amp;#44044; &amp;#44045; &amp;#44046; &amp;#44047; &amp;#44048; &amp;#44049; &amp;#44050; &amp;#44051; &amp;#44052; &amp;#44053; &amp;#44054; &amp;#44055; &amp;#44056; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Compatibility Ideographs&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#63744; &amp;#63745; &amp;#63746; &amp;#63747; &amp;#63748; &amp;#63749; &amp;#63750; &amp;#63752; &amp;#63753; &amp;#63754; &amp;#63755; &amp;#63756; &amp;#63757; &amp;#63758; &amp;#63759; &amp;#63760; &amp;#63761; &amp;#63762; &amp;#63763; &amp;#63764; &amp;#63765; &amp;#63766; &amp;#63767; &amp;#63768; &amp;#63769; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="stringliteral">&lt;/dl&gt;</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="stringliteral">&lt;h5&gt;Plane 2 (SIP)&lt;/h5&gt;</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="stringliteral">&lt;dl style=&quot;font-family:sun-exta;&quot;&gt;</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Unified Ideographs Extension B&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#x20000; &amp;#x20001; &amp;#x20002; &amp;#x20003; &amp;#x20004; &amp;#x20005; &amp;#x20006; &amp;#x20007; &amp;#x20008; &amp;#x20009; &amp;#x2000A; &amp;#x2000B; &amp;#x2000C; &amp;#x2000D; &amp;#x2000E; &amp;#x2000F; &amp;#x20010; &amp;#x20011; &amp;#x20012; &amp;#x20013; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Unified Ideographs Extension C&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#x2A700; &amp;#x2A701; &amp;#x2A702; &amp;#x2A703; &amp;#x2A704; &amp;#x2A705; &amp;#x2A706; &amp;#x2A707; &amp;#x2A708; &amp;#x2A709; &amp;#x2A70A; &amp;#x2A70B; &amp;#x2A70C; &amp;#x2A70D; &amp;#x2A70E; &amp;#x2A70F; &amp;#x2A710; &amp;#x2A711; &amp;#x2A712; &amp;#x2A713; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="stringliteral">&lt;dt&gt;CJK Compatibility Ideographs Supplement&lt;/dt&gt;</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="stringliteral">&lt;dd&gt;&amp;#x2F800; &amp;#x2F801; &amp;#x2F802; &amp;#x2F803; &amp;#x2F804; &amp;#x2F805; &amp;#x2F806; &amp;#x2F807; &amp;#x2F808; &amp;#x2F809; &amp;#x2F80A; &amp;#x2F80B; &amp;#x2F80C; &amp;#x2F80D; &amp;#x2F80E; &amp;#x2F80F; &amp;#x2F810; &amp;#x2F811; &amp;#x2F812; &amp;#x2F813; &lt;/dd&gt;</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="stringliteral">&lt;/dl&gt;</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="stringliteral">&lt;pagebreak /&gt;</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="stringliteral">&lt;h4&gt;Using CJK fonts in mPDF&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="stringliteral">&lt;p&gt;Fonts containing CJK characters are large files, typically 10-30MB. Adobe provides a free download of an \&#39;Asian font pack\&#39; allowing you to create PDF files without including (embedding) the font information in the file. This keeps the file size to a minimum and minimises resource usage on your website generating the PDF file. However, users will have to download the Adobe font packs to read the file, and other PDF software will not display the text correctly.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="stringliteral">&lt;p&gt;mPDF allows you to embed subsets of CJK fonts keeping file size down, although there is increased memory usage to generate these files.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="stringliteral">&lt;p&gt;Some CJK fonts are broken up into 2 files because of the size of the files. One freely available font with almost complete coverage of all CJK characters (in both BMP and SIP) is \&#39;Sun\&#39; available from Alan Wood\&#39;s excellent website: &lt;a href=&quot;http://www.alanwood.net/unicode/fonts-east-asian.html&quot;&gt;http://www.alanwood.net/unicode/fonts-east-asian.html&lt;/a&gt;. This comes as 2 files, Sun-ExtA and Sun-ExtB (both about 20MB in size) containing the characters from BMP and SIP respectively.</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="stringliteral">&lt;/p&gt;</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="stringliteral">&lt;p&gt;mPDF allows you to treat these as one font by defining the second file as an SIP-extension of the first in the config_fonts.php configuration file. The following text includes random characters from the BMP and SIP mixed together:&lt;/p&gt;</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE;&quot;&gt;</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:sun-extA;&quot;&gt;</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="stringliteral">&amp;#40706; &amp;#40712; &amp;#40727; &amp;#x2320f; &amp;#x23225; &amp;#40742; &amp;#40743; &amp;#x2322f; &amp;#x23231; &amp;#40761; &amp;#40772; &amp;#x23232; &amp;#x23233; &amp;#40773; &amp;#40784; &amp;#x23234; &amp;#x23256; &amp;#40787; &amp;#40794; &amp;#x23262; &amp;#x23281; &amp;#40802; &amp;#40809; &amp;#x23289; &amp;#x2328a; </span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="stringliteral">&lt;p&gt;This is the entry in the config_fonts.php configuration file:&lt;/p&gt;</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE; font-family: \&#39;Courier new\&#39;; font-size: 8.5pt;&quot;&gt;</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="stringliteral">$this-&gt;fontdata = array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="stringliteral">...&lt;br /&gt;</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;sun-exta&quot; =&gt; array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; &quot;Sun-ExtA.ttf&quot;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;sip-ext\&#39; =&gt; \&#39;sun-extb\&#39;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;sun-extb&quot; =&gt; array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; &quot;Sun-ExtB.ttf&quot;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="stringliteral">&lt;br /&gt;</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="stringliteral">...&lt;br /&gt;</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="stringliteral">);</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="stringliteral">&lt;p&gt;This is the HTML code - note only the sun-exta font-family needs to be referenced:&lt;/p&gt;</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE; font-family: \&#39;Courier new\&#39;; font-size: 8.5pt;&quot;&gt;</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="stringliteral">&amp;lt;div style=&quot;font-family:sun-extA;&quot;&amp;gt;</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="stringliteral">&amp;amp;#40706; &amp;amp;#40712; &amp;amp;#40727; &amp;amp;#x2320f; &amp;amp;#x23225; &amp;amp;#40742; &amp;amp;#40743; &amp;amp;#x2322f; &amp;amp;#x23231; &amp;amp;#40761; &amp;amp;#40772; &amp;amp;#x23232; &amp;amp;#x23233; &amp;amp;#40773; &amp;amp;#40784; &amp;amp;#x23234; &amp;amp;#x23256; &amp;amp;#40787; &amp;amp;#40794; &amp;amp;#x23262; &amp;amp;#x23281; &amp;amp;#40802; &amp;amp;#40809; &amp;amp;#x23289; &amp;amp;#x2328a; </span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="stringliteral">&amp;lt;/div&amp;gt;</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="stringliteral">&lt;p&gt;NB You may also need to edit the value $this-&gt;useAdobeCJK=false in config.php or use new mPDF(\&#39;-aCJK\&#39;), and edit the config_cp.php configuration file.&lt;/p&gt;</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="stringliteral">&lt;pagebreak /&gt;</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="stringliteral">&lt;h4&gt;TrueType Collections&lt;/h4&gt;</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="stringliteral">&lt;p&gt;TrueType Collections (.ttc files) contain more than one font. mPDF treats each font separately by defining the TTCfontID array in the config_fonts.php configuration file. &lt;/p&gt;</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="stringliteral">&lt;p&gt;This example uses the Windows MingLiU fonts, which consist of 2 files containing 6 fonts (note that mingliub is not a Bold variant): &lt;/p&gt;</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="stringliteral">&lt;p&gt;Font collection file (mingliu.ttc) contains the following fonts:&lt;br /&gt;</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="stringliteral">[1] MingLiU (mingliu) Regular&lt;br /&gt;</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="stringliteral">[2] PMingLiU (pmingliu) Regular (Proportional)&lt;br /&gt;</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="stringliteral">[3] MingLiU_HKSCS (mingliu_hkscs) Regular&lt;br /&gt;</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="stringliteral">&lt;/p&gt;</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="stringliteral">&lt;p&gt;Font collection file (mingliub.ttc) contains the following fonts:&lt;br /&gt;</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="stringliteral">[1] MingLiU-ExtB (mingliu-extb) Regular&lt;br /&gt;</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="stringliteral">[2] PMingLiU-ExtB (pmingliu-extb) Regular (Proportional)&lt;br /&gt;</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="stringliteral">[3] MingLiU_HKSCS-ExtB (mingliu_hkscs-extb) Regular&lt;br /&gt;</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="stringliteral">&lt;/p&gt;</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="stringliteral">&lt;p&gt;The following text includes characters from both BMP and SIP:&lt;/p&gt;</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE;&quot;&gt;</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:mingliu;&quot;&gt;</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="stringliteral">&amp;#40706; &amp;#40742; &amp;#40772; &amp;#40784; &amp;#40802; &amp;#40809; &amp;#x23289; &amp;#x2328a; </span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:mingliu_hkscs;&quot;&gt;</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="stringliteral">&amp;#40706; &amp;#40742; &amp;#40772; &amp;#40784; &amp;#40802; &amp;#40809; &amp;#x23289; &amp;#x2328a; </span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="stringliteral">&lt;div style=&quot;font-family:pmingliu;&quot;&gt;</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="stringliteral">&amp;#40706; &amp;#40742; &amp;#40772; &amp;#40784; &amp;#40802; &amp;#40809; &amp;#x23289; &amp;#x2328a; </span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="stringliteral">&lt;p&gt;This is the entry in the config_fonts.php configuration file:&lt;/p&gt;</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE; font-family: \&#39;Courier new\&#39;; font-size: 8.5pt;&quot;&gt;</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="stringliteral">$this-&gt;fontdata = array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="stringliteral">...&lt;br /&gt;</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;mingliu&quot; =&gt; array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; &quot;mingliu.ttc&quot;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;TTCfontID\&#39; =&gt; array (&lt;br /&gt;</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; 1,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;sip-ext\&#39; =&gt; \&#39;mingliu-extb\&#39;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;pmingliu&quot; =&gt; array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; &quot;mingliu.ttc&quot;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;TTCfontID\&#39; =&gt; array (&lt;br /&gt;</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; 2,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;sip-ext\&#39; =&gt; \&#39;pmingliu-extb\&#39;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;mingliu_hkscs&quot; =&gt; array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; &quot;mingliu.ttc&quot;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;TTCfontID\&#39; =&gt; array (&lt;br /&gt;</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; 3,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;sip-ext\&#39; =&gt; \&#39;mingliu_hkscs-extb\&#39;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;mingliu-extb&quot; =&gt; array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; &quot;mingliub.ttc&quot;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;TTCfontID\&#39; =&gt; array (&lt;br /&gt;</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; 1,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;pmingliu-extb&quot; =&gt; array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; &quot;mingliub.ttc&quot;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;TTCfontID\&#39; =&gt; array (&lt;br /&gt;</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; 2,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;mingliu_hkscs-extb&quot; =&gt; array(&lt;br /&gt;</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; &quot;mingliub.ttc&quot;,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;TTCfontID\&#39; =&gt; array (&lt;br /&gt;</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \&#39;R\&#39; =&gt; 3,&lt;br /&gt;</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  &amp;nbsp; &amp;nbsp; &amp;nbsp; ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="stringliteral"> &amp;nbsp; &amp;nbsp; &amp;nbsp;  ),&lt;br /&gt;</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="stringliteral">&lt;br /&gt;</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="stringliteral">...&lt;br /&gt;</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="stringliteral">);</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="stringliteral">&lt;p&gt;This is the HTML code:&lt;/p&gt;</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="stringliteral">&lt;div style=&quot;border:0.2mm solid #000088; padding: 1em; background-color: #EEEEEE; font-family: \&#39;Courier new\&#39;; font-size: 8.5pt;&quot;&gt;</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="stringliteral">&amp;lt;div style=&quot;font-family:mingliu;&quot;&amp;gt;</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="stringliteral">&amp;amp;#40706; &amp;amp;#40742; &amp;amp;#40772; &amp;amp;#40784; &amp;amp;#40802; &amp;amp;#40809; &amp;amp;#x23289; &amp;amp;#x2328a; </span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="stringliteral">&amp;lt;/div&amp;gt;</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="stringliteral">&lt;br /&gt;</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="stringliteral">&amp;lt;div style=&quot;font-family:mingliu_hkscs;&quot;&amp;gt;</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="stringliteral">&amp;amp;#40706; &amp;amp;#40742; &amp;amp;#40772; &amp;amp;#40784; &amp;amp;#40802; &amp;amp;#40809; &amp;amp;#x23289; &amp;amp;#x2328a; </span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="stringliteral">&amp;lt;/div&amp;gt;</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="stringliteral">&lt;br /&gt;</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="stringliteral">&amp;lt;div style=&quot;font-family:pmingliu;&quot;&amp;gt;</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="stringliteral">&amp;amp;#40706; &amp;amp;#40742; &amp;amp;#40772; &amp;amp;#40784; &amp;amp;#40802; &amp;amp;#40809; &amp;amp;#x23289; &amp;amp;#x2328a; </span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="stringliteral">&amp;lt;/div&amp;gt;</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="stringliteral">&lt;/div&gt;</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="stringliteral">&#39;</span>;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="keywordflow">if</span> ($_REQUEST[<span class="stringliteral">&#39;html&#39;</span>]) { echo $html; exit; }</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="keywordflow">if</span> ($_REQUEST[<span class="stringliteral">&#39;source&#39;</span>]) { </div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    $file = __FILE__;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    header(<span class="stringliteral">&quot;Content-Type: text/plain&quot;</span>);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    header(<span class="stringliteral">&quot;Content-Length: &quot;</span>. filesize($file));</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    header(<span class="stringliteral">&quot;Content-Disposition: attachment; filename=&#39;&quot;</span>.$file.<span class="stringliteral">&quot;&#39;&quot;</span>);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    readfile($file);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    exit; </div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;include(<span class="stringliteral">&quot;../mpdf.php&quot;</span>);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;$mpdf=<span class="keyword">new</span> mPDF(); </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;$mpdf-&gt;WriteHTML($html);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;$mpdf-&gt;Output();</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;exit;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">//==============================================================</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;?&gt;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno ne 13. dub 2014 14.01:49 pro projekt Dlouhodob�maturitn�pr�ce programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

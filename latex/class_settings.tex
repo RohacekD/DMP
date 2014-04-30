@@ -1,0 +1,117 @@
+\hypertarget{class_settings}{\section{Dokumentace třídy Settings}
+\label{class_settings}\index{Settings@{Settings}}
+}
+\subsection*{Statické veřejné atributy}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_settings_ae66c8f793cb922e441952393ff4d6168}{\$\-D\-Bconn}
+\item 
+static \hyperlink{class_settings_ad53d9811a9ab524a05cf3a1badc50b70}{\$\-D\-Bsettings}
+\item 
+static \hyperlink{class_settings_ab4d5556c37e88ee59e06e8c409e8bcd1}{\$url\-\_\-base} = \char`\"{}/D\-M\-P\char`\"{}
+\item 
+static \hyperlink{class_settings_a92bf988b87f175aaa87628e44943fb07}{\$access\-\_\-levels}
+\item 
+static \hyperlink{class_settings_a0fa5d232ec562cfdd51abcb478096a62}{\$default\-\_\-style} = \char`\"{}default\char`\"{}
+\item 
+static \hyperlink{class_settings_af85847d3f54cbc385315fc9006892694}{\$admin\-\_\-email} = \char`\"{}Rohacek\-D@localhost.\-com\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailní popis}
+
+
+Definice je uvedena na řádku 2 v souboru Settings.\-class.\-php.
+
+
+
+\subsection{Dokumentace k datovým členům}
+\hypertarget{class_settings_a92bf988b87f175aaa87628e44943fb07}{\index{Settings@{Settings}!\$access\-\_\-levels@{\$access\-\_\-levels}}
+\index{\$access\-\_\-levels@{\$access\-\_\-levels}!Settings@{Settings}}
+\subsubsection[{\$access\-\_\-levels}]{\setlength{\rightskip}{0pt plus 5cm}Settings\-::\$access\-\_\-levels\hspace{0.3cm}{\ttfamily [static]}}}\label{class_settings_a92bf988b87f175aaa87628e44943fb07}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+= array(
+        0   =>  \textcolor{stringliteral}{"Učitel"},
+        1   =>  \textcolor{stringliteral}{"Účetní"},
+        2   =>  \textcolor{stringliteral}{"Zástupce"},
+        3   =>  \textcolor{stringliteral}{"Řiditel"},
+        4   =>  \textcolor{stringliteral}{"Admin"}
+    )
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 17 v souboru Settings.\-class.\-php.
+
+
+
+Používá se v Profil\-Controller\textbackslash{}run().
+
+\hypertarget{class_settings_af85847d3f54cbc385315fc9006892694}{\index{Settings@{Settings}!\$admin\-\_\-email@{\$admin\-\_\-email}}
+\index{\$admin\-\_\-email@{\$admin\-\_\-email}!Settings@{Settings}}
+\subsubsection[{\$admin\-\_\-email}]{\setlength{\rightskip}{0pt plus 5cm}Settings\-::\$admin\-\_\-email = \char`\"{}Rohacek\-D@localhost.\-com\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_settings_af85847d3f54cbc385315fc9006892694}
+
+
+Definice je uvedena na řádku 27 v souboru Settings.\-class.\-php.
+
+\hypertarget{class_settings_ae66c8f793cb922e441952393ff4d6168}{\index{Settings@{Settings}!\$\-D\-Bconn@{\$\-D\-Bconn}}
+\index{\$\-D\-Bconn@{\$\-D\-Bconn}!Settings@{Settings}}
+\subsubsection[{\$\-D\-Bconn}]{\setlength{\rightskip}{0pt plus 5cm}Settings\-::\$\-D\-Bconn\hspace{0.3cm}{\ttfamily [static]}}}\label{class_settings_ae66c8f793cb922e441952393ff4d6168}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{"host"}  =>  \textcolor{stringliteral}{"127.0.0.1"},
+        \textcolor{stringliteral}{"pass"}  =>  \textcolor{stringliteral}{""},
+        \textcolor{stringliteral}{"user"}  =>  \textcolor{stringliteral}{"root"},
+        \textcolor{stringliteral}{"dbname"}=>  \textcolor{stringliteral}{"requests"}
+    )
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 3 v souboru Settings.\-class.\-php.
+
+\hypertarget{class_settings_ad53d9811a9ab524a05cf3a1badc50b70}{\index{Settings@{Settings}!\$\-D\-Bsettings@{\$\-D\-Bsettings}}
+\index{\$\-D\-Bsettings@{\$\-D\-Bsettings}!Settings@{Settings}}
+\subsubsection[{\$\-D\-Bsettings}]{\setlength{\rightskip}{0pt plus 5cm}Settings\-::\$\-D\-Bsettings\hspace{0.3cm}{\ttfamily [static]}}}\label{class_settings_ad53d9811a9ab524a05cf3a1badc50b70}
+{\bfseries Initializer\-:}
+\begin{DoxyCode}
+= array(
+            PDO::ATTR\_ERRMODE => PDO::ERRMODE\_EXCEPTION,
+            PDO::MYSQL\_ATTR\_INIT\_COMMAND => \textcolor{stringliteral}{'SET NAMES utf8'}
+    )
+\end{DoxyCode}
+
+
+Definice je uvedena na řádku 10 v souboru Settings.\-class.\-php.
+
+
+
+Používá se v Database\textbackslash{}pripoj().
+
+\hypertarget{class_settings_a0fa5d232ec562cfdd51abcb478096a62}{\index{Settings@{Settings}!\$default\-\_\-style@{\$default\-\_\-style}}
+\index{\$default\-\_\-style@{\$default\-\_\-style}!Settings@{Settings}}
+\subsubsection[{\$default\-\_\-style}]{\setlength{\rightskip}{0pt plus 5cm}Settings\-::\$default\-\_\-style = \char`\"{}default\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_settings_a0fa5d232ec562cfdd51abcb478096a62}
+
+
+Definice je uvedena na řádku 25 v souboru Settings.\-class.\-php.
+
+
+
+Používá se v Administration\-Controller\textbackslash{}run().
+
+\hypertarget{class_settings_ab4d5556c37e88ee59e06e8c409e8bcd1}{\index{Settings@{Settings}!\$url\-\_\-base@{\$url\-\_\-base}}
+\index{\$url\-\_\-base@{\$url\-\_\-base}!Settings@{Settings}}
+\subsubsection[{\$url\-\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}Settings\-::\$url\-\_\-base = \char`\"{}/D\-M\-P\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_settings_ab4d5556c37e88ee59e06e8c409e8bcd1}
+
+
+Definice je uvedena na řádku 15 v souboru Settings.\-class.\-php.
+
+
+
+Používá se v Router\-Controller\textbackslash{}parse(), User\-Manager\textbackslash{}\-Print\-User() a Administration\-Controller\textbackslash{}run().
+
+
+
+Dokumentace pro tuto třídu byla generována z následujícího souboru\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_settings_8class_8php}{Settings.\-class.\-php}\end{DoxyCompactItemize}

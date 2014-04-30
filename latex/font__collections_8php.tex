@@ -1,0 +1,90 @@
+\hypertarget{font__collections_8php}{\section{Dokumentace souboru Models/\-M\-P\-D\-F/utils/font\-\_\-collections.php}
+\label{font__collections_8php}\index{Models/\-M\-P\-D\-F/utils/font\-\_\-collections.\-php@{Models/\-M\-P\-D\-F/utils/font\-\_\-collections.\-php}}
+}
+\subsection*{Proměnné}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{font__collections_8php_ad773ebf7841c6538baa63f9945d7c9ca}{\$checkdir} = ''
+\item 
+const \hyperlink{font__collections_8php_a79734099b3f1817b14687db06cde3132}{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H} '../'
+\item 
+\hyperlink{font__collections_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\$mpdf} =new \hyperlink{classm_p_d_f}{m\-P\-D\-F}('')
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(\$checkdir) \hyperlink{font__collections_8php_a5271a2344cca2dc08862484f40ba9273}{else} \{ \$ttfdir = \-\_\-\-M\-P\-D\-F\-\_\-\-T\-T\-F\-O\-N\-T\-P\-A\-T\-H
+\item 
+\hyperlink{font__collections_8php_ad04a9e91774b9f9d3044e0c2b7636ca1}{\$mqr} =ini\-\_\-get(\char`\"{}magic\-\_\-quotes\-\_\-runtime\char`\"{})
+\item 
+\hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(\$mqr) \hyperlink{pdf__parser_8php_af8105e84b42a9ceda5357caeb6c4760b}{if}(!class\-\_\-exists('T\-T\-Font\-File\-\_\-\-Analysis', \\*
+\hyperlink{ttfontsuni_8php_afbaa04e5cc97693dc668b3c45d3dd740}{false})) \hyperlink{font__collections_8php_afff581834e571b043984b18c7bfbe4e6}{\$ttf} = new T\-T\-Font\-File\-\_\-\-Analysis()
+\item 
+\hyperlink{font__collections_8php_a064fd64c462dd929cd17812cf14ec09e}{\$ff} = scandir(\$ttfdir)
+\item 
+\hyperlink{font__names_8php_ac6e05d8eea8274a71f8f9c686e891421}{foreach}(\$ff A\-S \$f) \hyperlink{font__collections_8php_a1fe6089a8ea9dad4d98c742e8c25b329}{exit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentace proměnných}
+\hypertarget{font__collections_8php_ad773ebf7841c6538baa63f9945d7c9ca}{\index{font\-\_\-collections.\-php@{font\-\_\-collections.\-php}!\$checkdir@{\$checkdir}}
+\index{\$checkdir@{\$checkdir}!font_collections.php@{font\-\_\-collections.\-php}}
+\subsubsection[{\$checkdir}]{\setlength{\rightskip}{0pt plus 5cm}\$checkdir = ''}}\label{font__collections_8php_ad773ebf7841c6538baa63f9945d7c9ca}
+
+
+Definice je uvedena na řádku 14 v souboru font\-\_\-collections.\-php.
+
+\hypertarget{font__collections_8php_a064fd64c462dd929cd17812cf14ec09e}{\index{font\-\_\-collections.\-php@{font\-\_\-collections.\-php}!\$ff@{\$ff}}
+\index{\$ff@{\$ff}!font_collections.php@{font\-\_\-collections.\-php}}
+\subsubsection[{\$ff}]{\setlength{\rightskip}{0pt plus 5cm}\$ff = scandir(\$ttfdir)}}\label{font__collections_8php_a064fd64c462dd929cd17812cf14ec09e}
+
+
+Definice je uvedena na řádku 40 v souboru font\-\_\-collections.\-php.
+
+\hypertarget{font__collections_8php_ad028f81910d6cbab9b184d2214b3a8f8}{\index{font\-\_\-collections.\-php@{font\-\_\-collections.\-php}!\$mpdf@{\$mpdf}}
+\index{\$mpdf@{\$mpdf}!font_collections.php@{font\-\_\-collections.\-php}}
+\subsubsection[{\$mpdf}]{\setlength{\rightskip}{0pt plus 5cm}\$mpdf =new {\bf m\-P\-D\-F}('')}}\label{font__collections_8php_ad028f81910d6cbab9b184d2214b3a8f8}
+
+
+Definice je uvedena na řádku 27 v souboru font\-\_\-collections.\-php.
+
+\hypertarget{font__collections_8php_ad04a9e91774b9f9d3044e0c2b7636ca1}{\index{font\-\_\-collections.\-php@{font\-\_\-collections.\-php}!\$mqr@{\$mqr}}
+\index{\$mqr@{\$mqr}!font_collections.php@{font\-\_\-collections.\-php}}
+\subsubsection[{\$mqr}]{\setlength{\rightskip}{0pt plus 5cm}\$mqr =ini\-\_\-get(\char`\"{}magic\-\_\-quotes\-\_\-runtime\char`\"{})}}\label{font__collections_8php_ad04a9e91774b9f9d3044e0c2b7636ca1}
+
+
+Definice je uvedena na řádku 35 v souboru font\-\_\-collections.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-dochecks().
+
+\hypertarget{font__collections_8php_afff581834e571b043984b18c7bfbe4e6}{\index{font\-\_\-collections.\-php@{font\-\_\-collections.\-php}!\$ttf@{\$ttf}}
+\index{\$ttf@{\$ttf}!font_collections.php@{font\-\_\-collections.\-php}}
+\subsubsection[{\$ttf}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$mqr) {\bf if} (!class\-\_\-exists('T\-T\-Font\-File\-\_\-\-Analysis', {\bf false})) \$ttf = new T\-T\-Font\-File\-\_\-\-Analysis()}}\label{font__collections_8php_afff581834e571b043984b18c7bfbe4e6}
+
+
+Definice je uvedena na řádku 38 v souboru font\-\_\-collections.\-php.
+
+
+
+Používá se v m\-P\-D\-F\textbackslash{}\-\_\-putfonts(), m\-P\-D\-F\textbackslash{}\-Add\-Font() a Get\-Info\-From\-True\-Type().
+
+\hypertarget{font__collections_8php_a79734099b3f1817b14687db06cde3132}{\index{font\-\_\-collections.\-php@{font\-\_\-collections.\-php}!\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H@{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H}}
+\index{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H@{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H}!font_collections.php@{font\-\_\-collections.\-php}}
+\subsubsection[{\-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}const \-\_\-\-M\-P\-D\-F\-\_\-\-P\-A\-T\-H '../'}}\label{font__collections_8php_a79734099b3f1817b14687db06cde3132}
+
+
+Definice je uvedena na řádku 24 v souboru font\-\_\-collections.\-php.
+
+\hypertarget{font__collections_8php_a5271a2344cca2dc08862484f40ba9273}{\index{font\-\_\-collections.\-php@{font\-\_\-collections.\-php}!else@{else}}
+\index{else@{else}!font_collections.php@{font\-\_\-collections.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$checkdir) else \{ \$ttfdir = \-\_\-\-M\-P\-D\-F\-\_\-\-T\-T\-F\-O\-N\-T\-P\-A\-T\-H}}\label{font__collections_8php_a5271a2344cca2dc08862484f40ba9273}
+
+
+Definice je uvedena na řádku 31 v souboru font\-\_\-collections.\-php.
+
+\hypertarget{font__collections_8php_a1fe6089a8ea9dad4d98c742e8c25b329}{\index{font\-\_\-collections.\-php@{font\-\_\-collections.\-php}!exit@{exit}}
+\index{exit@{exit}!font_collections.php@{font\-\_\-collections.\-php}}
+\subsubsection[{exit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf foreach} (\$ff A\-S \$f) exit}}\label{font__collections_8php_a1fe6089a8ea9dad4d98c742e8c25b329}
+
+
+Definice je uvedena na řádku 43 v souboru font\-\_\-collections.\-php.
+

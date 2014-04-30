@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Dlouhodob�maturitn�pr�ce: Zdrojový soubor Controllers/RequestsEditorController.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Dlouhodob�maturitn�pr�ce
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Hledat');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hlavní&#160;stránka</span></a></li>
+      <li><a href="pages.html"><span>Ostatní&#160;stránky</span></a></li>
+      <li><a href="annotated.html"><span>Třídy</span></a></li>
+      <li class="current"><a href="files.html"><span>Soubory</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Hledat" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Seznam&#160;souborů</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Vše</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Třídy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkce</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Stránky</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f1e231c396d6a78f925b250f39acb3ba.html">Controllers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">RequestsEditorController.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_requests_editor_controller.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_requests_editor_controller.html">RequestsEditorController</a> <span class="keyword">extends</span> Controller{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">private</span> $error = <span class="keyword">false</span>;<span class="comment">//pokud je true po prvnich kontrolach tak se nic do DB nezapise a vypisou se errory</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> run($parameters){</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="class_user_manager.html#a591da89b9f5821a5cd5b128053d85288">UserManager::IsLogged</a>())</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            $this-&gt;redirect(<span class="stringliteral">&quot;/error/Neregistrovany-pristup&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        $this-&gt;user_panel=<span class="keyword">new</span> <a class="code" href="class_user_controller.html">UserController</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        $this-&gt;user_panel-&gt;run(array(<span class="stringliteral">&quot;Panel&quot;</span>));</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span>(isset($_POST[<span class="stringliteral">&#39;submit&#39;</span>])){<span class="comment">//kontrola+zapis+presmerovani na request</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">if</span>(!isset($_POST[<span class="stringliteral">&#39;Name&#39;</span>])) {$this-&gt;data[<span class="stringliteral">&#39;error&#39;</span>][]=<span class="stringliteral">&quot;Musíte zadat jméno žádosti!&quot;</span>; $this-&gt;error=<span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">if</span>(!is_numeric($_POST[<span class="stringliteral">&#39;Need&#39;</span>])) {$this-&gt;data[<span class="stringliteral">&#39;error&#39;</span>][]=<span class="stringliteral">&quot;Požadovaná částka musí být platné číslo!&quot;</span>; $this-&gt;error=<span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">if</span>(!is_string($_POST[<span class="stringliteral">&#39;Need&#39;</span>])) {$this-&gt;data[<span class="stringliteral">&#39;error&#39;</span>][]=<span class="stringliteral">&quot;Požadovaná částka musí být platné číslo!2&quot;</span>; $this-&gt;error=<span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">if</span>($parameters[0]==<span class="stringliteral">&quot;New&quot;</span>){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="keywordflow">if</span>($this-&gt;error){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    $this-&gt;data=array_merge($this-&gt;data,$_POST);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                    $id=Database::Insert(<span class="stringliteral">&quot;INSERT INTO requests VALUES(?,?,?,?,?,?)&quot;</span>, array(null,$_POST[<span class="stringliteral">&#39;Name&#39;</span>],null,$_POST[<span class="stringliteral">&#39;Description&#39;</span>], $_POST[<span class="stringliteral">&#39;Need&#39;</span>],self::$user-&gt;<span class="keywordtype">id</span>()));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    $this-&gt;redirect(<span class="stringliteral">&quot;/requests/request/&quot;</span>.$id);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>($parameters[0]==<span class="stringliteral">&quot;Edit&quot;</span>){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">if</span>($this-&gt;error){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    $this-&gt;data=array_merge($this-&gt;data,$_POST);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    $r=Database::OneRowQuery(<span class="stringliteral">&quot;SELECT id, User_id FROM requests WHERE id=?&quot;</span>, array($_POST[<span class="stringliteral">&#39;id&#39;</span>]));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <span class="keywordflow">if</span>($r==null || $r[<span class="stringliteral">&quot;User_id&quot;</span>]!=self::$user-&gt;<span class="keywordtype">id</span>())<span class="comment">//querry nic nevratilo...</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        $this-&gt;redirect(<span class="stringliteral">&quot;/error/Edit_foreign_request&quot;</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        Database::Update(<span class="stringliteral">&quot;UPDATE requests SET Name=?, Create_date=?, Description=?, Need=? WHERE id=?;&quot;</span>, array($_POST[<span class="stringliteral">&#39;Name&#39;</span>],null,$_POST[<span class="stringliteral">&#39;Description&#39;</span>], $_POST[<span class="stringliteral">&#39;Need&#39;</span>], $_POST[<span class="stringliteral">&quot;id&quot;</span>]));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        $this-&gt;redirect(<span class="stringliteral">&quot;/requests/request/&quot;</span>.$_POST[<span class="stringliteral">&quot;id&quot;</span>]);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="comment">//pokud jsem dosel sem je neco spatne...</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            $this-&gt;view=<span class="stringliteral">&#39;request_editor&#39;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            $this-&gt;view=<span class="stringliteral">&#39;request_editor&#39;</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span>($parameters[0]==<span class="stringliteral">&quot;New&quot;</span>){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                $this-&gt;head[<span class="stringliteral">&#39;title&#39;</span>]=<span class="stringliteral">&quot;Přidat novou žádnaku&quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                $this-&gt;data[]=<span class="charliteral">&#39;a&#39;</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>($parameters[0]==<span class="stringliteral">&quot;Edit&quot;</span>){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                $confirm = Database::OneRowQuery(<span class="stringliteral">&quot;SELECT count(User_id) FROM requests_confirm WHERE request_id=?&quot;</span>, array($parameters[1]) );</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keywordflow">if</span>($confirm[0]==0){<span class="comment">//neni jeste nikym schvaleno</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    $request= Database::OneRowQuery(<span class="stringliteral">&quot;SELECT * FROM requests WHERE id=?&quot;</span>, array($parameters[1]));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keywordflow">if</span>($request==null){<span class="comment">//neexistujici zaznam</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        $this-&gt;redirect(<span class="stringliteral">&quot;/error/Edited_request_exists&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        die();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <span class="keywordflow">if</span>($request[<span class="stringliteral">&#39;User_id&#39;</span>]!=self::$user-&gt;<span class="keywordtype">id</span>()){<span class="comment">//editace ciziho requestu</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        header(<span class="stringliteral">&quot;Location: &quot;</span>.settings::$url_base.<span class="stringliteral">&quot;/error/Edit_foreign_request&quot;</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        die();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    $this-&gt;data=$request;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    header(<span class="stringliteral">&quot;Location: &quot;</span>.settings::$url_base.<span class="stringliteral">&quot;/error/Edit_after_confirm&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    die();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno ne 13. dub 2014 14.01:48 pro projekt Dlouhodob�maturitn�pr�ce programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

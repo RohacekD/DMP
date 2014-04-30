@@ -1,0 +1,10 @@
+					<article class="fragment" style="width: 100%;">
+						<?php if(isset($header)):?><h1> <?=$header;?></h1><?php endif;?>
+						<article class="fragment" style="width: 50%;">
+<?php if(isset($left))  $left->show();?>
+						</article>
+						<article class="fragment" style="width: 50%;">
+<?php if(isset($right)) $right->show();?>
+						</article>
+					</article>
+					<div class="garbage"></div>

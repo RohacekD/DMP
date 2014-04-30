@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="<?= settings::$url_base."/" ?>" />
+	<meta charset="UTF-8">
+	<meta name="author" content="Dominik Roháček">
+	<title><?= $title ?></title>
+	<link rel="stylesheet" href="<?= $style ?>" type="text/css" />
+	<script type="text/javascript" src="Script.php"></script>
+</head>
+	<body>
+	    <header id="top_panel">
+	    	<nav id="lista" class="content">
+	    	<a href="<?= settings::$url_base."/" ?>">
+		    	<section id="logo">
+		    	&nbsp;
+		    	</section>
+		    </a>
+<?php if(isset($user_panel)) $user_panel->show();?>
+	    	<div style="clear:both"></div>
+	    	</nav>
+		</header>
+		<div id="content">
+			<div id="top"></div>
+				<section class="content">
+<?php $this->controller->show(); ?>
+					<div class="garbage"></div>
+				</section>
+			<div id="bottom"></div>
+		</div>
+		<footer>
+			<section  class="content">
+				<p>Copyright Dominik Roháček 2013-2014.</p>
+			</section>
+		</footer>
+	</body>
+</html>
